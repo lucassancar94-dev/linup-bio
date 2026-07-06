@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Linup — Dein Ernährungs-Coach</title>
+<meta name="description" content="Linup: der Ernährungs-Coach, der dir sagt, was du essen und einkaufen sollst — ohne Abo-Wahnsinn.">
+<style>
+  :root {
+    --bg: #0E1116;
+    --bg2: #14171d;
+    --orange: #FF6A00;
+    --orange-soft: #FF8A2E;
+    --ink: #F4F1EC;
+    --ink-soft: #A5A29B;
+    --card: #1a1e25;
+    --border: #2a2f38;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: radial-gradient(120% 80% at 50% 0%, #1a120a 0%, var(--bg2) 45%, var(--bg) 100%);
+    color: var(--ink);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px 32px;
+  }
+  .wrap { width: 100%; max-width: 460px; text-align: center; }
+
+  .logo { width: 84px; height: 84px; margin: 0 auto 18px; display: block; }
+
+  h1 { font-size: 30px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 8px; }
+  .brandmark { color: var(--orange); }
+
+  .bio {
+    font-size: 15px; line-height: 1.5; color: var(--ink-soft);
+    max-width: 340px; margin: 0 auto 28px;
+  }
+
+  .links { display: flex; flex-direction: column; gap: 12px; }
+
+  a.btn {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    padding: 16px 18px; border-radius: 16px; text-decoration: none;
+    font-size: 16px; font-weight: 700; transition: transform .12s ease, opacity .12s ease;
+    border: 1px solid var(--border);
+  }
+  a.btn:active { transform: scale(0.97); }
+
+  .btn-primary { background: var(--orange); color: #1a1005; border-color: transparent; }
+  .btn-secondary { background: var(--card); color: var(--ink); }
+  .btn-disabled { background: var(--card); color: var(--ink-soft); opacity: 0.55; pointer-events: none; }
+
+  .badge {
+    font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;
+    background: rgba(255,106,0,0.15); color: var(--orange-soft);
+    padding: 3px 8px; border-radius: 6px; margin-left: 6px;
+  }
+
+  .why { margin: 30px 0 8px; text-align: left; }
+  .why h2 {
+    font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;
+    color: var(--ink-soft); margin-bottom: 12px; padding-left: 4px;
+  }
+  .why ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .why li {
+    background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+    padding: 14px 16px; font-size: 14px; line-height: 1.45; color: var(--ink);
+  }
+  .why li b { color: var(--orange-soft); font-weight: 700; }
+
+  footer { margin-top: 32px; font-size: 12px; color: var(--ink-soft); }
+  footer a { color: var(--ink-soft); text-decoration: underline; }
+  footer .legal-links { display: flex; gap: 18px; justify-content: center; margin-bottom: 16px; }
+
+  details.impressum {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 0; margin-top: 8px; text-align: left; overflow: hidden;
+  }
+  details.impressum summary {
+    cursor: pointer; padding: 14px 16px; font-size: 13px; font-weight: 600;
+    color: var(--ink); list-style: none;
+  }
+  details.impressum summary::-webkit-details-marker { display: none; }
+  details.impressum summary::after { content: "▾"; float: right; color: var(--ink-soft); }
+  details.impressum[open] summary::after { content: "▴"; }
+  .impressum-body {
+    padding: 0 16px 16px; font-size: 13px; line-height: 1.6; color: var(--ink-soft);
+  }
+  .impressum-body strong { color: var(--ink); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <svg class="logo" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" aria-label="Linup Logo">
+      <defs>
+        <linearGradient id="stroke" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#FFC08A"/>
+          <stop offset="45%" stop-color="#FF8A2E"/>
+          <stop offset="100%" stop-color="#FF6A00"/>
+        </linearGradient>
+      </defs>
+      <g transform="translate(0 38)">
+        <path d="M 342 452 L 512 168 L 682 452" fill="none" stroke="url(#stroke)" stroke-width="58" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M 397 657 L 512 472 L 627 657" fill="none" stroke="url(#stroke)" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M 437 790 L 512 670 L 587 790" fill="none" stroke="url(#stroke)" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </svg>
+
+    <h1>Lin<span class="brandmark">up</span></h1>
+    <p class="bio">Der Ernährungs-Coach für Berufstätige, die keine Lust mehr auf Abo-Wahnsinn haben. Sag uns dein Ziel — wir sagen dir, was du essen und einkaufen sollst.</p>
+
+    <div class="links">
+      <a class="btn btn-primary" href="https://apps.apple.com/app/id6780292694" target="_blank" rel="noopener">
+        Im App Store laden
+      </a>
+      <span class="btn btn-disabled">
+        Google Play <span class="badge">bald</span>
+      </span>
+    </div>
+
+    <section class="why">
+      <h2>Warum Linup?</h2>
+      <ul>
+        <li><b>Getrackt in Sekunden.</b> Foto, Barcode oder Text — kein mühsames Suchen.</li>
+        <li><b>Auswärts am Ziel.</b> Der Coach sagt dir, was du im Restaurant bestellst.</li>
+        <li><b>Ohne Abo-Wahnsinn.</b> Fast der volle Funktionsumfang, ohne teures Monats-Abo.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <div class="legal-links">
+        <a href="https://puffy-albatross-a4e.notion.site/37aa388a99a2804b95e9fa0d72bdb0ac" target="_blank" rel="noopener">Datenschutz</a>
+        <a href="#impressum" onclick="document.getElementById('impressum').open=true">Impressum</a>
+      </div>
+      <details class="impressum" id="impressum">
+        <summary>Impressum</summary>
+        <div class="impressum-body">
+          Angaben gemäß § 5 DDG<br><br>
+          <strong>Lucas Sancar</strong><br>
+          Berufsschulstr. 11<br>
+          63785 Obernburg<br>
+          Deutschland<br><br>
+          <strong>Kontakt</strong><br>
+          E-Mail: lucassancar94@gmail.com<br><br>
+          Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:<br>
+          Lucas Sancar (Anschrift wie oben)
+        </div>
+      </details>
+      <p style="margin-top:16px; opacity:0.6;">© 2026 Linup</p>
+    </footer>
+  </div>
+</body>
+</html>
