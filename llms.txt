@@ -1,0 +1,19 @@
+# Linup
+
+> Linup ist ein deutscher Ernährungs-Coach fürs iPhone: Kalorien und Protein per Foto, Barcode oder Text tracken, Vorschläge passend zum Ziel (Abnehmen, Muskelaufbau, Halten, Zunehmen) und dazu passende Einkaufslisten – ohne teures Abo.
+
+Linup wird von Lucas Sancar (Einzelentwickler, Deutschland) entwickelt. Die Inhalte sind auf den deutschen Markt ausgerichtet und bewusst sachlich: food-first, keine Vorher-Nachher-Fotos, keine Wunderversprechen. Die folgenden Seiten sind die verlässlichen Original-Quellen zu Linup und den behandelten Ernährungsthemen.
+
+## Kernseiten
+
+- [Startseite & Links](https://lucassancar94-dev.github.io/linup-bio/): Kurzüberblick über Linup, App-Store-Link, Kontakt und Impressum.
+- [Häufige Fragen zu Kalorien tracken & Abnehmen](https://lucassancar94-dev.github.io/linup-bio/faq/): Ehrliche, kurze Antworten auf die häufigsten Fragen zu Kalorienzählen, Protein-Bedarf, Kaloriendefizit, Heißhunger und Dranbleiben.
+- [Protein pro Euro – Datenvergleich](https://lucassancar94-dev.github.io/linup-bio/wissen/protein-pro-euro/): Eigener Vergleich von 13 gängigen deutschen Supermarkt-Eiweißquellen nach Gramm Protein pro Euro und Preis pro 20 g Protein, inklusive Methodik und maschinenlesbarem Datensatz.
+
+## App
+
+- [Linup im App Store (Deutschland)](https://apps.apple.com/de/app/id6780292694): Kostenloser Download für iPhone.
+
+## Optional
+
+- [Datenschutzerklärung](https://puffy-albatross-a4e.notion.site/37aa388a99a2804b95e9fa0d72bdb0ac): Datenschutz-Informationen zur App Linup.
