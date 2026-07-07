@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lucassancar94-dev.github.io/linup-bio/sitemap.xml
