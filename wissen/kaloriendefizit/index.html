@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wie ein Kaloriendefizit wirklich funktioniert – mit Beispielrechnung | Linup</title>
+<meta name="description" content="Ehrliche Erklärung: Was ein Kaloriendefizit ist, wie du deinen Bedarf grob berechnest und wie groß das Defizit sein sollte – mit Schritt-für-Schritt-Beispiel, ohne Wunderversprechen.">
+<link rel="canonical" href="https://lucassancar94-dev.github.io/linup-bio/wissen/kaloriendefizit/">
+<style>
+  :root{--bg:#0E1116;--bg2:#14171d;--orange:#FF6A00;--orange-soft:#FF8A2E;--ink:#F4F1EC;--ink-soft:#A5A29B;--card:#1a1e25;--border:#2a2f38;--good:#46C2AD;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:radial-gradient(120% 60% at 50% 0%,#1a120a 0%,var(--bg2) 40%,var(--bg) 100%);color:var(--ink);line-height:1.6;padding:48px 20px 64px;}
+  .wrap{max-width:760px;margin:0 auto;}
+  .brandrow{display:flex;align-items:center;gap:12px;margin-bottom:8px;}
+  .logo{width:40px;height:40px;}
+  .brand{font-size:20px;font-weight:800;}
+  .brand .up{color:var(--orange);}
+  .kicker{font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--orange-soft);margin:24px 0 6px;}
+  h1{font-size:31px;font-weight:800;letter-spacing:-0.5px;margin:0 0 12px;line-height:1.22;}
+  .lead{color:var(--ink-soft);font-size:16.5px;margin-bottom:14px;max-width:62ch;}
+  .meta{color:var(--ink-soft);font-size:13px;margin-bottom:32px;opacity:.85;}
+  h2{font-size:21px;font-weight:800;margin:38px 0 14px;letter-spacing:-0.3px;}
+  p{font-size:15.5px;color:var(--ink-soft);margin-bottom:14px;}
+  p strong{color:var(--ink);font-weight:600;}
+  .tldr{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px 22px;margin-bottom:8px;}
+  .tldr h2{margin:0 0 12px;font-size:17px;}
+  .tldr ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
+  .tldr li{font-size:15px;color:var(--ink);padding-left:24px;position:relative;line-height:1.5;}
+  .tldr li::before{content:"→";position:absolute;left:0;color:var(--orange-soft);font-weight:800;}
+  .calc{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:8px 22px 20px;margin:8px 0;}
+  .calc .row{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:14px 0;border-top:1px solid var(--border);font-variant-numeric:tabular-nums;}
+  .calc .row:first-of-type{border-top:none;}
+  .calc .step{font-size:14.5px;color:var(--ink-soft);}
+  .calc .step b{color:var(--ink);font-weight:600;}
+  .calc .num{font-size:16px;font-weight:800;color:var(--ink);white-space:nowrap;}
+  .calc .result{border-top:2px solid var(--orange);}
+  .calc .result .num{color:var(--good);}
+  .calc .cap{font-size:13px;color:var(--ink-soft);padding:14px 0 2px;}
+  .methodik{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px 22px;margin-top:10px;}
+  .methodik h2{margin-top:0;font-size:17px;}
+  .methodik p{font-size:14px;margin-bottom:10px;}
+  .cta{margin-top:40px;background:var(--orange);color:#1a1005;text-align:center;display:block;padding:16px;border-radius:16px;font-weight:800;text-decoration:none;font-size:16px;}
+  .related{margin-top:22px;display:flex;gap:14px;flex-wrap:wrap;}
+  .related a{color:var(--ink-soft);font-size:14px;text-decoration:none;border:1px solid var(--border);border-radius:12px;padding:10px 14px;}
+  footer{margin-top:36px;text-align:center;color:var(--ink-soft);font-size:13px;}
+  footer a{color:var(--ink-soft);}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Wie ein Kaloriendefizit wirklich funktioniert",
+  "description":"Ehrliche Erklärung von Kaloriendefizit und Energiebilanz mit Schritt-für-Schritt-Beispielrechnung: Bedarf berechnen, Defizit wählen, realistisches Tempo einschätzen.",
+  "inLanguage":"de",
+  "datePublished":"2026-07-07",
+  "dateModified":"2026-07-07",
+  "author":{"@type":"Organization","name":"Linup","url":"https://lucassancar94-dev.github.io/linup-bio/"},
+  "publisher":{"@type":"Organization","name":"Linup","url":"https://lucassancar94-dev.github.io/linup-bio/"},
+  "mainEntityOfPage":{"@type":"WebPage","@id":"https://lucassancar94-dev.github.io/linup-bio/wissen/kaloriendefizit/"},
+  "about":["Kaloriendefizit","Energiebilanz","Abnehmen","Ernährung","Kalorienbedarf"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Was ist ein Kaloriendefizit?","acceptedAnswer":{"@type":"Answer","text":"Ein Kaloriendefizit bedeutet, dass du über den Tag weniger Energie isst, als dein Körper verbraucht. Nur dann greift der Körper auf seine Reserven zurück und du nimmst ab. Alle Diäten funktionieren letztlich über dieses Prinzip, egal wie sie heißen."}},
+    {"@type":"Question","name":"Wie groß sollte das Kaloriendefizit sein?","acceptedAnswer":{"@type":"Answer","text":"Für die meisten sind rund 300 bis 500 Kalorien unter dem Tagesbedarf sinnvoll. Das entspricht etwa 0,3 bis 0,5 Kilo Fettverlust pro Woche. Ein größeres Defizit bringt schneller Muskelverlust, mehr Hunger und ist schwerer durchzuhalten."}},
+    {"@type":"Question","name":"Warum nehme ich trotz Defizit nicht ab?","acceptedAnswer":{"@type":"Answer","text":"Meist wird die Aufnahme unterschätzt (Öl, Getränke, Snacks nebenbei) oder das Gewicht schwankt durch Wasser. Der Fettabbau kann real laufen, während die Waage kurzfristig still steht. Entscheidend ist der Trend über zwei bis drei Wochen, nicht der einzelne Tag."}}
+  ]
+}
+</script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brandrow">
+      <svg class="logo" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" aria-label="Linup">
+        <defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFC08A"/><stop offset=".45" stop-color="#FF8A2E"/><stop offset="1" stop-color="#FF6A00"/></linearGradient></defs>
+        <g transform="translate(0 38)">
+          <path d="M342 452 L512 168 L682 452" fill="none" stroke="url(#s)" stroke-width="58" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M397 657 L512 472 L627 657" fill="none" stroke="url(#s)" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M437 790 L512 670 L587 790" fill="none" stroke="url(#s)" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+      </svg>
+      <span class="brand">Lin<span class="up">up</span></span>
+    </div>
+
+    <p class="kicker">So funktioniert es wirklich</p>
+    <h1>Wie ein Kaloriendefizit wirklich funktioniert</h1>
+    <p class="lead">Keine Wunderdiät, kein Geheimnis: Abnehmen läuft immer über die Energiebilanz. Hier steht in einfachen Schritten, was das heißt – <strong>mit einer konkreten Beispielrechnung</strong>, damit du weißt, wo deine Zahl ungefähr liegt.</p>
+    <p class="meta">Grobe Richtwerte · individuell verschieden · keine medizinische Beratung</p>
+
+    <div class="tldr">
+      <h2>Kurz gesagt</h2>
+      <ul>
+        <li>Du nimmst ab, wenn du <strong>weniger isst, als du verbrauchst</strong> – das ist die einzige Regel, die immer gilt.</li>
+        <li>Ein <strong>moderates Defizit von 300–500 kcal</strong> pro Tag reicht für rund 0,3–0,5 kg pro Woche.</li>
+        <li><strong>1 kg Körperfett entspricht etwa 7.000 kcal</strong> – deshalb geht es nicht schneller, ohne Muskeln zu verlieren.</li>
+        <li>Die Waage schwankt täglich durch Wasser. Zählt der <strong>Trend über 2–3 Wochen</strong>, nicht der einzelne Tag.</li>
+      </ul>
+    </div>
+
+    <h2>Die einzige Regel: Energiebilanz</h2>
+    <p>Dein Körper verbraucht jeden Tag Energie – fürs Atmen, Denken, Bewegen, Verdauen. Isst du weniger, als er verbraucht, holt er sich den Rest aus den Fettreserven. <strong>Das ist ein Kaloriendefizit.</strong> Ob Low Carb, Intervallfasten oder „clean eating": Sie alle funktionieren nur, wenn am Ende des Tages ein Defizit steht. Die Methode ist nur die Verpackung.</p>
+
+    <h2>Beispielrechnung: Schritt für Schritt</h2>
+    <p>So kommst du grob an deine Zielzahl. Der Gesamtbedarf (auch TDEE genannt) ist alles, was du an einem Tag verbrauchst – Grundumsatz plus Bewegung.</p>
+    <div class="calc">
+      <div class="cap">Beispiel: 80 kg, männlich, leicht aktiv (Bürojob, etwas Bewegung)</div>
+      <div class="row"><span class="step"><b>1. Gesamtbedarf</b> pro Tag (Grundumsatz + Alltag)</span><span class="num">~2.400 kcal</span></div>
+      <div class="row"><span class="step"><b>2. Moderates Defizit</b> abziehen</span><span class="num">− 500 kcal</span></div>
+      <div class="row result"><span class="step"><b>Zielaufnahme</b> zum Abnehmen</span><span class="num">1.900 kcal</span></div>
+      <div class="cap">Ergebnis: rund <strong style="color:var(--ink)">0,5 kg Fett pro Woche</strong> (500 kcal × 7 Tage = 3.500 kcal ≈ ½ kg).</div>
+    </div>
+    <p>Für eine Frau mit z. B. 65 kg liegt der Gesamtbedarf oft eher bei 1.800–2.000 kcal, die Zielaufnahme also bei rund 1.400–1.500 kcal. Die genauen Zahlen hängen von Größe, Gewicht, Muskelmasse und Aktivität ab – die Rechnung bleibt dieselbe.</p>
+
+    <h2>Wie groß sollte das Defizit sein?</h2>
+    <p><strong>300 bis 500 kcal unter dem Bedarf</strong> ist für die meisten der Sweet Spot. Größer heißt nicht besser: Ein sehr großes Defizit bringt mehr Hunger, mehr Muskelverlust und meistens den Jo-Jo-Effekt, weil man es nicht durchhält. Langsam und dranbleiben schlägt schnell und aufgeben.</p>
+
+    <h2>Warum die Waage „lügt"</h2>
+    <p>Dein Gewicht schwankt täglich um 1–2 kg – durch Wasser, Salz, Verdauung und Hormone. Das sagt nichts über deinen Fettabbau. Wieg dich <strong>einmal pro Woche unter gleichen Bedingungen</strong> (morgens, nüchtern) und schau auf den Trend über mehrere Wochen. Eine einzelne Zahl ist Rauschen.</p>
+
+    <h2>Die drei häufigsten Fehler</h2>
+    <p><strong>1. Aufnahme unterschätzen.</strong> Öl in der Pfanne, ein Schluck Saft, der Rest vom Teller der Kinder – das summiert sich. Genau hier hilft grobes Tracken: Man sieht schwarz auf weiß, was wirklich reingeht.</p>
+    <p><strong>2. Zu extrem starten.</strong> 1.200 kcal ab Tag eins fühlt sich heldenhaft an und kippt nach zwei Wochen. Moderat anfangen, das hält.</p>
+    <p><strong>3. Zu wenig Protein.</strong> Im Defizit schützt Eiweiß die Muskeln und sättigt. Ohne genug Protein verlierst du auch Muskeln – und hast mehr Hunger.</p>
+
+    <div class="methodik">
+      <h2>Ehrlich bleiben</h2>
+      <p>Die Zahlen hier sind <strong>grobe Richtwerte</strong> zur Orientierung, keine exakten Vorgaben und keine medizinische Beratung. Der beste „Rechner" bist am Ende du selbst: eine Zielzahl schätzen, 2–3 Wochen locker tracken, und anpassen, falls sich nichts tut.</p>
+      <p>1 kg Fett ≈ 7.000 kcal ist eine bewährte Faustregel; in der Praxis spielt am Anfang auch Wasser mit rein, weshalb die erste Woche oft mehr Gewicht zeigt.</p>
+    </div>
+
+    <a class="cta" href="https://apps.apple.com/de/app/id6780292694">Deinen Bedarf &amp; dein Defizit automatisch tracken – Linup laden</a>
+
+    <div class="related">
+      <a href="https://lucassancar94-dev.github.io/linup-bio/wissen/protein-pro-euro/">Protein pro Euro – Vergleich</a>
+      <a href="https://lucassancar94-dev.github.io/linup-bio/faq/">Häufige Fragen</a>
+      <a href="https://lucassancar94-dev.github.io/linup-bio/">Alle Links &amp; Impressum</a>
+    </div>
+
+    <footer>
+      © 2026 Linup · Zuletzt aktualisiert: Juli 2026
+    </footer>
+  </div>
+</body>
+</html>
