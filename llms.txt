@@ -37,6 +37,26 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://lucassancar94-
 - [Sportdrinks: Kalorien & Zucker](https://lucassancar94-dev.github.io/linup-bio/getraenke/sportdrinks-kalorien/): Powerade, Gatorade, Nocco, Isostar & Co. mit Nährwerten pro Portion.
 - [Energy-Drinks & neue Limos: Kalorien & Zucker](https://lucassancar94-dev.github.io/linup-bio/getraenke/energy-drinks-limonaden-kalorien/): 25 angesagte Limonaden und Energy-Drinks (Gönergy, Celsius, Lemonaid, Almdudler u. a.) mit echten Nährwerten.
 
+## Gerichte & Snacks zum Abnehmen (Kalorien & Eiweiß pro Portion)
+
+- [Gerichte & Snacks – Übersicht](https://lucassancar94-dev.github.io/linup-bio/gerichte/): Sammelseite kalorienarmer warmer Gerichte und kalter Snacks mit echten Nährwerten pro Portion.
+- [Kalorienarme Fertigsuppen](https://lucassancar94-dev.github.io/linup-bio/gerichte/kalorienarme-fertigsuppen/): 12 Fertigsuppen mit Kalorien und Eiweiß pro Portion im Vergleich.
+- [Suppen zum Abnehmen (selbstgekocht)](https://lucassancar94-dev.github.io/linup-bio/gerichte/suppen-zum-abnehmen/): Nährwerte von 8 selbstgekochten Suppen-Rezepten.
+- [Fertige Eintöpfe & Pfannen (kalorienarm)](https://lucassancar94-dev.github.io/linup-bio/gerichte/kalorienarme-eintoepfe-fertig/): 6 fertige Eintöpfe und Pfannengerichte im Kalorienvergleich.
+- [Eintöpfe & Pfannen selbst kochen](https://lucassancar94-dev.github.io/linup-bio/gerichte/eintoepfe-selbstgekocht/): Nährwerte von 7 selbstgekochten Eintöpfen und Pfannengerichten.
+- [Kalorienarme Pasta- & Reisgerichte](https://lucassancar94-dev.github.io/linup-bio/gerichte/kalorienarme-pasta-reis/): 6 kalorienreduzierte Pasta- und Reisgerichte im Vergleich.
+- [Fleisch- & Fischgerichte zum Abnehmen](https://lucassancar94-dev.github.io/linup-bio/gerichte/fleisch-fisch-abnehmen/): 9 warme Fleisch- und Fischgerichte mit Kalorien und Eiweiß pro Portion.
+- [Wok- & Pfannengerichte (kalorienarm)](https://lucassancar94-dev.github.io/linup-bio/gerichte/wok-pfannengerichte-kalorienarm/): 5 kalorienarme Wok- und Pfannengerichte.
+- [Curry- & Asia-Gerichte zum Abnehmen](https://lucassancar94-dev.github.io/linup-bio/gerichte/curry-asia-abnehmen/): 4 Curry- und Asia-Gerichte im Kalorienvergleich.
+- [Kalorienarme Ofengerichte](https://lucassancar94-dev.github.io/linup-bio/gerichte/kalorienarme-ofengerichte/): 5 Ofengerichte zum Abnehmen mit Nährwerten pro Portion.
+- [Proteinriegel im Vergleich](https://lucassancar94-dev.github.io/linup-bio/gerichte/proteinriegel-vergleich/): 12 Proteinriegel mit Kalorien, Eiweiß und Zucker pro Riegel.
+- [Herzhafte kalorienarme Snacks](https://lucassancar94-dev.github.io/linup-bio/gerichte/herzhafte-snacks-kalorienarm/): 15 herzhafte Snacks mit wenig Kalorien pro Portion.
+- [Rohes Gemüse als Snack](https://lucassancar94-dev.github.io/linup-bio/gerichte/gemuese-snacks-kalorien/): 12 Gemüse-Snacks mit Kalorien pro Portion.
+- [Obst als Snack: Kalorien im Vergleich](https://lucassancar94-dev.github.io/linup-bio/gerichte/obst-snack-kalorien/): 13 Obstsorten als Snack mit Kalorien pro Portion.
+- [Süße Snacks mit wenig Kalorien](https://lucassancar94-dev.github.io/linup-bio/gerichte/suesse-snacks-kalorienarm/): 8 kalorienarme süße Snacks im Vergleich.
+- [Nüsse & Samen: Kalorien pro Portion](https://lucassancar94-dev.github.io/linup-bio/gerichte/nuesse-samen-kalorien/): 5 Nuss- und Samen-Snacks mit Kalorien pro Snack-Portion.
+- [To-Go-Boxen & kalte Fertiggerichte](https://lucassancar94-dev.github.io/linup-bio/gerichte/to-go-boxen-kalorien/): 8 kalte To-Go-Boxen und Fertiggerichte mit Nährwerten pro Portion.
+
 ## App
 
 - [Linup im App Store (Deutschland)](https://apps.apple.com/de/app/id6780292694): Kostenloser Download für iPhone.
