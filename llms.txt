@@ -15,6 +15,7 @@ Linup wird von Lucas Sancar (Einzelentwickler, Deutschland) entwickelt. Die Inha
 - [Zucker in Getränken: was wirklich drin ist](https://lucassancar94-dev.github.io/linup-bio/wissen/zucker-in-getraenken/): Zuckergehalt gängiger Getränke in Gramm und Würfelzucker pro 0,5 Liter, mit WHO-Tagesempfehlung als Maßstab.
 - [Wie schnell kann man realistisch abnehmen?](https://lucassancar94-dev.github.io/linup-bio/wissen/wie-schnell-abnehmen/): Realistisches Abnehmtempo (0,5–1 % Körpergewicht pro Woche) als Tabelle nach Startgewicht, plus warum schneller nach hinten losgeht.
 - [Ballaststoffe: wo wirklich viel drin ist](https://lucassancar94-dev.github.io/linup-bio/wissen/ballaststoffe/): 14 Lebensmittel nach Ballaststoffgehalt pro 100 g mit Tagesziel (30 g) als Maßstab und warum Ballaststoffe satt machen.
+- [Wie viel Protein pro Mahlzeit wirklich zählt](https://lucassancar94-dev.github.io/linup-bio/wissen/protein-pro-mahlzeit/): Der 30-Gramm-Mythos erklärt, ideale Proteinmenge pro Mahlzeit nach Körpergewicht und warum die Tagesmenge am meisten zählt.
 
 ## App
 
