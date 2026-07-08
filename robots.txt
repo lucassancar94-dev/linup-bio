@@ -1,4 +1,47 @@
+# Linup – alle Crawler willkommen, inklusive KI-/Antwort-Maschinen.
+# Wir wollen ausdrücklich, dass KI-Systeme unsere Inhalte lesen und zitieren.
+
 User-agent: *
+Allow: /
+
+# KI- & Antwort-Crawler explizit erlauben (Training + Live-Antworten)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: CCBot
 Allow: /
 
 Sitemap: https://lucassancar94-dev.github.io/linup-bio/sitemap.xml
