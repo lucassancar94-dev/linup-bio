@@ -32,6 +32,11 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://lucassancar94-
 - [Intervallfasten zum Abnehmen](https://lucassancar94-dev.github.io/linup-bio/wissen/intervallfasten-abnehmen/): 16:8 und 5:2 ehrlich erklärt – wann Intervallfasten hilft und warum Kaloriendefizit das Entscheidende bleibt.
 - [Kalorien in Alkohol](https://lucassancar94-dev.github.io/linup-bio/wissen/kalorien-alkohol/): Kalorien in Bier, Wein und Cocktails im Vergleich – und warum Alkohol das Abnehmen ausbremst.
 - [Abnehmen ohne Sport](https://lucassancar94-dev.github.io/linup-bio/wissen/abnehmen-ohne-sport/): Ob und wie Abnehmen ohne Fitnessstudio funktioniert – Ernährung vs. Bewegung ehrlich erklärt.
+- [Gewicht halten nach dem Abnehmen](https://lucassancar94-dev.github.io/linup-bio/wissen/gewicht-halten-nach-abnehmen/): Erhaltungskalorien finden, Reverse Dieting und Gewohnheiten für langfristiges Halten ohne Jo-Jo.
+- [Gesund zunehmen](https://lucassancar94-dev.github.io/linup-bio/wissen/zunehmen-gesund/): Kalorienüberschuss, Protein und kaloriendichte Lebensmittel – food-first statt nur Junk Food.
+- [Kalorien schätzen ohne Waage](https://lucassancar94-dev.github.io/linup-bio/wissen/kalorien-schaetzen/): Hand-Portionen, typische Schätzfehler und wann Schätzen fürs Tracking reicht.
+- [Einkaufen zum Abnehmen](https://lucassancar94-dev.github.io/linup-bio/wissen/einkaufen-zum-abnehmen/): Konkrete Supermarkt-Liste für Rewe, Edeka, Lidl, Aldi – proteinreich, günstig, ohne Impulskäufe.
+- [Meal Prep zum Abnehmen](https://lucassancar94-dev.github.io/linup-bio/wissen/meal-prep-abnehmen/): Vorkochen in 3–4 Stunden, 5 Basis-Gerichte und Portionieren für die Woche.
 - [Die günstigsten Sattmacher](https://lucassancar94-dev.github.io/linup-bio/wissen/guenstige-sattmacher/): 12 günstige, sättigende Lebensmittel mit Preis pro Portion und dem Grund fürs Sattmachen (Volumen, Ballaststoffe, Protein).
 
 ## Getränke-Nährwerte (Kalorien, Zucker & Koffein)
