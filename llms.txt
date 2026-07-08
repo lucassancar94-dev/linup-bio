@@ -25,6 +25,18 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://lucassancar94-
 - [Wie viel Protein pro Mahlzeit wirklich zählt](https://lucassancar94-dev.github.io/linup-bio/wissen/protein-pro-mahlzeit/): Der 30-Gramm-Mythos erklärt, ideale Proteinmenge pro Mahlzeit nach Körpergewicht und warum die Tagesmenge am meisten zählt.
 - [Die günstigsten Sattmacher](https://lucassancar94-dev.github.io/linup-bio/wissen/guenstige-sattmacher/): 12 günstige, sättigende Lebensmittel mit Preis pro Portion und dem Grund fürs Sattmachen (Volumen, Ballaststoffe, Protein).
 
+## Getränke-Nährwerte (Kalorien, Zucker & Koffein)
+
+- [Getränke – Übersicht Kalorien, Zucker & Koffein](https://lucassancar94-dev.github.io/linup-bio/getraenke/): Sammelseite mit echten Nährwerten bekannter Getränke, alle Sorten und Größen im Vergleich.
+- [Coca-Cola: Kalorien, Zucker & Koffein](https://lucassancar94-dev.github.io/linup-bio/getraenke/coca-cola-kalorien/): Alle 16 Coca-Cola-Sorten (Original, Zero, Light, Cherry, Vanilla, Mezzo Mix u. a.) mit kcal, Zucker und Koffein pro Portion.
+- [Pepsi: Kalorien, Zucker & Koffein](https://lucassancar94-dev.github.io/linup-bio/getraenke/pepsi-kalorien/): 10 Pepsi-Varianten (Original, Max, Zero) mit echten Nährwerten pro Portion.
+- [Fanta: Kalorien & Zucker](https://lucassancar94-dev.github.io/linup-bio/getraenke/fanta-kalorien/): 15 Fanta-Sorten mit Kalorien und Zucker pro Portion, inkl. Zero-Varianten.
+- [Sprite: Kalorien & Zucker](https://lucassancar94-dev.github.io/linup-bio/getraenke/sprite-kalorien/): 7 Sprite-Sorten mit echten Nährwerten pro Portion.
+- [Monster Energy: Kalorien, Zucker & Koffein](https://lucassancar94-dev.github.io/linup-bio/getraenke/monster-energy-kalorien/): 20 Monster-Energy-Sorten mit kcal, Zucker und Koffein pro Dose.
+- [Red Bull: Kalorien, Zucker & Koffein](https://lucassancar94-dev.github.io/linup-bio/getraenke/red-bull-kalorien/): 15 Red-Bull-Sorten (Original, Sugarfree, Editions) mit echten Nährwerten und Koffein pro Dose.
+- [Sportdrinks: Kalorien & Zucker](https://lucassancar94-dev.github.io/linup-bio/getraenke/sportdrinks-kalorien/): Powerade, Gatorade, Nocco, Isostar & Co. mit Nährwerten pro Portion.
+- [Energy-Drinks & neue Limos: Kalorien & Zucker](https://lucassancar94-dev.github.io/linup-bio/getraenke/energy-drinks-limonaden-kalorien/): 25 angesagte Limonaden und Energy-Drinks (Gönergy, Celsius, Lemonaid, Almdudler u. a.) mit echten Nährwerten.
+
 ## App
 
 - [Linup im App Store (Deutschland)](https://apps.apple.com/de/app/id6780292694): Kostenloser Download für iPhone.
