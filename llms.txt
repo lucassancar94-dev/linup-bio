@@ -26,6 +26,12 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://lucassancar94-
 - [Protein beim Abnehmen: Wie viel du wirklich brauchst](https://lucassancar94-dev.github.io/linup-bio/wissen/protein-beim-abnehmen/): Konkrete Gramm-Zahlen im Kaloriendefizit, warum Eiweiß sättigt und Muskeln schützt – food-first, ohne Shake-Pflicht.
 - [Kalorien tracken beim Muskelaufbau](https://lucassancar94-dev.github.io/linup-bio/wissen/kalorien-tracken-muskelaufbau/): Wie viel Kalorienüberschuss sinnvoll ist, was du tracken solltest und wie du Lean Bulk ohne unnötiges Fett machst.
 - [Heißhunger abends stoppen](https://lucassancar94-dev.github.io/linup-bio/wissen/heisshunger-abends/): 6 echte Ursachen für Abend-Heißhunger und konkrete Gegenmaßnahmen – ohne Verbote und Schuldgefühle.
+- [Kalorienbedarf berechnen](https://lucassancar94-dev.github.io/linup-bio/wissen/kalorienbedarf-berechnen/): Wie viele Kalorien du täglich brauchst – Erhaltung, Abnehmen und Muskelaufbau mit Formel und Beispielrechnung.
+- [Jo-Jo-Effekt vermeiden](https://lucassancar94-dev.github.io/linup-bio/wissen/jojo-effekt-vermeiden/): Warum das Gewicht nach Diäten zurückkommt und wie du mit moderatem Defizit und Gewohnheiten langfristig dranbleibst.
+- [Snacks zum Abnehmen](https://lucassancar94-dev.github.io/linup-bio/wissen/snacks-zum-abnehmen/): 12 sättigende Snack-Ideen unter 200 kcal mit Protein und Kalorien – food-first statt Light-Produkte.
+- [Intervallfasten zum Abnehmen](https://lucassancar94-dev.github.io/linup-bio/wissen/intervallfasten-abnehmen/): 16:8 und 5:2 ehrlich erklärt – wann Intervallfasten hilft und warum Kaloriendefizit das Entscheidende bleibt.
+- [Kalorien in Alkohol](https://lucassancar94-dev.github.io/linup-bio/wissen/kalorien-alkohol/): Kalorien in Bier, Wein und Cocktails im Vergleich – und warum Alkohol das Abnehmen ausbremst.
+- [Abnehmen ohne Sport](https://lucassancar94-dev.github.io/linup-bio/wissen/abnehmen-ohne-sport/): Ob und wie Abnehmen ohne Fitnessstudio funktioniert – Ernährung vs. Bewegung ehrlich erklärt.
 - [Die günstigsten Sattmacher](https://lucassancar94-dev.github.io/linup-bio/wissen/guenstige-sattmacher/): 12 günstige, sättigende Lebensmittel mit Preis pro Portion und dem Grund fürs Sattmachen (Volumen, Ballaststoffe, Protein).
 
 ## Getränke-Nährwerte (Kalorien, Zucker & Koffein)
