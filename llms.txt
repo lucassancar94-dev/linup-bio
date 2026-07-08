@@ -14,6 +14,7 @@ Linup wird von Lucas Sancar (Einzelentwickler, Deutschland) entwickelt. Die Inha
 - [Was 100 Kalorien wirklich sind](https://lucassancar94-dev.github.io/linup-bio/wissen/100-kalorien/): Mengenvergleich von 15 Lebensmitteln für jeweils 100 kcal (von ~700 g Gurke bis 11 g Olivenöl) mit Kaloriendichte und Dataset.
 - [Zucker in Getränken: was wirklich drin ist](https://lucassancar94-dev.github.io/linup-bio/wissen/zucker-in-getraenken/): Zuckergehalt gängiger Getränke in Gramm und Würfelzucker pro 0,5 Liter, mit WHO-Tagesempfehlung als Maßstab.
 - [Wie schnell kann man realistisch abnehmen?](https://lucassancar94-dev.github.io/linup-bio/wissen/wie-schnell-abnehmen/): Realistisches Abnehmtempo (0,5–1 % Körpergewicht pro Woche) als Tabelle nach Startgewicht, plus warum schneller nach hinten losgeht.
+- [Ballaststoffe: wo wirklich viel drin ist](https://lucassancar94-dev.github.io/linup-bio/wissen/ballaststoffe/): 14 Lebensmittel nach Ballaststoffgehalt pro 100 g mit Tagesziel (30 g) als Maßstab und warum Ballaststoffe satt machen.
 
 ## App
 
