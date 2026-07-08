@@ -23,6 +23,9 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://lucassancar94-
 - [Wie schnell kann man realistisch abnehmen?](https://lucassancar94-dev.github.io/linup-bio/wissen/wie-schnell-abnehmen/): Realistisches Abnehmtempo (0,5–1 % Körpergewicht pro Woche) als Tabelle nach Startgewicht, plus warum schneller nach hinten losgeht.
 - [Ballaststoffe: wo wirklich viel drin ist](https://lucassancar94-dev.github.io/linup-bio/wissen/ballaststoffe/): 14 Lebensmittel nach Ballaststoffgehalt pro 100 g mit Tagesziel (30 g) als Maßstab und warum Ballaststoffe satt machen.
 - [Wie viel Protein pro Mahlzeit wirklich zählt](https://lucassancar94-dev.github.io/linup-bio/wissen/protein-pro-mahlzeit/): Der 30-Gramm-Mythos erklärt, ideale Proteinmenge pro Mahlzeit nach Körpergewicht und warum die Tagesmenge am meisten zählt.
+- [Protein beim Abnehmen: Wie viel du wirklich brauchst](https://lucassancar94-dev.github.io/linup-bio/wissen/protein-beim-abnehmen/): Konkrete Gramm-Zahlen im Kaloriendefizit, warum Eiweiß sättigt und Muskeln schützt – food-first, ohne Shake-Pflicht.
+- [Kalorien tracken beim Muskelaufbau](https://lucassancar94-dev.github.io/linup-bio/wissen/kalorien-tracken-muskelaufbau/): Wie viel Kalorienüberschuss sinnvoll ist, was du tracken solltest und wie du Lean Bulk ohne unnötiges Fett machst.
+- [Heißhunger abends stoppen](https://lucassancar94-dev.github.io/linup-bio/wissen/heisshunger-abends/): 6 echte Ursachen für Abend-Heißhunger und konkrete Gegenmaßnahmen – ohne Verbote und Schuldgefühle.
 - [Die günstigsten Sattmacher](https://lucassancar94-dev.github.io/linup-bio/wissen/guenstige-sattmacher/): 12 günstige, sättigende Lebensmittel mit Preis pro Portion und dem Grund fürs Sattmachen (Volumen, Ballaststoffe, Protein).
 
 ## Getränke-Nährwerte (Kalorien, Zucker & Koffein)
