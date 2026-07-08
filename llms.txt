@@ -77,6 +77,20 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://lucassancar94-
 - [Vegane Proteinquellen: Kalorien & Eiweiß](https://lucassancar94-dev.github.io/linup-bio/lebensmittel/vegane-proteinquellen/): 4 vegane Proteinquellen mit Kalorien und Eiweiß pro Portion.
 - [Käse: Kalorien & Protein](https://lucassancar94-dev.github.io/linup-bio/lebensmittel/kaese/): 4 Käsesorten mit Kalorien und Eiweiß pro Portion.
 
+## Fast Food & Restaurants (Kalorien pro Gericht)
+
+- [Fast Food & Restaurants – Übersicht](https://lucassancar94-dev.github.io/linup-bio/fastfood/): Sammelseite mit Kalorien der Gerichte großer Fast-Food- und Restaurant-Ketten.
+- [McDonald's: Kalorien der Gerichte](https://lucassancar94-dev.github.io/linup-bio/fastfood/mcdonalds-kalorien/): 15 McDonald's-Gerichte (Big Mac, Cheeseburger u. a.) mit Kalorien und Eiweiß pro Portion.
+- [Burger King: Kalorien der Gerichte](https://lucassancar94-dev.github.io/linup-bio/fastfood/burger-king-kalorien/): 18 Burger-King-Gerichte (Whopper u. a.) mit Kalorien pro Portion.
+- [KFC: Kalorien der Gerichte](https://lucassancar94-dev.github.io/linup-bio/fastfood/kfc-kalorien/): 17 KFC-Gerichte mit Kalorien und Eiweiß pro Portion.
+- [Subway: Kalorien der Subs](https://lucassancar94-dev.github.io/linup-bio/fastfood/subway-kalorien/): 10 Subway-Subs mit Kalorien pro Portion.
+- [Domino's Pizza: Kalorien](https://lucassancar94-dev.github.io/linup-bio/fastfood/dominos-kalorien/): Kalorien pro Pizzastück bei Domino's.
+- [Pizza Hut: Kalorien](https://lucassancar94-dev.github.io/linup-bio/fastfood/pizza-hut-kalorien/): Kalorien pro Pizzastück bei Pizza Hut.
+- [Nordsee: Kalorien](https://lucassancar94-dev.github.io/linup-bio/fastfood/nordsee-kalorien/): Kalorien der Nordsee-Gerichte pro Portion.
+- [Döner & Kebab: Kalorien (Richtwerte)](https://lucassancar94-dev.github.io/linup-bio/fastfood/doener-kalorien/): Kalorien-Richtwerte für Döner, Dürüm und Kebab pro Portion.
+- [Vapiano: Kalorien](https://lucassancar94-dev.github.io/linup-bio/fastfood/vapiano-kalorien/): Kalorien der Vapiano-Gerichte pro Portion.
+- [Indisches Essen: Kalorien (Richtwerte)](https://lucassancar94-dev.github.io/linup-bio/fastfood/indisch-kalorien/): Kalorien-Richtwerte typischer indischer Gerichte pro Portion.
+
 ## App
 
 - [Linup im App Store (Deutschland)](https://apps.apple.com/de/app/id6780292694): Kostenloser Download für iPhone.
