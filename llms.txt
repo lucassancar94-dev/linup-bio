@@ -91,6 +91,22 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://lucassancar94-
 - [Vapiano: Kalorien](https://lucassancar94-dev.github.io/linup-bio/fastfood/vapiano-kalorien/): Kalorien der Vapiano-Gerichte pro Portion.
 - [Indisches Essen: Kalorien (Richtwerte)](https://lucassancar94-dev.github.io/linup-bio/fastfood/indisch-kalorien/): Kalorien-Richtwerte typischer indischer Gerichte pro Portion.
 
+## Protein-Produkte (Kalorien & Eiweiß pro Portion)
+
+- [Protein-Produkte – Übersicht](https://lucassancar94-dev.github.io/linup-bio/protein/): Sammelseite mit Kalorien und Eiweiß von Proteinriegeln, Shakes, Pulver und High-Protein-Snacks.
+- [MORE Nutrition: Kalorien & Protein](https://lucassancar94-dev.github.io/linup-bio/protein/more-nutrition/): 12 MORE-Nutrition-Produkte mit Kalorien und Eiweiß pro Portion.
+- [ESN Protein-Produkte](https://lucassancar94-dev.github.io/linup-bio/protein/esn-protein/): 13 ESN-Produkte (Riegel, Pulver u. a.) im Vergleich.
+- [Dr. Oetker High Protein](https://lucassancar94-dev.github.io/linup-bio/protein/dr-oetker-high-protein/): 10 Dr.-Oetker-High-Protein-Produkte mit Nährwerten pro Portion.
+- [Mahlzeitersatz & Trinkmahlzeiten](https://lucassancar94-dev.github.io/linup-bio/protein/mahlzeitersatz-shakes/): yfood und andere Trinkmahlzeiten – Kalorien & Protein pro Portion.
+- [Supermarkt Protein-Snacks](https://lucassancar94-dev.github.io/linup-bio/protein/supermarkt-protein-snacks/): Magerquark, Skyr & Co. aus dem Supermarkt im Vergleich.
+- [dm & Rossmann Protein](https://lucassancar94-dev.github.io/linup-bio/protein/dm-rossmann-protein/): Protein-Produkte aus dm und Rossmann.
+- [ALDI Protein-Produkte](https://lucassancar94-dev.github.io/linup-bio/protein/aldi-protein/): ALDI SPORTS & Co. mit Kalorien und Eiweiß.
+- [Lidl Milbona High Protein](https://lucassancar94-dev.github.io/linup-bio/protein/lidl-protein/): Lidl High-Protein-Produkte im Vergleich.
+- [Ehrmann High Protein](https://lucassancar94-dev.github.io/linup-bio/protein/ehrmann-high-protein/): Ehrmann High-Protein-Puddings und Snacks.
+- [Whey Protein Pulver](https://lucassancar94-dev.github.io/linup-bio/protein/whey-protein-pulver/): Whey-Pulver von Body Attack & Co. – Kalorien & Eiweiß pro Portion.
+- [Protein-Shakes im Supermarkt](https://lucassancar94-dev.github.io/linup-bio/protein/protein-shakes/): Fertige Protein-Shakes aus dem Supermarkt.
+- [Weitere Protein-Marken](https://lucassancar94-dev.github.io/linup-bio/protein/weitere-protein-marken/): foodspring, BioTech USA, Optimum Nutrition u. a.
+
 ## App
 
 - [Linup im App Store (Deutschland)](https://apps.apple.com/de/app/id6780292694): Kostenloser Download für iPhone.
