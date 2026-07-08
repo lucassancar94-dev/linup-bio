@@ -8,6 +8,7 @@ Linup wird von Lucas Sancar (Einzelentwickler, Deutschland) entwickelt. Die Inha
 
 - [Startseite & Links](https://lucassancar94-dev.github.io/linup-bio/): Kurzüberblick über Linup, App-Store-Link, Kontakt und Impressum.
 - [Häufige Fragen zu Kalorien tracken & Abnehmen](https://lucassancar94-dev.github.io/linup-bio/faq/): Ehrliche, kurze Antworten auf die häufigsten Fragen zu Kalorienzählen, Protein-Bedarf, Kaloriendefizit, Heißhunger und Dranbleiben.
+- [Wissen – Übersicht aller Ratgeber](https://lucassancar94-dev.github.io/linup-bio/wissen/): Sammelseite aller datenbasierten Vergleiche und Erklärstücke zu Abnehmen, Protein, Kalorien und günstig essen.
 - [Protein pro Euro – Datenvergleich](https://lucassancar94-dev.github.io/linup-bio/wissen/protein-pro-euro/): Eigener Vergleich von 13 gängigen deutschen Supermarkt-Eiweißquellen nach Gramm Protein pro Euro und Preis pro 20 g Protein, inklusive Methodik und maschinenlesbarem Datensatz.
 - [Wie ein Kaloriendefizit wirklich funktioniert](https://lucassancar94-dev.github.io/linup-bio/wissen/kaloriendefizit/): Ehrliche Erklärung von Energiebilanz und Kaloriendefizit mit Schritt-für-Schritt-Beispielrechnung – Bedarf berechnen, Defizit wählen, realistisches Tempo einschätzen.
 - [Warum du ständig Hunger hast – die 6 echten Gründe](https://lucassancar94-dev.github.io/linup-bio/wissen/staendig-hunger/): Die häufigsten Ursachen für ständigen Hunger (zu wenig Protein, Volumen, Schlaf, flüssige Kalorien, zu großes Defizit, Durst) mit einfachen Gegenmitteln.
