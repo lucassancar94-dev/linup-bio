@@ -12,6 +12,7 @@ Linup wird von Lucas Sancar (Einzelentwickler, Deutschland) entwickelt. Die Inha
 - [Wie ein Kaloriendefizit wirklich funktioniert](https://lucassancar94-dev.github.io/linup-bio/wissen/kaloriendefizit/): Ehrliche Erklärung von Energiebilanz und Kaloriendefizit mit Schritt-für-Schritt-Beispielrechnung – Bedarf berechnen, Defizit wählen, realistisches Tempo einschätzen.
 - [Warum du ständig Hunger hast – die 6 echten Gründe](https://lucassancar94-dev.github.io/linup-bio/wissen/staendig-hunger/): Die häufigsten Ursachen für ständigen Hunger (zu wenig Protein, Volumen, Schlaf, flüssige Kalorien, zu großes Defizit, Durst) mit einfachen Gegenmitteln.
 - [Was 100 Kalorien wirklich sind](https://lucassancar94-dev.github.io/linup-bio/wissen/100-kalorien/): Mengenvergleich von 15 Lebensmitteln für jeweils 100 kcal (von ~700 g Gurke bis 11 g Olivenöl) mit Kaloriendichte und Dataset.
+- [Zucker in Getränken: was wirklich drin ist](https://lucassancar94-dev.github.io/linup-bio/wissen/zucker-in-getraenken/): Zuckergehalt gängiger Getränke in Gramm und Würfelzucker pro 0,5 Liter, mit WHO-Tagesempfehlung als Maßstab.
 
 ## App
 
