@@ -56,6 +56,26 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://lucassancar94-
 - [Süße Snacks mit wenig Kalorien](https://lucassancar94-dev.github.io/linup-bio/gerichte/suesse-snacks-kalorienarm/): 8 kalorienarme süße Snacks im Vergleich.
 - [Nüsse & Samen: Kalorien pro Portion](https://lucassancar94-dev.github.io/linup-bio/gerichte/nuesse-samen-kalorien/): 5 Nuss- und Samen-Snacks mit Kalorien pro Snack-Portion.
 - [To-Go-Boxen & kalte Fertiggerichte](https://lucassancar94-dev.github.io/linup-bio/gerichte/to-go-boxen-kalorien/): 8 kalte To-Go-Boxen und Fertiggerichte mit Nährwerten pro Portion.
+- [Eier & Eiergerichte: Kalorien & Eiweiß](https://lucassancar94-dev.github.io/linup-bio/gerichte/eier-gerichte-kalorien/): 25 Eiergerichte (Rührei, Omelett, gekochte Eier u. a.) mit Kalorien und Eiweiß pro Portion.
+
+## Getränke-Ergänzungen
+
+- [Säfte, Eistee & Schorlen: Kalorien & Zucker](https://lucassancar94-dev.github.io/linup-bio/getraenke/saefte-eistee-schorlen-kalorien/): Fruchtsäfte, Eistees und Schorlen mit echten Kalorien- und Zuckerwerten pro Portion.
+- [Kaffee & Tee (Fertiggetränke): Kalorien](https://lucassancar94-dev.github.io/linup-bio/getraenke/kaffee-tee-kalorien/): Fertige Kaffee- und Teegetränke mit Kalorien und Zucker pro Portion.
+
+## Lebensmittel-Nährwerte (Kalorien, Protein & Makros pro Portion)
+
+- [Lebensmittel – Übersicht Kalorien & Nährwerte](https://lucassancar94-dev.github.io/linup-bio/lebensmittel/): Sammelseite gängiger Lebensmittel nach Kategorie mit vollen Makros pro Portion.
+- [Gemüse: Kalorien & Nährwerte](https://lucassancar94-dev.github.io/linup-bio/lebensmittel/gemuese/): 11 Gemüsesorten mit Kalorien, Eiweiß, Kohlenhydraten und Fett pro Portion.
+- [Milchprodukte: Kalorien & Protein](https://lucassancar94-dev.github.io/linup-bio/lebensmittel/milchprodukte/): 9 proteinreiche Milchprodukte (Magerquark, Skyr u. a.) mit Makros pro Portion.
+- [Obst: Kalorien & Nährwerte](https://lucassancar94-dev.github.io/linup-bio/lebensmittel/obst/): 8 Obstsorten mit Kalorien und Nährwerten pro Portion.
+- [Fisch: Kalorien & Protein](https://lucassancar94-dev.github.io/linup-bio/lebensmittel/fisch/): 7 Fischsorten mit Kalorien und Eiweiß pro Portion.
+- [Fleisch: Kalorien & Protein](https://lucassancar94-dev.github.io/linup-bio/lebensmittel/fleisch/): 6 magere Fleischsorten mit Kalorien und Eiweiß pro Portion.
+- [Kohlenhydrate: Kalorien & Nährwerte](https://lucassancar94-dev.github.io/linup-bio/lebensmittel/kohlenhydrate/): 7 gesunde Kohlenhydratquellen mit Makros pro Portion.
+- [Frühstück: Kalorien & Nährwerte](https://lucassancar94-dev.github.io/linup-bio/lebensmittel/fruehstueck/): 4 kalorienbewusste Frühstücksoptionen mit Nährwerten pro Portion.
+- [Nüsse: Kalorien & Nährwerte](https://lucassancar94-dev.github.io/linup-bio/lebensmittel/nuesse/): 4 Nusssorten mit Kalorien und Nährwerten pro Portion.
+- [Vegane Proteinquellen: Kalorien & Eiweiß](https://lucassancar94-dev.github.io/linup-bio/lebensmittel/vegane-proteinquellen/): 4 vegane Proteinquellen mit Kalorien und Eiweiß pro Portion.
+- [Käse: Kalorien & Protein](https://lucassancar94-dev.github.io/linup-bio/lebensmittel/kaese/): 4 Käsesorten mit Kalorien und Eiweiß pro Portion.
 
 ## App
 
