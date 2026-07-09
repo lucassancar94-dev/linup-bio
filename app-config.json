@@ -1,0 +1,16 @@
+{
+  "_note": "Steuert den Update-Hinweis in der App. latestVersion hochsetzen (z.B. auf 1.0.5), sobald eine neue Version im App Store live ist -> alle aelteren Versionen sehen den sanften Hinweis. minSupportedVersion nur bei kaputten Versionen hochsetzen (harte Sperre). Fail-open: laedt die Datei nicht, wird nie gesperrt.",
+  "ios": {
+    "minSupportedVersion": "1.0.0",
+    "latestVersion": "1.0.4",
+    "storeUrl": "https://apps.apple.com/de/app/id6780292694"
+  },
+  "softUpdate": {
+    "title": "Update verfügbar",
+    "message": "Neue Funktionen und Verbesserungen warten auf dich."
+  },
+  "hardUpdate": {
+    "title": "Zeit für ein Update",
+    "message": "Diese Version von Linup ist nicht mehr aktuell. Bitte aktualisiere, um weiterzumachen."
+  }
+}
