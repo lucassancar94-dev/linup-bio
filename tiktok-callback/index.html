@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Linup TikTok — Login OK</title>
+<style>
+  body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:#0E1116;color:#F4F1EC;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;padding:24px;text-align:center;}
+  .box{max-width:480px;background:#1a1e25;border:1px solid #2a2f38;border-radius:16px;padding:28px;}
+  h1{font-size:22px;margin:0 0 12px;color:#FF6A00;}
+  p{color:#A5A29B;line-height:1.5;font-size:15px;}
+  code{display:block;background:#0E1116;border:1px solid #FF6A00;border-radius:10px;padding:14px;margin:16px 0;font-size:13px;word-break:break-all;color:#FF8A2E;}
+  .err{color:#ff6b6b;}
+</style>
+</head>
+<body>
+  <div class="box">
+    <h1>TikTok verbunden</h1>
+    <p id="msg">Code wird geladen…</p>
+    <code id="code"></code>
+    <p id="hint"></p>
+  </div>
+<script>
+(function(){
+  var q = new URLSearchParams(location.search);
+  var code = q.get('code');
+  var err = q.get('error');
+  var msg = document.getElementById('msg');
+  var el = document.getElementById('code');
+  var hint = document.getElementById('hint');
+  if (err) {
+    msg.innerHTML = '<span class="err">Login abgebrochen: ' + err + '</span>';
+    el.textContent = '—';
+    return;
+  }
+  if (!code) {
+    msg.textContent = 'Kein Code in der URL. Bitte Login erneut starten.';
+    el.textContent = '—';
+    return;
+  }
+  msg.textContent = 'Kopiere diesen Code und füge ihn im Terminal ein:';
+  el.textContent = code;
+  hint.textContent = 'Terminal: ./venv/bin/python3 tiktok_api.py --code ' + code.substring(0, 8) + '…';
+  if (navigator.clipboard) navigator.clipboard.writeText(code).catch(function(){});
+})();
+</script>
+</body>
+</html>
