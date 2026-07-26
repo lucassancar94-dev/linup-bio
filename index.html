@@ -157,22 +157,6 @@
   footer { margin-top: 32px; font-size: 12px; color: var(--ink-soft); }
   footer a { color: var(--ink-soft); text-decoration: underline; }
   footer .legal-links { display: flex; gap: 18px; justify-content: center; margin-bottom: 16px; }
-
-  details.impressum {
-    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
-    padding: 0; margin-top: 8px; text-align: left; overflow: hidden;
-  }
-  details.impressum summary {
-    cursor: pointer; padding: 14px 16px; font-size: 13px; font-weight: 600;
-    color: var(--ink); list-style: none;
-  }
-  details.impressum summary::-webkit-details-marker { display: none; }
-  details.impressum summary::after { content: "▾"; float: right; color: var(--ink-soft); }
-  details.impressum[open] summary::after { content: "▴"; }
-  .impressum-body {
-    padding: 0 16px 16px; font-size: 13px; line-height: 1.6; color: var(--ink-soft);
-  }
-  .impressum-body strong { color: var(--ink); }
 </style>
 </head>
 <body>
@@ -232,24 +216,10 @@
       </div>
       <div class="legal-links">
         <a href="https://puffy-albatross-a4e.notion.site/37aa388a99a2804b95e9fa0d72bdb0ac" target="_blank" rel="noopener">Datenschutz</a>
-        <a href="#impressum" onclick="document.getElementById('impressum').open=true">Impressum</a>
+        <!-- Impressum liegt auf eigener Unterseite (noindex): erreichbar mit
+             einem Klick, taucht aber nicht in Suchmaschinen auf. -->
+        <a href="https://lucassancar94-dev.github.io/linup-bio/impressum/">Impressum</a>
       </div>
-      <details class="impressum" id="impressum">
-        <summary>Impressum</summary>
-        <div class="impressum-body">
-          Angaben gemäß § 5 DDG<br><br>
-          <strong>Lucas Sancar</strong><br>
-          Berufsschulstr. 11<br>
-          63785 Obernburg<br>
-          Deutschland<br><br>
-          <strong>Kontakt</strong><br>
-          E-Mail: lucassancar94@gmail.com<br>
-          Direktnachricht (schnelle Rückmeldung):
-          <a href="https://ig.me/m/linup25" target="_blank" rel="noopener">Instagram-Nachricht an @linup25</a><br><br>
-          Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:<br>
-          Lucas Sancar (Anschrift wie oben)
-        </div>
-      </details>
       <p style="margin-top:16px; opacity:0.6;">© 2026 Linup</p>
     </footer>
   </div>

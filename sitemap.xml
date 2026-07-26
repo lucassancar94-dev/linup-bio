@@ -76,6 +76,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://lucassancar94-dev.github.io/linup-bio/wissen/abnehmen-ab-40/</loc>
+    <lastmod>2026-07-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lucassancar94-dev.github.io/linup-bio/wissen/abnehmen-anfangen/</loc>
+    <lastmod>2026-07-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://lucassancar94-dev.github.io/linup-bio/wissen/abnehmen-ohne-sport/</loc>
     <lastmod>2026-07-12</lastmod>
     <priority>0.8</priority>
@@ -87,6 +97,11 @@
   </url>
   <url>
     <loc>https://lucassancar94-dev.github.io/linup-bio/wissen/ballaststoffe/</loc>
+    <lastmod>2026-07-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lucassancar94-dev.github.io/linup-bio/wissen/bauchfett-verlieren/</loc>
     <lastmod>2026-07-12</lastmod>
     <priority>0.8</priority>
   </url>
@@ -127,6 +142,11 @@
   </url>
   <url>
     <loc>https://lucassancar94-dev.github.io/linup-bio/wissen/kalorien-schaetzen/</loc>
+    <lastmod>2026-07-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lucassancar94-dev.github.io/linup-bio/wissen/kalorien-sparen-alltag/</loc>
     <lastmod>2026-07-12</lastmod>
     <priority>0.8</priority>
   </url>
@@ -191,12 +211,22 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://lucassancar94-dev.github.io/linup-bio/wissen/stoffwechsel-ankurbeln/</loc>
+    <lastmod>2026-07-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://lucassancar94-dev.github.io/linup-bio/wissen/wasser-trinken-abnehmen/</loc>
     <lastmod>2026-07-12</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lucassancar94-dev.github.io/linup-bio/wissen/wie-schnell-abnehmen/</loc>
+    <lastmod>2026-07-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lucassancar94-dev.github.io/linup-bio/wissen/wie-viel-eiweiss-am-tag/</loc>
     <lastmod>2026-07-12</lastmod>
     <priority>0.8</priority>
   </url>
@@ -504,5 +534,15 @@
     <loc>https://lucassancar94-dev.github.io/linup-bio/protein/whey-protein-pulver/</loc>
     <lastmod>2026-07-12</lastmod>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lucassancar94-dev.github.io/linup-bio/meta-callback/</loc>
+    <lastmod>2026-07-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucassancar94-dev.github.io/linup-bio/tiktok-callback/</loc>
+    <lastmod>2026-07-12</lastmod>
+    <priority>0.6</priority>
   </url>
 </urlset>
