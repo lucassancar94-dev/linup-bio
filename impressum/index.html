@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--favicon-->
+<link rel="icon" href="https://linupapp.de/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="https://linupapp.de/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="https://linupapp.de/apple-touch-icon.png">
+<meta name="theme-color" content="#0E1116">
+<!--/favicon-->
+<title>Impressum – Linup</title>
+
+<!-- BEWUSST NICHT INDEXIEREN.
+     Das Impressum ist gesetzlich "leicht erkennbar und unmittelbar erreichbar"
+     (Link im Footer, ein Klick) — es muss aber NICHT in Suchmaschinen stehen.
+     So findet der Name des Betreibers nicht über eine Google-Personensuche
+     hierher. Nutzer, App-Links und Store-Reviewer erreichen die Seite normal.
+     Zusaetzlich: aus sitemap.xml ausgeschlossen (scripts/gen-sitemap.mjs). -->
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="googlebot" content="noindex, nofollow">
+
+<style>
+  :root {
+    --bg: #0E1116;
+    --bg2: #14171d;
+    --orange: #FF6A00;
+    --orange-soft: #FF8A2E;
+    --ink: #F4F1EC;
+    --ink-soft: #A5A29B;
+    --card: #1a1e25;
+    --border: #2a2f38;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: radial-gradient(120% 80% at 50% 0%, #1a120a 0%, var(--bg2) 45%, var(--bg) 100%);
+    color: var(--ink);
+    line-height: 1.6;
+    padding: 48px 20px 64px;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; }
+  .brandrow { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+  .logo { width: 40px; height: 40px; }
+  .brand { font-size: 20px; font-weight: 800; }
+  .brand .up { color: var(--orange); }
+  h1 { font-size: 28px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 24px; }
+  .card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+    padding: 22px 24px; font-size: 15px; color: var(--ink-soft);
+  }
+  .card strong { color: var(--ink); font-weight: 600; }
+  .card a { color: var(--orange-soft); }
+  .sec { margin-top: 22px; }
+  .sec:first-child { margin-top: 0; }
+  .back { display: inline-block; margin-top: 28px; color: var(--ink-soft); font-size: 14px;
+          text-decoration: none; border: 1px solid var(--border); border-radius: 12px; padding: 10px 16px; }
+  footer { margin-top: 32px; text-align: center; color: var(--ink-soft); font-size: 13px; opacity: .7; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brandrow">
+      <svg class="logo" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" aria-label="Linup">
+        <defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFC08A"/><stop offset=".45" stop-color="#FF8A2E"/><stop offset="1" stop-color="#FF6A00"/></linearGradient></defs>
+        <g transform="translate(0 38)">
+          <path d="M342 452 L512 168 L682 452" fill="none" stroke="url(#s)" stroke-width="58" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M397 657 L512 472 L627 657" fill="none" stroke="url(#s)" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M437 790 L512 670 L587 790" fill="none" stroke="url(#s)" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+      </svg>
+      <span class="brand">Lin<span class="up">up</span></span>
+    </div>
+
+    <h1>Impressum</h1>
+
+    <div class="card">
+      <div class="sec">
+        Angaben gemäß § 5 DDG<br><br>
+        <strong>Lucas Sancar</strong><br>
+        Berufsschulstr. 11<br>
+        63785 Obernburg<br>
+        Deutschland
+      </div>
+
+      <div class="sec">
+        <strong>Kontakt</strong><br>
+        E-Mail: <a href="mailto:lucassancar94@gmail.com">lucassancar94@gmail.com</a><br>
+        Direktnachricht (schnelle Rückmeldung):
+        <a href="https://ig.me/m/linup25" target="_blank" rel="noopener">Instagram-Nachricht an @linup25</a>
+      </div>
+
+      <div class="sec">
+        <strong>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</strong><br>
+        Lucas Sancar (Anschrift wie oben)
+      </div>
+
+      <div class="sec">
+        <strong>Datenschutz</strong><br>
+        <a href="https://puffy-albatross-a4e.notion.site/37aa388a99a2804b95e9fa0d72bdb0ac" target="_blank" rel="noopener">Datenschutzerklärung ansehen</a>
+      </div>
+    </div>
+
+    <a class="back" href="https://linupapp.de/">‹ Zurück zur Startseite</a>
+
+    <footer>© 2026 Linup</footer>
+  </div>
+</body>
+</html>

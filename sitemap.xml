@@ -76,6 +76,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://linupapp.de/wissen/abnehmen-ab-40/</loc>
+    <lastmod>2026-08-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://linupapp.de/wissen/abnehmen-anfangen/</loc>
+    <lastmod>2026-08-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://linupapp.de/wissen/abnehmen-ohne-sport/</loc>
     <lastmod>2026-07-12</lastmod>
     <priority>0.8</priority>
@@ -88,6 +98,11 @@
   <url>
     <loc>https://linupapp.de/wissen/ballaststoffe/</loc>
     <lastmod>2026-07-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://linupapp.de/wissen/bauchfett-verlieren/</loc>
+    <lastmod>2026-08-06</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -128,6 +143,11 @@
   <url>
     <loc>https://linupapp.de/wissen/kalorien-schaetzen/</loc>
     <lastmod>2026-07-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://linupapp.de/wissen/kalorien-sparen-alltag/</loc>
+    <lastmod>2026-08-06</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -191,6 +211,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://linupapp.de/wissen/stoffwechsel-ankurbeln/</loc>
+    <lastmod>2026-08-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://linupapp.de/wissen/wasser-trinken-abnehmen/</loc>
     <lastmod>2026-07-12</lastmod>
     <priority>0.8</priority>
@@ -198,6 +223,11 @@
   <url>
     <loc>https://linupapp.de/wissen/wie-schnell-abnehmen/</loc>
     <lastmod>2026-07-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://linupapp.de/wissen/wie-viel-eiweiss-am-tag/</loc>
+    <lastmod>2026-08-06</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -504,5 +534,10 @@
     <loc>https://linupapp.de/protein/whey-protein-pulver/</loc>
     <lastmod>2026-07-12</lastmod>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://linupapp.de/impressum/</loc>
+    <lastmod>2026-08-06</lastmod>
+    <priority>0.6</priority>
   </url>
 </urlset>
