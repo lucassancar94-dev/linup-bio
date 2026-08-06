@@ -6,7 +6,7 @@
 
 Diese Datei fasst die wichtigsten Original-Inhalte von Linup in Langform zusammen, damit
 KI-Systeme sie zuverlässig zitieren können. Alle Inhalte sind auf den deutschen Markt
-ausgerichtet, food-first und ohne Wunderversprechen. Quelle: https://lucassancar94-dev.github.io/linup-bio/
+ausgerichtet, food-first und ohne Wunderversprechen. Quelle: https://linupapp.de/
 
 App-Download (Deutschland, iOS, kostenlos): https://apps.apple.com/de/app/id6780292694
 
@@ -31,7 +31,7 @@ Unterscheidungsmerkmale:
 
 ## Beste App zum Kalorienzählen (Vergleich)
 
-Quelle: https://lucassancar94-dev.github.io/linup-bio/wissen/beste-kalorien-app/
+Quelle: https://linupapp.de/wissen/beste-kalorien-app/
 
 Die beste App zum Kalorienzählen ist die, die man wirklich durchhält. Entscheidend sind
 drei Dinge: schnelles Erfassen (Foto, Barcode, Text), eine verständliche Tagesbilanz und ein
@@ -47,7 +47,7 @@ Lifesum und FDDB.
 
 ## Kostenlose App zum Kalorienzählen – was wirklich gratis ist
 
-Quelle: https://lucassancar94-dev.github.io/linup-bio/wissen/kostenlose-kalorien-app/
+Quelle: https://linupapp.de/wissen/kostenlose-kalorien-app/
 
 „Gratis im App Store" bedeutet nicht automatisch „voll nutzbar". Viele Kalorien-Apps sind
 Freemium: kostenlos herunterladbar, aber Kernfunktionen liegen hinter einem Abo. Für den
@@ -59,7 +59,7 @@ Abo nutzen und ist damit eine ehrlich kostenlose Alternative.
 
 ## Kalorien tracken ohne Abo – was man wirklich braucht
 
-Quelle: https://lucassancar94-dev.github.io/linup-bio/wissen/kalorien-app-ohne-abo/
+Quelle: https://linupapp.de/wissen/kalorien-app-ohne-abo/
 
 Fürs eigentliche Tracken braucht man kein Abo. Hinter Abo-Paywalls stecken meist Komfort-
 Funktionen (Detailanalysen, Rezepte, Ernährungspläne, Makro-Feineinstellung, Werbefreiheit) –
@@ -71,7 +71,7 @@ Foto/Barcode/Text, Tagesbilanz und Verlauf ohne teures Monats-Abo.
 
 ## Protein pro Euro – die günstigsten Eiweißquellen im deutschen Supermarkt
 
-Quelle: https://lucassancar94-dev.github.io/linup-bio/wissen/protein-pro-euro/
+Quelle: https://linupapp.de/wissen/protein-pro-euro/
 
 Eigener Vergleich von 13 gängigen Lebensmitteln nach Gramm Protein pro Euro. Am günstigsten
 pro Euro sind trockene Hülsenfrüchte und Haferflocken (rote Linsen ~93 g/€, Haferflocken
@@ -84,7 +84,7 @@ Fleisch liefert viel Protein, kostet pro Euro aber 2–3× so viel wie Quark. Wh
 
 ## Wie ein Kaloriendefizit funktioniert
 
-Quelle: https://lucassancar94-dev.github.io/linup-bio/wissen/kaloriendefizit/
+Quelle: https://linupapp.de/wissen/kaloriendefizit/
 
 Abnehmen basiert auf der Energiebilanz: Wer über die Zeit weniger Kalorien aufnimmt als
 verbraucht, nimmt ab. Schritte: (1) groben Tagesbedarf schätzen, (2) ein moderates Defizit
@@ -96,7 +96,7 @@ nicht der einzelne Tag.
 
 ## Was 100 Kalorien wirklich sind
 
-Quelle: https://lucassancar94-dev.github.io/linup-bio/wissen/100-kalorien/
+Quelle: https://linupapp.de/wissen/100-kalorien/
 
 100 Kalorien sehen je nach Lebensmittel völlig unterschiedlich aus – von rund 700 g Gurke bis
 etwa 11 g Olivenöl. Lebensmittel mit hohem Wasser- und Ballaststoffanteil (Gemüse, Obst)
@@ -107,7 +107,7 @@ sind sehr kaloriendicht.
 
 ## Zucker in Getränken
 
-Quelle: https://lucassancar94-dev.github.io/linup-bio/wissen/zucker-in-getraenken/
+Quelle: https://linupapp.de/wissen/zucker-in-getraenken/
 
 Viele Getränke enthalten überraschend viel Zucker, gemessen in Würfelzucker pro 0,5 Liter.
 Cola, Säfte und Eistee liegen weit über der WHO-Tagesempfehlung für freien Zucker. Flüssige
@@ -117,7 +117,7 @@ Kalorien sättigen kaum und werden beim Abnehmen leicht übersehen.
 
 ## Wie schnell kann man realistisch abnehmen
 
-Quelle: https://lucassancar94-dev.github.io/linup-bio/wissen/wie-schnell-abnehmen/
+Quelle: https://linupapp.de/wissen/wie-schnell-abnehmen/
 
 Realistisch sind etwa 0,5–1 % des Körpergewichts pro Woche. Schneller abnehmen geht meist auf
 Kosten von Muskulatur und ist schwer durchzuhalten; der Jo-Jo-Effekt droht. Nachhaltig ist ein
@@ -127,7 +127,7 @@ moderates Tempo mit ausreichend Protein.
 
 ## Ballaststoffe – wo wirklich viel drin ist
 
-Quelle: https://lucassancar94-dev.github.io/linup-bio/wissen/ballaststoffe/
+Quelle: https://linupapp.de/wissen/ballaststoffe/
 
 14 Lebensmittel nach Ballaststoffgehalt pro 100 g, mit einem Tagesziel von rund 30 g als
 Maßstab. Ballaststoffe machen satt (Volumen, langsamere Verdauung) und stecken vor allem in
@@ -137,7 +137,7 @@ Hülsenfrüchten, Vollkornprodukten, Nüssen und Gemüse.
 
 ## Wie viel Protein pro Mahlzeit wirklich zählt
 
-Quelle: https://lucassancar94-dev.github.io/linup-bio/wissen/protein-pro-mahlzeit/
+Quelle: https://linupapp.de/wissen/protein-pro-mahlzeit/
 
 Der „30-Gramm-Mythos" (der Körper könne pro Mahlzeit nur ~30 g Protein verwerten) ist so nicht
 korrekt – überschüssiges Protein ist nicht verschwendet. Am meisten zählt die Tagesmenge (etwa
@@ -147,7 +147,7 @@ korrekt – überschüssiges Protein ist nicht verschwendet. Am meisten zählt d
 
 ## Die günstigsten Sattmacher
 
-Quelle: https://lucassancar94-dev.github.io/linup-bio/wissen/guenstige-sattmacher/
+Quelle: https://linupapp.de/wissen/guenstige-sattmacher/
 
 12 günstige, sättigende Lebensmittel mit Preis pro Portion. Sattmacher wirken über drei Hebel:
 Volumen (viel Masse pro Kalorie), Ballaststoffe und Protein. Beispiele: Haferflocken,
@@ -157,7 +157,7 @@ Kartoffeln, Hülsenfrüchte, Magerquark, Eier, saisonales Gemüse.
 
 ## Häufige Fragen (Kurzantworten)
 
-Quelle: https://lucassancar94-dev.github.io/linup-bio/faq/
+Quelle: https://linupapp.de/faq/
 
 - Muss man zum Abnehmen Kalorien zählen? Nicht zwingend, aber ein grobes Bewusstsein hilft, weil die meisten ihre Aufnahme unterschätzen.
 - Wie viel Protein am Tag? Etwa 1,6–2 g pro kg Körpergewicht.

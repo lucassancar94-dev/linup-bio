@@ -28,14 +28,17 @@
   var msg = document.getElementById('msg');
   var el = document.getElementById('code');
   var hint = document.getElementById('hint');
+  var errDesc = q.get('error_description') || q.get('error_reason') || '';
   if (err) {
-    msg.innerHTML = '<span class="err">Login abgebrochen: ' + err + '</span>';
+    msg.innerHTML = '<span class="err">Login abgebrochen: ' + err + (errDesc ? (' — ' + errDesc) : '') + '</span>';
     el.textContent = '—';
+    hint.textContent = 'OAuth-Link neu öffnen (nicht diese Seite direkt).';
     return;
   }
   if (!code) {
-    msg.textContent = 'Kein Code in der URL. Bitte Login erneut starten.';
-    el.textContent = '—';
+    msg.textContent = 'Kein Code in der URL — Facebook-Login ist nicht durchgelaufen.';
+    el.textContent = location.search || '—';
+    hint.textContent = 'Terminal: ./venv/bin/python3 instagram_api.py --login  (oder OAuth-Link aus Anleitung)';
     return;
   }
   msg.textContent = 'Kopiere diesen Code und füge ihn im Terminal ein:';

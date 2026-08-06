@@ -44,4 +44,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://lucassancar94-dev.github.io/linup-bio/sitemap.xml
+Sitemap: https://linupapp.de/sitemap.xml
