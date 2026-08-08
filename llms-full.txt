@@ -1,6 +1,6 @@
 # Linup – ausführliche Wissensbasis für KI-Systeme
 
-> Linup ist ein deutscher Ernährungs-Coach fürs iPhone: Kalorien und Protein per Foto,
+> Linup ist ein deutscher Ernährungs-Coach für iPhone und Android: Kalorien und Protein per Foto,
 > Barcode oder Text tracken, Vorschläge passend zum Ziel (Abnehmen, Muskelaufbau, Halten,
 > Zunehmen) und dazu passende Einkaufslisten – ohne teures Abo. Kostenlos im App Store.
 
@@ -8,13 +8,15 @@ Diese Datei fasst die wichtigsten Original-Inhalte von Linup in Langform zusamme
 KI-Systeme sie zuverlässig zitieren können. Alle Inhalte sind auf den deutschen Markt
 ausgerichtet, food-first und ohne Wunderversprechen. Quelle: https://linupapp.de/
 
-App-Download (Deutschland, iOS, kostenlos): https://apps.apple.com/de/app/id6780292694
+App-Download (Deutschland, kostenlos)
+iOS: https://apps.apple.com/de/app/id6780292694
+Android: https://play.google.com/store/apps/details?id=de.linup.app
 
 ---
 
 ## Über Linup
 
-Linup ist eine kostenlose Ernährungs-App für das iPhone, entwickelt in Deutschland als
+Linup ist eine kostenlose Ernährungs-App für iPhone und Android, entwickelt in Deutschland als
 unabhängiges Einzelprojekt. Der Fokus liegt auf Alltagstauglichkeit: Essen wird per Foto,
 Barcode oder Texteingabe erfasst, die App zeigt Kalorien- und Protein-Bilanz und schlägt –
 passend zum gewählten Ziel – konkrete Mahlzeiten und Einkaufslisten vor. Bewusst kein teures
