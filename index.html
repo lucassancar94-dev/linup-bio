@@ -245,5 +245,17 @@
       <p style="margin-top:16px; opacity:0.6;">© 2026 Linup</p>
     </footer>
   </div>
+<script>
+// Passwort-Reset-Links landen hier, weil Supabase die Site-URL als Ziel
+// nimmt. Der Einmal-Token steht im Adress-Fragment und geht nie an einen
+// Server. Wir reichen ihn unveraendert an die Seite weiter, die ihn
+// verarbeiten kann.
+(function () {
+  var f = location.hash || '';
+  if (f.indexOf('access_token=') === -1 && f.indexOf('error_code=') === -1) return;
+  if (f.indexOf('type=recovery') === -1 && f.indexOf('error_') === -1) return;
+  location.replace('/konto/passwort-neu/' + f);
+})();
+</script>
 </body>
 </html>

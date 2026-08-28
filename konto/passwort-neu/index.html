@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Neues Passwort für dein Linup-Konto</title>
+<!-- Der Schluessel hier ist der oeffentliche Anon-Key. Er steckt in jeder
+     ausgelieferten App und darf hier stehen. Schreiben kann er nur mit dem
+     Einmal-Token aus der Mail, das der Browser im Adress-Fragment traegt
+     und das nie an unseren Server geht. -->
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#F4F4F6;color:#0B0B0C;font-family:-apple-system,'Helvetica Neue',Arial,sans-serif;
+       min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
+  .karte{background:#fff;border:1px solid #E3E3E8;border-radius:20px;max-width:420px;width:100%;
+         padding:32px 26px;box-shadow:0 10px 30px rgba(11,11,12,.07)}
+  .marke{display:flex;align-items:center;gap:10px;margin-bottom:22px}
+  .ring{width:34px;height:34px;border-radius:50%;border:3px solid #007AFF;display:flex;align-items:center;justify-content:center}
+  .wort{font-size:22px;font-weight:800}
+  .wort b{font-weight:400}
+  h1{font-size:22px;margin-bottom:6px}
+  p{color:#5E5E63;font-size:15px;line-height:1.45;margin-bottom:18px}
+  label{display:block;font-size:12px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:#5E5E63;margin:0 0 6px}
+  input{width:100%;font-size:17px;padding:13px 14px;border:1.5px solid #D5D5DB;border-radius:12px;background:#fff}
+  input:focus{outline:none;border-color:#0B0B0C}
+  button{width:100%;margin-top:16px;padding:15px;font-size:16px;font-weight:700;color:#fff;
+         background:#0B0B0C;border:none;border-radius:999px;cursor:pointer}
+  button:disabled{opacity:.4}
+  .meldung{margin-top:14px;font-size:14px;line-height:1.4;display:none}
+  .gut{color:#0B7A3B}.schlecht{color:#C22F2F}
+</style>
+</head>
+<body>
+<div class="karte">
+  <div class="marke">
+    <span class="ring"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0B0B0C" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 15l7-7 7 7"/></svg></span>
+    <span class="wort">Lin<b>up</b></span>
+  </div>
+  <h1>Neues Passwort setzen</h1>
+  <p id="intro">Wähle ein neues Passwort für dein Linup-Konto. Danach kannst du dich in der App damit anmelden.</p>
+  <form id="formular">
+    <label for="pw">Neues Passwort</label>
+    <input id="pw" type="password" minlength="8" required autocomplete="new-password" placeholder="mindestens 8 Zeichen">
+    <button id="knopf" type="submit">Passwort speichern</button>
+  </form>
+  <p class="meldung" id="meldung"></p>
+</div>
+<script>
+(function () {
+  var SUPABASE = 'https://vbxahjnbcjmexqnxacxs.supabase.co';
+  var ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZieGFoam5iY2ptZXhxbnhhY3hzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA1MTg4MDgsImV4cCI6MjA5NjA5NDgwOH0.NC5_FKULzVm2s6Zx16J-0vU3fgp4AayTlwD0T2Kc8gY';
+  var teile = new URLSearchParams(location.hash.replace(/^#/, ''));
+  var token = teile.get('access_token');
+  var meldung = document.getElementById('meldung');
+  var formular = document.getElementById('formular');
+  var knopf = document.getElementById('knopf');
+
+  function zeige(text, gut) {
+    meldung.textContent = text;
+    meldung.className = 'meldung ' + (gut ? 'gut' : 'schlecht');
+    meldung.style.display = 'block';
+  }
+
+  var fehlerText = teile.get('error_description');
+  if (fehlerText) {
+    formular.style.display = 'none';
+    zeige('Der Link ist nicht mehr gültig: ' + decodeURIComponent(fehlerText.replace(/\+/g, ' ')) +
+          '. Fordere in der App unter "Passwort vergessen?" einen neuen an.', false);
+  } else if (!token) {
+    formular.style.display = 'none';
+    document.getElementById('intro').textContent =
+      'Diese Seite gehört zum Passwort-Zurücksetzen. Öffne den Link aus der E-Mail von Linup, dann kannst du hier ein neues Passwort wählen.';
+  }
+
+  formular.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var pw = document.getElementById('pw').value;
+    if (pw.length < 8) { zeige('Das Passwort braucht mindestens 8 Zeichen.', false); return; }
+    knopf.disabled = true;
+    fetch(SUPABASE + '/auth/v1/user', {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json', apikey: ANON, Authorization: 'Bearer ' + token },
+      body: JSON.stringify({ password: pw })
+    }).then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
+      .then(function (a) {
+        if (a.ok) {
+          formular.style.display = 'none';
+          zeige('Passwort gespeichert. Du kannst dich jetzt in der Linup-App anmelden.', true);
+        } else {
+          knopf.disabled = false;
+          zeige('Das hat nicht geklappt: ' + (a.d.msg || a.d.error_description || 'unbekannter Fehler') +
+                '. Fordere notfalls einen neuen Link an.', false);
+        }
+      })
+      .catch(function () { knopf.disabled = false; zeige('Keine Verbindung. Bitte noch einmal versuchen.', false); });
+  });
+})();
+</script>
+</body>
+</html>
