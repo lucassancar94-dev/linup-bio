@@ -3,7 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Linup Instagram — Login OK</title>
+<!--favicon-->
+<link rel="icon" href="https://linupapp.de/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="https://linupapp.de/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="https://linupapp.de/apple-touch-icon.png">
+<meta name="theme-color" content="#F4F4F6">
+<!--/favicon-->
+<title>Linup Instagram: Login OK</title>
 <style>
   body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:#0E1116;color:#F4F1EC;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;padding:24px;text-align:center;}
   .box{max-width:480px;background:#1a1e25;border:1px solid #2a2f38;border-radius:16px;padding:28px;}
@@ -12,6 +18,7 @@
   code{display:block;background:#0E1116;border:1px solid #FF6A00;border-radius:10px;padding:14px;margin:16px 0;font-size:13px;word-break:break-all;color:#FF8A2E;}
   .err{color:#ff6b6b;}
 </style>
+<link rel="stylesheet" href="/assets/linup.css">
 </head>
 <body>
   <div class="box">
@@ -30,14 +37,14 @@
   var hint = document.getElementById('hint');
   var errDesc = q.get('error_description') || q.get('error_reason') || '';
   if (err) {
-    msg.innerHTML = '<span class="err">Login abgebrochen: ' + err + (errDesc ? (' — ' + errDesc) : '') + '</span>';
-    el.textContent = '—';
+    msg.innerHTML = '<span class="err">Login abgebrochen: ' + err + (errDesc ? (': ' + errDesc) : '') + '</span>';
+    el.textContent = '-';
     hint.textContent = 'OAuth-Link neu öffnen (nicht diese Seite direkt).';
     return;
   }
   if (!code) {
-    msg.textContent = 'Kein Code in der URL — Facebook-Login ist nicht durchgelaufen.';
-    el.textContent = location.search || '—';
+    msg.textContent = 'Kein Code in der URL, Facebook-Login ist nicht durchgelaufen.';
+    el.textContent = location.search || '-';
     hint.textContent = 'Terminal: ./venv/bin/python3 instagram_api.py --login  (oder OAuth-Link aus Anleitung)';
     return;
   }

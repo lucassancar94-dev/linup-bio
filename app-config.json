@@ -1,21 +1,15 @@
 {
-  "_note": "Steuert den Update-Hinweis in der App. latestVersion hochsetzen (z.B. auf 1.0.5), sobald eine neue Version im App Store live ist -> alle aelteren Versionen (die den Update-Code haben, also ab 1.0.4) sehen die grosse Pflicht-Meldung mit App-Store-Button. Fuer einen sanften, wegklickbaren Hinweis stattdessen: ios.latestIsSoft = true. minSupportedVersion nur bei kaputten Versionen hochsetzen (zusaetzliche harte Sperre). Fail-open: laedt die Datei nicht, wird nie gesperrt.",
+  "_note": "Steuert den Update-Hinweis in der App. latestVersion hochsetzen (z.B. auf 1.0.5), sobald eine neue Version im App Store live ist -> alle aelteren Versionen (die den Update-Code haben, also ab 1.0.4) sehen die grosse Pflicht-Meldung mit App-Store-Button. Fuer einen sanften, wegklickbaren Hinweis stattdessen: ios.latestIsSoft = true. minSupportedVersion nur bei kaputten Versionen hochsetzen (zusaetzliche harte Sperre). Fail-open: laedt die Datei nicht, wird nie gesperrt. Jede Plattform braucht ihren EIGENEN Block; ohne android-Block wird auf Android nichts gesperrt (kein Rueckfall auf ios mehr). Titel und Text stehen bewusst NICHT mehr hier: die App hat sie in 16 Sprachen (locales/*.json, Namensraum lib_appconfig). Ein Block newVersion/softUpdate/hardUpdate hier wuerde sie ueberschreiben und allen Nutzern Deutsch zeigen.",
   "ios": {
     "minSupportedVersion": "1.0.0",
     "latestVersion": "1.0.4",
     "latestIsSoft": false,
     "storeUrl": "https://apps.apple.com/de/app/id6780292694"
   },
-  "newVersion": {
-    "title": "Neue Version verfügbar",
-    "message": "Es gibt ein Update von Linup mit neuen Funktionen und Verbesserungen. Bitte aktualisiere, um weiterzumachen."
-  },
-  "softUpdate": {
-    "title": "Update verfügbar",
-    "message": "Neue Funktionen und Verbesserungen warten auf dich."
-  },
-  "hardUpdate": {
-    "title": "Zeit für ein Update",
-    "message": "Diese Version von Linup ist nicht mehr aktuell. Bitte aktualisiere, um weiterzumachen."
+  "android": {
+    "minSupportedVersion": "1.0.0",
+    "latestVersion": "1.0.4",
+    "latestIsSoft": true,
+    "storeUrl": "https://play.google.com/store/apps/details?id=de.linup.app"
   }
 }

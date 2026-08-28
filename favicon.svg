@@ -1,8 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
-  <rect width="1024" height="1024" rx="230" fill="#0E1116"/>
-  <g fill="none" stroke="#FF6A00" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M 342 470 L 512 210 L 682 470" stroke-width="74"/>
-    <path d="M 397 650 L 512 480 L 627 650" stroke-width="60"/>
-    <path d="M 442 792 L 512 680 L 582 792" stroke-width="46"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="Linup">
+  <!-- Linup-Zeichen als Vektor. Masse aus assets/icon.png abgemessen, damit
+       Webseite und App dasselbe Symbol zeigen. Aendert sich das App-Symbol,
+       gehoert diese Datei mit nachgezogen. -->
+  <rect width="1024" height="1024" fill="#1B1D24"/>
+  <g fill="none" stroke-linecap="round">
+    <circle cx="512" cy="512" r="358" stroke="#343845" stroke-width="61"/>
+    <path d="M 482.0 155.3 A 358 358 0 1 1 156.0 549.4" stroke="#3A7D62" stroke-width="61"/>
+    <circle cx="512" cy="512" r="260" stroke="#343845" stroke-width="61"/>
+    <path d="M 482.1 253.7 A 260 260 0 0 1 563.4 766.9" stroke="#007AFF" stroke-width="61"/>
+    <path d="M 422 561 L 512 463 L 602 561" stroke="#FF6A00" stroke-width="84" stroke-linejoin="round"/>
   </g>
 </svg>

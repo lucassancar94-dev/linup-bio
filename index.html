@@ -10,7 +10,7 @@
 <link rel="icon" href="https://linupapp.de/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="https://linupapp.de/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="https://linupapp.de/apple-touch-icon.png">
-<meta name="theme-color" content="#0E1116">
+<meta name="theme-color" content="#F4F4F6">
 <!--/favicon-->
 <title>Kalorien zählen & Abnehmen mit Linup – App ohne Abo</title>
 <meta name="description" content="Linup ist die Ernährungs-App, die dir sagt, was du essen und einkaufen sollst: Kalorien per Foto oder Barcode tracken, passend zum Ziel – ohne teures Abo.">
@@ -36,7 +36,7 @@
   "@type": "MobileApplication",
   "name": "Linup: Kalorien & Abnehmen",
   "operatingSystem": "iOS, Android",
-  "softwareVersion": "1.0.6",
+  "softwareVersion": "1.0.7",
   "applicationCategory": "HealthApplication",
   "description": "Ernährungs-Coach fürs Handy: Kalorien tracken per Foto oder Barcode, Vorschläge fürs Ziel und passende Einkaufslisten – ob Abnehmen, Muskelaufbau oder Halten. Ohne Abo-Wahnsinn.",
   "url": "https://linupapp.de/",
@@ -140,7 +140,7 @@
     background: rgba(255,106,0,0.15); color: var(--orange-soft);
     padding: 3px 8px; border-radius: 6px; margin-left: 6px;
   }
-  /* Auf der orangen Fläche wäre Orange-auf-Orange unlesbar — dunkel absetzen. */
+  /* Auf der orangen Fläche wäre Orange-auf-Orange unlesbar, dunkel absetzen. */
   .btn-primary .badge { background: rgba(0,0,0,0.22); color: #1a1005; }
 
   .why { margin: 30px 0 8px; text-align: left; }
@@ -177,41 +177,29 @@
   }
   .impressum-body strong { color: var(--ink); }
 </style>
+<link rel="stylesheet" href="/assets/linup.css">
 </head>
 <body>
   <div class="wrap">
-    <svg class="logo" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" aria-label="Linup Logo">
-      <defs>
-        <linearGradient id="stroke" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stop-color="#FFC08A"/>
-          <stop offset="45%" stop-color="#FF8A2E"/>
-          <stop offset="100%" stop-color="#FF6A00"/>
-        </linearGradient>
-      </defs>
-      <g transform="translate(0 38)">
-        <path d="M 342 452 L 512 168 L 682 452" fill="none" stroke="url(#stroke)" stroke-width="58" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M 397 657 L 512 472 L 627 657" fill="none" stroke="url(#stroke)" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M 437 790 L 512 670 L 587 790" fill="none" stroke="url(#stroke)" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
-      </g>
-    </svg>
+    <img class="logo" src="/assets/linup-mark.svg" alt="Linup" width="44" height="44">
 
     <h1>Lin<span class="brandmark">up</span></h1>
-    <p class="bio">Der Ernährungs-Coach für Berufstätige, die keine Lust mehr auf Abo-Wahnsinn haben. Sag uns dein Ziel — wir sagen dir, was du essen und einkaufen sollst.</p>
+    <p class="bio">Der Ernährungs-Coach für Berufstätige, die keine Lust mehr auf Abo-Wahnsinn haben. Sag uns dein Ziel, wir sagen dir, was du essen und einkaufen sollst.</p>
 
     <div class="links">
       <a class="btn btn-primary" href="https://apps.apple.com/de/app/id6780292694" target="_blank" rel="noopener">
-        Im App Store laden <span class="badge">1.0.6</span>
+        Im App Store laden <span class="badge">1.0.7</span>
       </a>
       <a class="btn btn-secondary" href="https://play.google.com/store/apps/details?id=de.linup.app" target="_blank" rel="noopener">
-        Bei Google Play laden <span class="badge">1.0.6</span>
+        Bei Google Play laden <span class="badge">1.1.2</span>
       </a>
     </div>
 
     <section class="why">
       <h2>Warum Linup?</h2>
       <ul>
-        <li><b>Getrackt in Sekunden.</b> Foto, Barcode oder Text — kein mühsames Suchen.</li>
-        <li><b>Auswärts am Ziel.</b> Der Coach sagt dir, was du im Restaurant bestellst.</li>
+        <li><b>Getrackt in Sekunden.</b> Foto, Barcode oder Text, kein mühsames Suchen.</li>
+        <li><b>Ehrlich gerechnet.</b> Die Woche zählt, nicht der einzelne Tag.</li>
         <li><b>Ohne Abo-Wahnsinn.</b> Fast der volle Funktionsumfang, ohne teures Monats-Abo.</li>
       </ul>
     </section>

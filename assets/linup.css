@@ -1,0 +1,493 @@
+/* ============================================================
+   Linup Webseite. Ein Blatt fuer alle Seiten unter linupapp.de.
+   ============================================================
+
+   WARUM ES DIESE DATEI GIBT
+   Jede der 117 Seiten hat ihr eigenes <style> im Kopf. Gewachsen ueber
+   Monate, erzeugt von sechs verschiedenen Skripten in scripts/gen-*.mjs.
+   Eine Farbaenderung war damit eine Aenderung an 117 Stellen.
+
+   Dieses Blatt wird auf jeder Seite NACH dem eingebauten <style> geladen.
+   Bei gleicher Gewichtung gewinnt das spaeter geladene Blatt. Damit greift
+   hier eine Zeile fuer die ganze Seite. Das eingebaute <style> bleibt
+   unangetastet und traegt weiter das Raster der jeweiligen Seite.
+
+   WOHER DAS AUSSEHEN KOMMT
+   Aus der App selbst: constants/theme.js (heller Grund, weisse Karten,
+   Apple-Schriftstufen) und aus den Store-Bildern in
+   PlayStore-Metadaten/de-DE/images/phoneScreenshots. Deren Ton ist
+   kraeftiges Schwarz auf hellem Grund, viel Luft, Haarlinien statt
+   Rahmen, graue und schwarze Pillen als Auszeichnung. Genau eine Farbe
+   bleibt uebrig: das Blau im Markenzeichen.
+
+   DIE ALTEN NAMEN BLEIBEN
+   --orange heisst weiter --orange, obwohl dort jetzt Schwarz steht.
+   Der Name steckt in 114 eingebauten Stylesheets. Ihn umzubenennen hiesse,
+   genau die 117 Dateien anzufassen, die dieses Blatt ueberfluessig macht.
+   Was ein Merkmal heute bedeutet, steht darum daneben.
+   ============================================================ */
+
+
+/* --- 1. Merkmale --------------------------------------------------- */
+/* :root:root statt :root. Gleiche Bedeutung, hoeheres Gewicht.
+   So gewinnt dieser Block auch dann, wenn das eingebaute <style>
+   einmal nach diesem Blatt landen sollte. */
+:root:root {
+  --bg: #F4F4F6;              /* Seitengrund, wie systemGroupedBackground */
+  --bg2: #FFFFFF;
+  --card: #FFFFFF;            /* Karten sind reines Weiss */
+  --border: rgba(0,0,0,0.11); /* Haarlinie */
+
+  --ink: #0B0B0C;             /* Schrift, kraeftiges Schwarz */
+  --ink-soft: #5E5E63;        /* Nebentext, 6,4:1 auf Weiss */
+
+  --orange: #0B0B0C;          /* frueher Marken-Orange, heute: Flaeche schwarz */
+  --orange-soft: #5E5E63;     /* frueher helles Orange, heute: leise Auszeichnung */
+  --good: #0B0B0C;            /* frueher Mint, heute: hervorgehoben schwarz */
+  --warn: #5E5E63;
+
+  --ring: #007AFF;            /* die einzige Farbe: der Ring im Zeichen */
+  --pille: #ECECEF;           /* grauer Pillengrund, wie in der App */
+  --schatten: 0 1px 2px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.05);
+
+  color-scheme: light;
+}
+
+
+/* --- 2. Grundlage -------------------------------------------------- */
+html { background: var(--bg); -webkit-text-size-adjust: 100%; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI",
+               Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.62;
+  letter-spacing: -0.011em;
+  -webkit-font-smoothing: antialiased;
+  padding: 56px 22px 72px;
+}
+
+::selection { background: #0B0B0C; color: #fff; }
+
+
+/* --- 3. Kopfbereich ------------------------------------------------ */
+/* Zeichen, Wortmarke, Haarlinie. Dieselbe Reihenfolge wie im App-Kopf. */
+.brandrow {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin: 0 0 30px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo { display: block; }
+.brandrow .logo { width: 34px; height: 34px; }
+
+.brand {
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  color: var(--ink);
+}
+/* Das "up" war orange. Die App setzt die Wortmarke einfarbig. */
+.brand .up { color: var(--ink); }
+
+.crumbs {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--ink-soft);
+  margin: 0 0 14px;
+}
+.crumbs a { color: var(--ink-soft); text-decoration: none; }
+.crumbs a:hover { color: var(--ink); text-decoration: underline; }
+
+
+/* --- 4. Titel und Text --------------------------------------------- */
+/* Die Store-Bilder setzen die Zeile ueber dem Titel gesperrt, grau und
+   in Versalien. Genau das macht .kicker jetzt, statt orange zu leuchten. */
+.kicker {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0 0 12px;
+}
+
+h1 {
+  font-size: clamp(30px, 5.4vw, 44px);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  color: var(--ink);
+  margin: 0 0 16px;
+}
+
+h2 {
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.024em;
+  text-transform: none;   /* wissen/ setzte h2 in Versalien, dafuer gibt es .kicker */
+  color: var(--ink);
+  margin: 46px 0 14px;
+}
+
+h3 { color: var(--ink); letter-spacing: -0.015em; }
+
+.lead {
+  font-size: 17.5px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  max-width: 60ch;
+  margin-bottom: 16px;
+}
+.lead strong { color: var(--ink); font-weight: 600; }
+
+p { font-size: 16px; color: var(--ink-soft); margin-bottom: 15px; }
+p strong { color: var(--ink); font-weight: 600; }
+p a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+
+.meta {
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  opacity: 1;
+  margin-bottom: 34px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--border);
+}
+
+
+/* --- 5. Karten ----------------------------------------------------- */
+/* Weiss auf hellgrauem Grund, Haarlinie, sehr flacher Schatten.
+   Kein Rahmen, der lauter ist als sein Inhalt. */
+.tldr,
+.methodik,
+.card,
+.feat,
+.faq .item,
+.faqblock .item,
+.why li,
+.food,
+.calc,
+.item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: var(--schatten);
+}
+
+.tldr, .methodik { padding: 24px 26px; }
+.tldr h2 { margin: 0 0 14px; font-size: 15px; letter-spacing: 0.02em; }
+.tldr li { color: var(--ink); font-size: 15.5px; }
+/* Der Pfeil war orange. Grau, damit die Zeile selbst vorne steht. */
+.tldr li::before,
+ul.diff li::before { color: var(--ink-soft); font-weight: 700; }
+
+.methodik p { color: var(--ink-soft); }
+.methodik h2 { margin-top: 0; font-size: 15px; }
+
+.grid { gap: 16px; }
+
+/* Eine Ueberschrift, die eine Karte eroeffnet, braucht keinen Abstand nach
+   oben. Ohne das schoebe der Abschnittsabstand von h2 die Karte auf.
+   Und der letzte Absatz einer Karte laesst sonst unten Leerraum stehen. */
+.card > :first-child,
+.tldr > :first-child,
+.methodik > :first-child,
+.feat > :first-child,
+.item > :first-child,
+.faq .item > :first-child,
+.faqblock .item > :first-child,
+.food > :first-child,
+.calc > :first-child { margin-top: 0; }
+
+.card > :last-child,
+.tldr > :last-child,
+.methodik > :last-child,
+.item > :last-child,
+.faq .item > :last-child,
+.faqblock .item > :last-child { margin-bottom: 0; }
+
+.card { padding: 20px; transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease; }
+.card h2, .card h3 { color: var(--ink); margin-top: 0; }
+.card h2 { font-size: 17px; }
+.card p { color: var(--ink-soft); }
+.card:hover {
+  border-color: rgba(0,0,0,0.32);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05), 0 14px 34px rgba(0,0,0,0.09);
+  transform: translateY(-2px);
+}
+.card .go { color: var(--ink); font-weight: 700; }
+
+/* Die fetten Einstiegswoerter in den Merkmal-Kaechelchen. Schwarz, nicht grau,
+   weil sie die Zeile anfuehren. */
+.feat b, .why li b, .food b { color: var(--ink); }
+/* .food span richtet rechtsbuendig aus, damit die kcal-Zahl steht. Die
+   Beschreibung ist auch ein span und rutschte deshalb mit nach rechts. */
+.food .meta2 { text-align: left; }
+.feat, .why li, .faq .item, .faqblock .item { padding: 16px 18px; }
+.feat { color: var(--ink-soft); }
+.faq p, .faqblock p, .why li { color: var(--ink-soft); }
+.faq h3, .faqblock h3, .item h2 { color: var(--ink); }
+.why li a { color: var(--ink); font-weight: 600; }
+.why h2, .compare h2 {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.19em;
+  text-transform: uppercase; color: var(--ink-soft);
+}
+.compare li { color: var(--ink-soft); }
+.compare li::before { color: var(--ink); }
+
+
+/* --- 6. Tabellen --------------------------------------------------- */
+.tablewrap, .tblwrap {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--card);
+  box-shadow: var(--schatten);
+}
+
+table { font-variant-numeric: tabular-nums; }
+th, td { border-bottom: 1px solid var(--border); padding: 13px 15px; }
+thead th {
+  background: var(--pille);
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+td { color: var(--ink-soft); }
+td.name, tbody td:first-child { color: var(--ink); font-weight: 600; }
+caption { color: var(--ink-soft); }
+
+
+/* --- 7. Pillen und Marker ------------------------------------------ */
+/* Die App zeichnet mit Pillen aus, nicht mit Farbe: grau heisst normal,
+   schwarz gefuellt heisst bemerkenswert. Dieselbe Sprache hier. */
+/* .best steht mal an einem <span>, mal an einer ganzen <td>. Deshalb nur
+   die Schrift gemeinsam, die Flaeche getrennt: die Zelle bekommt einen
+   grauen Grund, das Wort im Fliesstext eine Pille. */
+.best { color: var(--ink); font-weight: 800; }
+td.best { background: var(--pille); }
+span.best { background: var(--pille); border-radius: 100px; padding: 2px 9px; }
+
+.tag, .badge, .pill {
+  background: var(--pille);
+  color: var(--ink);
+  border: none;
+  border-radius: 100px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 3px 10px;
+}
+.tag.zero { background: var(--ink); color: #FFFFFF; }
+/* Auf der schwarzen Schaltflaeche waere eine schwarze Pille unsichtbar. */
+.btn-primary .badge { background: rgba(255,255,255,0.22); color: #FFFFFF; }
+.pill { display: inline-block; font-size: 11px; text-transform: uppercase; }
+.val { color: var(--ink); font-weight: 700; }
+
+
+/* --- 8. Schaltflaechen --------------------------------------------- */
+/* Eine gefuellte schwarze Flaeche, sonst nichts. Zweitrangiges bleibt
+   weiss mit Haarlinie, wie die Pille unter den Store-Bildern. */
+.cta, .btn-primary, .store-btn, .primary, .app-strip a {
+  background: var(--ink);
+  color: #FFFFFF;
+  border: 1px solid var(--ink);
+  border-radius: 100px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.14);
+  transition: transform .14s ease, box-shadow .14s ease;
+}
+.cta { margin-top: 44px; padding: 17px 24px; }
+.cta:hover, .btn-primary:hover, .store-btn:hover, .primary:hover, .app-strip a:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.19);
+}
+.cta:active, .btn-primary:active, .store-btn:active, .primary:active { transform: scale(0.985); }
+
+.btn-secondary, .secondary, .btn-disabled {
+  background: var(--card);
+  color: var(--ink);
+  border: 1px solid rgba(0,0,0,0.20);
+  border-radius: 100px;
+  font-weight: 700;
+}
+.btn-disabled { color: var(--ink-soft); border-color: var(--border); }
+
+/* Weiterfuehrende Verweise: weisse Pille mit Haarlinie.
+   :not(.btn), sonst wuerde diese Regel die Store-Schaltflaechen auf der
+   Startseite und auf 404 flach machen. Die liegen naemlich auch in .links. */
+.related a, .links a:not(.btn), .quick a, .deep a {
+  background: var(--card);
+  color: var(--ink);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  font-weight: 600;
+  padding: 9px 15px;
+  text-decoration: none;
+  transition: border-color .16s ease;
+}
+.related a:hover, .links a:not(.btn):hover, .quick a:hover {
+  border-color: rgba(0,0,0,0.34);
+}
+.deep, .deep a { color: var(--ink); }
+.deep a { background: none; border: none; padding: 0; text-decoration: underline; text-underline-offset: 3px; }
+
+/* Der Werbestreifen in den Uebersichten hatte einen orangen Verlauf. */
+.app-strip {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: var(--schatten);
+  padding: 26px 24px;
+  margin: 34px 0 8px;
+}
+.app-strip p { color: var(--ink-soft); font-size: 15px; }
+.app-strip a { display: inline-block; padding: 13px 24px; font-size: 15px; }
+
+.code { color: var(--ink); letter-spacing: -0.05em; }
+
+
+/* --- 9. Fussbereich ------------------------------------------------ */
+footer {
+  margin-top: 56px;
+  padding-top: 26px;
+  border-top: 1px solid var(--border);
+  color: var(--ink-soft);
+  font-size: 13px;
+  opacity: 1;   /* impressum/ blendete den Fuss auf 70 Prozent ab */
+}
+
+/* Kleingedrucktes (Quellenhinweis, Copyright) war im dunklen Entwurf
+   abgeblendet. Auf hellem Grund faellt es damit unter die Lesbarkeitsgrenze:
+   3,8:1 statt der noetigen 4,5:1. Die Abblendung steht als style-Angabe
+   direkt im Markup von 64 Seiten. Deshalb hier einmal mit !important,
+   statt 64 Dateien anzufassen. */
+p[style*="opacity"] { opacity: 1 !important; }
+footer a { color: var(--ink-soft); text-decoration: underline; text-underline-offset: 3px; }
+footer a:hover { color: var(--ink); }
+
+
+/* --- 10. Startseite ------------------------------------------------ */
+/* Das eine laute Element der ganzen Seite: das "up" steht offen, nur als
+   Kontur. Genau der Kniff, mit dem die Store-Bilder ihre zweite Titelzeile
+   setzen. Er traegt nur in Grosse: die Kontur ist rund 3 Prozent der
+   Schriftgroesse breit, darunter laufen die Punzen von "u" und "p" zu.
+   Deshalb steht die Wortmarke hier deutlich groesser als sonst. */
+h1:has(> .brandmark) {
+  font-size: clamp(46px, 8.5vw, 66px);
+  letter-spacing: -0.045em;
+  margin-bottom: 14px;
+}
+.wrap > h1 .brandmark {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--ink);
+}
+@supports not (-webkit-text-stroke: 2px black) {
+  .wrap > h1 .brandmark { color: var(--ink); -webkit-text-stroke: 0; }
+}
+
+/* Das Zeichen ordnet sich der Wortmarke unter, es fuehrt sie nicht an. */
+.wrap > .logo { width: 64px; height: 64px; margin-bottom: 20px; }
+
+.bio { color: var(--ink-soft); font-size: 16.5px; max-width: 38ch; }
+
+.links { gap: 12px; }
+.why { margin-top: 42px; }
+.why ul { gap: 12px; }
+
+details.impressum {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: var(--schatten);
+}
+details.impressum summary { color: var(--ink); }
+details.impressum summary::after,
+details.impressum[open] summary::after { color: var(--ink-soft); }
+.impressum-body { color: var(--ink-soft); }
+.impressum-body strong { color: var(--ink); }
+.sec { color: var(--ink-soft); }
+.back {
+  color: var(--ink);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  padding: 9px 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.back:hover { border-color: rgba(0,0,0,0.34); }
+.card strong { color: var(--ink); }
+.card a { color: var(--ink); }
+
+
+/* --- 10b. Rueckleitungs-Seiten ------------------------------------- */
+/* meta-callback/ und tiktok-callback/ sind die Landepunkte nach einer
+   Anmeldung bei Instagram beziehungsweise TikTok. Sie schreiben ihre
+   Farben direkt hin, nicht ueber Merkmale, und blieben deshalb als
+   einzige Seiten dunkel und orange stehen. */
+.box {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: var(--schatten);
+  padding: 30px;
+}
+.box h1 { color: var(--ink); }
+.box p { color: var(--ink-soft); }
+.box code {
+  background: var(--pille);
+  border: 1px solid var(--border);
+  color: var(--ink);
+  border-radius: 12px;
+  font-variant-numeric: tabular-nums;
+}
+/* Die einzige weitere Farbe der Seite, und nur hier: eine Fehlermeldung
+   darf nicht wie normaler Text aussehen. Der Ton ist das systemRed der
+   App, abgedunkelt bis er auf Weiss mit 5,4:1 lesbar ist. */
+.err { color: #D70015; font-weight: 600; }
+
+
+/* --- 11. Bedienbarkeit --------------------------------------------- */
+a:focus-visible, summary:focus-visible, details:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    transition-duration: .001ms !important;
+  }
+  .card:hover, .cta:hover, .btn-primary:hover, .store-btn:hover { transform: none; }
+}
+
+
+/* --- 12. Handy ------------------------------------------------------ */
+/* Nichts darf seitlich herauslaufen. Tabellen scrollen in ihrem Kasten,
+   lange Woerter brechen um. */
+@media (max-width: 640px) {
+  body { padding: 34px 18px 56px; }
+  h1 { font-size: clamp(27px, 8.4vw, 36px); }
+  h2 { font-size: 19px; margin-top: 38px; }
+  .brandrow { margin-bottom: 24px; padding-bottom: 18px; }
+  .tldr, .methodik { padding: 20px; }
+  .app-strip { padding: 22px 18px; }
+  .cta { margin-top: 34px; }
+  .related, .links, .quick { gap: 10px; }
+  .related a, .links a, .quick a { padding: 8px 13px; font-size: 13px; }
+  .wrap > .logo { width: 56px; height: 56px; margin-bottom: 16px; }
+  .wrap > h1 .brandmark { -webkit-text-stroke-width: 1.5px; }
+}
+
+.tablewrap, .tblwrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+h1, h2, h3, p, .lead, .bio, td, th { overflow-wrap: break-word; }
+img, svg, table { max-width: 100%; }
