@@ -2,12 +2,12 @@
   "_note": "Steuert die Update-Sperre in der App. latestVersion hochsetzen, sobald eine neue Version im Store WIRKLICH LIVE ist -> jede aeltere Version bekommt die Vollbild-Meldung, die sich NICHT wegklicken laesst. Das ist Absicht und gilt fuer jede Veroeffentlichung. WICHTIG: erst hochsetzen, wenn die Fassung fuer alle ausgerollt ist. Setzt man die Nummer zu frueh, steht der Nutzer vor einer Wand und der Store bietet ihm die Version noch gar nicht an - er kommt dann nicht mehr in die App. Einen weichen, wegklickbaren Hinweis gibt es seit 16.09.2026 nicht mehr; der frueher hier moegliche Schalter latestIsSoft wird ignoriert. minSupportedVersion nur bei kaputten Versionen hochsetzen. Fail-open: laedt die Datei nicht, wird nie gesperrt. Jede Plattform braucht ihren EIGENEN Block; ohne android-Block wird auf Android nichts gesperrt (kein Rueckfall auf ios). Titel und Text stehen bewusst NICHT hier: die App hat sie in 16 Sprachen (locales/*.json, Namensraum lib_appconfig). Ein Block newVersion/hardUpdate hier wuerde sie ueberschreiben und allen Nutzern Deutsch zeigen.",
   "ios": {
     "minSupportedVersion": "1.0.0",
-    "latestVersion": "1.1.6",
+    "latestVersion": "1.1.7",
     "storeUrl": "https://apps.apple.com/de/app/id6780292694"
   },
   "android": {
     "minSupportedVersion": "1.0.0",
-    "latestVersion": "1.1.6",
+    "latestVersion": "1.1.7",
     "storeUrl": "https://play.google.com/store/apps/details?id=de.linup.app"
   }
 }
