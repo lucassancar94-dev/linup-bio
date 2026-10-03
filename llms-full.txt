@@ -76,12 +76,14 @@ Foto/Barcode/Text, Tagesbilanz und Verlauf ohne teures Monats-Abo.
 
 Quelle: https://linupapp.de/wissen/protein-pro-euro/
 
-Eigener Vergleich von 13 gängigen Lebensmitteln nach Gramm Protein pro Euro. Am günstigsten
-pro Euro sind trockene Hülsenfrüchte und Haferflocken (rote Linsen ~93 g/€, Haferflocken
-~85 g/€, Kichererbsen ~80 g/€ – jeweils Trockengewicht). Bei fertig essbaren Lebensmitteln
-führen Harzer Käse (~67 g/€, ~0,30 € für 20 g Protein) und Magerquark (~63 g/€, ~0,32 €).
-Fleisch liefert viel Protein, kostet pro Euro aber 2–3× so viel wie Quark. Whey-Pulver
-(~40 g/€) ist solide, aber kein Preiswunder – Magerquark ist günstiger.
+Eigener Vergleich von 13 gängigen Lebensmitteln nach Gramm Protein pro Euro. Neun Zeilen mit
+Preis und Nährwerten von den Produktseiten auf aldi-sued.de (geprüft am 03.10.2026). Tofu,
+Thunfisch in Wasser, Haferflocken und trockene Kichererbsen führt der Onlineshop nicht: deren
+Preise sind Richtwerte, die Eiweißwerte stammen von Taifun (Tofu) bzw. USDA FoodData Central. Am günstigsten pro Euro sind trockene Hülsenfrüchte und Haferflocken
+(rote Linsen und Kichererbsen ~86 g/€, Haferflocken ~84 g/€, jeweils Trockengewicht). Bei
+fertig essbaren Lebensmitteln führt Magerquark (~51 g/€, 0,39 € für 20 g Protein), dann Skyr
+(~43 g/€). Harzer Käse liegt bei ~30 g/€. Hähnchenbrust kostet für 20 g Protein knapp dreimal
+so viel wie Quark. Whey-Pulver kommt selbst im Aktionspreis nur auf ~27 g/€.
 
 ---
 
