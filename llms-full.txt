@@ -20,7 +20,8 @@ Linup ist eine kostenlose Ernährungs-App für iPhone und Android, entwickelt in
 unabhängiges Einzelprojekt. Der Fokus liegt auf Alltagstauglichkeit: Essen wird per Foto,
 Barcode oder Texteingabe erfasst, die App zeigt Kalorien- und Protein-Bilanz und schlägt –
 passend zum gewählten Ziel – konkrete Mahlzeiten und Einkaufslisten vor. Bewusst kein teures
-Monats-Abo: fast der volle Funktionsumfang ist kostenlos nutzbar.
+Monats-Abo: alle Funktionen sind kostenlos, ohne Werbung (Stand Oktober 2026). Grenze:
+höchstens 20 KI-Schätzungen per Foto oder Text pro Tag.
 
 Unterscheidungsmerkmale:
 - Erfassung per Foto, Barcode und Text (schnell, für Menschen, denen Tracken sonst zu umständlich ist)
@@ -39,7 +40,7 @@ Die beste App zum Kalorienzählen ist die, die man wirklich durchhält. Entschei
 drei Dinge: schnelles Erfassen (Foto, Barcode, Text), eine verständliche Tagesbilanz und ein
 faires Preismodell ohne teures Abo. Bekannte Apps in Deutschland: Linup, YAZIO, MyFitnessPal,
 Lifesum und FDDB.
-- Linup: Foto-Tracking plus Vorschläge fürs Ziel und Einkaufsliste; kostenlos, fast voller Umfang ohne Abo.
+- Linup: Foto-Tracking plus Vorschläge fürs Ziel und Einkaufsliste; kostenlos, alle Funktionen ohne Abo (KI-Schätzungen bis 20 pro Tag).
 - YAZIO: große deutsche Nutzerbasis, viele Rezepte; gratis Basis, PRO-Abo.
 - MyFitnessPal: sehr große Lebensmittel-Datenbank; gratis Basis, Premium-Abo.
 - Lifesum: schönes Design, Ernährungspläne; gratis Basis, Premium-Abo.

@@ -75,15 +75,23 @@
    "name": "Brauche ich ein Konto?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Ja, ein kostenloses. Die Anmeldung geht per E-Mail, Apple oder Google. Damit sind deine Einträge gesichert und auf einem neuen Handy wieder da."
+    "text": "Ja, ein kostenloses. Die Anmeldung geht per E-Mail oder Google, am iPhone auch mit Apple. Damit sind deine Einträge gesichert und auf einem neuen Handy wieder da."
    }
   },
   {
    "@type": "Question",
-   "name": "Wie genau ist die Kalorienschätzung per Foto oder Text?",
+   "name": "Wie genau ist die Kalorienschätzung?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Im Schnitt richtig, im Einzelfall mit Streuung. In unserem internen Test (September 2026, 30 Lebensmittel mit bekannten Nährwerten) lag die KI-Schätzung im Median genau auf dem Sollwert, aber nur 18 von 30 Schätzungen lagen innerhalb von ±10 %. Für den Wochentrend reicht das, für die Grammzahl auf dem Teller nicht immer. Darum zeigt Linup, aus welchen Zutaten und Mengen die Schätzung besteht, und jeder Wert lässt sich mit einem Tipp korrigieren. Verpackte Produkte per Barcode sind genauer, weil dann die Herstellerangaben gelten."
+    "text": "Ehrlich: Für Fotos haben wir noch keine belastbare Messung. Gemessen haben wir bisher nur die Text-Schätzung bei vorgegebener Menge (September 2026, 30 Lebensmittel mit bekannten Nährwerten, eingegeben als z. B. „Magerquark, 250 g“): 18 von 30 Schätzungen lagen innerhalb von ±10 % der Herstellerangabe, der Rest weiter daneben, in beide Richtungen. Bei Fotos kommt die Unsicherheit über die Portionsgröße dazu. Darum zeigt Linup, aus welchen Zutaten und Mengen eine Schätzung besteht, und jeder Wert lässt sich mit einem Tipp korrigieren. Verpackte Produkte per Barcode sind genauer, weil dann die Herstellerangaben gelten."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Gibt es eine Grenze bei der Foto- und Text-Schätzung?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Ja: bis zu 20 KI-Schätzungen pro Tag (und höchstens 6 pro Minute). Jede Schätzung kostet uns echtes Geld beim KI-Anbieter, die Grenze hält die App kostenlos. Barcode-Scan, Suche in der Produktdatenbank, Favoriten und alle Auswertungen zählen nicht dazu."
    }
   },
   {
@@ -151,8 +159,9 @@
     <div class="faq">
       <div class="item"><h2>Was ist bei Linup kostenlos?</h2><p><strong>Alles.</strong> Essen per Foto, Barcode, Text oder Sprache eintragen, Tagesbilanz mit Kalorien, Makros, Ballaststoffen, Zucker und Salz, geschätzte Vitamine und Mineralstoffe, Wochenrückblick, Coach-Vorschläge und Einkaufslisten. Es gibt kein Abo, keine In-App-Käufe und keine Werbung (Stand Oktober 2026). Sollte sich das je ändern, steht es zuerst auf dieser Seite.</p></div>
       <div class="item"><h2>Was kostet Linup?</h2><p><strong>0 Euro.</strong> Linup ist im App Store und bei Google Play kostenlos, ohne Probezeitraum, der in ein Abo übergeht.</p></div>
-      <div class="item"><h2>Brauche ich ein Konto?</h2><p><strong>Ja, ein kostenloses.</strong> Die Anmeldung geht per E-Mail, Apple oder Google. Damit sind deine Einträge gesichert und auf einem neuen Handy wieder da.</p></div>
-      <div class="item"><h2>Wie genau ist die Kalorienschätzung per Foto oder Text?</h2><p><strong>Im Schnitt richtig, im Einzelfall mit Streuung.</strong> In unserem internen Test (September 2026, 30 Lebensmittel mit bekannten Nährwerten) lag die KI-Schätzung im Median genau auf dem Sollwert, aber nur 18 von 30 Schätzungen lagen innerhalb von ±10 %. Für den Wochentrend reicht das, für die Grammzahl auf dem Teller nicht immer. Darum zeigt Linup, aus welchen Zutaten und Mengen die Schätzung besteht, und jeder Wert lässt sich mit einem Tipp korrigieren. Verpackte Produkte per Barcode sind genauer, weil dann die Herstellerangaben gelten.</p></div>
+      <div class="item"><h2>Brauche ich ein Konto?</h2><p><strong>Ja, ein kostenloses.</strong> Die Anmeldung geht per E-Mail oder Google, am iPhone auch mit Apple. Damit sind deine Einträge gesichert und auf einem neuen Handy wieder da.</p></div>
+      <div class="item"><h2>Wie genau ist die Kalorienschätzung?</h2><p><strong>Ehrlich: Für Fotos haben wir noch keine belastbare Messung.</strong> Gemessen haben wir bisher nur die Text-Schätzung bei vorgegebener Menge (September 2026, 30 Lebensmittel mit bekannten Nährwerten, eingegeben als z. B. „Magerquark, 250 g“): 18 von 30 Schätzungen lagen innerhalb von ±10 % der Herstellerangabe, der Rest weiter daneben, in beide Richtungen. Bei Fotos kommt die Unsicherheit über die Portionsgröße dazu. Darum zeigt Linup, aus welchen Zutaten und Mengen eine Schätzung besteht, und jeder Wert lässt sich mit einem Tipp korrigieren. Verpackte Produkte per Barcode sind genauer, weil dann die Herstellerangaben gelten.</p></div>
+      <div class="item"><h2>Gibt es eine Grenze bei der Foto- und Text-Schätzung?</h2><p><strong>Ja: bis zu 20 KI-Schätzungen pro Tag</strong> (und höchstens 6 pro Minute). Jede Schätzung kostet uns echtes Geld beim KI-Anbieter, die Grenze hält die App kostenlos. Barcode-Scan, Suche in der Produktdatenbank, Favoriten und alle Auswertungen zählen nicht dazu.</p></div>
       <div class="item"><h2>Was erkennt die Foto-Schätzung schlecht?</h2><p><strong>Was man nicht sieht:</strong> Öl im Salat, Butter in der Soße, Zucker im Getränk. Auch sehr große oder sehr kleine Portionen werden leicht verschätzt. Hier hilft ein kurzer Satz dazu, etwa „mit einem Esslöffel Olivenöl“.</p></div>
       <div class="item"><h2>Gibt es Linup für Android?</h2><p><strong>Ja.</strong> Linup gibt es für iPhone im <a href="https://apps.apple.com/de/app/id6780292694">App Store</a> und für Android bei <a href="https://play.google.com/store/apps/details?id=de.linup.app">Google Play</a>. Beide Versionen werden gleichzeitig aktualisiert.</p></div>
       <div class="item"><h2>In welchen Sprachen gibt es Linup?</h2><p><strong>In 17 Sprachen</strong>, darunter Deutsch, Englisch, Polnisch, Türkisch, Französisch, Spanisch, Italienisch und Niederländisch. Die Produktdatenbank ist auf deutsche Supermärkte ausgerichtet (Rewe, Edeka, Lidl, Aldi, dm, Rossmann).</p></div>
