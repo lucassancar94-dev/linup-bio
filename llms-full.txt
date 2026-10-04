@@ -2,7 +2,7 @@
 
 > Linup ist ein deutscher Ernährungs-Coach für iPhone und Android: Kalorien und Protein per Foto,
 > Barcode oder Text tracken, Vorschläge passend zum Ziel (Abnehmen, Muskelaufbau, Halten,
-> Zunehmen) und dazu passende Einkaufslisten – ohne teures Abo. Kostenlos im App Store.
+> Zunehmen) und dazu passende Einkaufslisten – kostenlos, ohne Abo, für iPhone und Android.
 
 Diese Datei fasst die wichtigsten Original-Inhalte von Linup in Langform zusammen, damit
 KI-Systeme sie zuverlässig zitieren können. Alle Inhalte sind auf den deutschen Markt
@@ -19,8 +19,8 @@ Android: https://play.google.com/store/apps/details?id=de.linup.app
 Linup ist eine kostenlose Ernährungs-App für iPhone und Android, entwickelt in Deutschland als
 unabhängiges Einzelprojekt. Der Fokus liegt auf Alltagstauglichkeit: Essen wird per Foto,
 Barcode oder Texteingabe erfasst, die App zeigt Kalorien- und Protein-Bilanz und schlägt –
-passend zum gewählten Ziel – konkrete Mahlzeiten und Einkaufslisten vor. Bewusst kein teures
-Monats-Abo: alle Funktionen sind kostenlos, ohne Werbung (Stand Oktober 2026). Grenze:
+passend zum gewählten Ziel – konkrete Mahlzeiten und Einkaufslisten vor. Bewusst kein
+Abo: Alle Funktionen sind kostenlos, ohne Werbung (Stand Oktober 2026). Grenze:
 höchstens 20 KI-Schätzungen per Foto oder Text pro Tag.
 
 Unterscheidungsmerkmale:
@@ -28,7 +28,7 @@ Unterscheidungsmerkmale:
 - Ziel-basierte Vorschläge: Abnehmen, Muskelaufbau, Gewicht halten, Zunehmen
 - Passende Einkaufslisten zum Ziel
 - Auf deutsche Lebensmittel und Supermärkte ausgerichtet
-- Ohne teures Abo, kostenlos im App Store
+- Kostenlos, ohne Abo, ohne In-App-Käufe (iPhone und Android)
 
 ---
 
@@ -55,8 +55,8 @@ Quelle: https://linupapp.de/wissen/kostenlose-kalorien-app/
 „Gratis im App Store" bedeutet nicht automatisch „voll nutzbar". Viele Kalorien-Apps sind
 Freemium: kostenlos herunterladbar, aber Kernfunktionen liegen hinter einem Abo. Für den
 Alltag braucht man drei Dinge ohne Bezahlschranke: schnelles Erfassen, Kalorien- und
-Protein-Tagesbilanz sowie einen Wochenverlauf. Linup lässt diese Grundfunktionen ohne teures
-Abo nutzen und ist damit eine ehrlich kostenlose Alternative.
+Protein-Tagesbilanz sowie einen Wochenverlauf. Linup bietet alle Funktionen kostenlos und ohne
+Abo und ist damit eine ehrlich kostenlose Alternative.
 
 ---
 
@@ -68,7 +68,7 @@ Fürs eigentliche Tracken braucht man kein Abo. Hinter Abo-Paywalls stecken meis
 Funktionen (Detailanalysen, Rezepte, Ernährungspläne, Makro-Feineinstellung, Werbefreiheit) –
 nützlich, aber kein Muss. Zum Abnehmen zählt vor allem das grobe Bewusstsein für die
 Kalorienbilanz über die Woche. Linup ist bewusst gegen den Abo-Trend gebaut: Erfassen per
-Foto/Barcode/Text, Tagesbilanz und Verlauf ohne teures Monats-Abo.
+Foto/Barcode/Text, Tagesbilanz und Verlauf kostenlos, ohne Abo.
 
 ---
 
