@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="https://linupapp.de/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://linupapp.de/apple-touch-icon.png">
+<meta name="theme-color" content="#F2F2F7">
+<meta name="robots" content="noindex">
+<title>Linup 💬</title>
+<style>
+  :root{--bg:#F2F2F7;--card:#FFFFFF;--ink:#000;--soft:rgba(60,60,67,0.60);--line:rgba(60,60,67,0.18);--muted:#E9E9EF;}
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.4;padding:28px 16px 48px;}
+  .wrap{max-width:520px;margin:0 auto;}
+  .kopf{display:flex;align-items:center;gap:10px;margin-bottom:18px;}
+  .kopf img{width:36px;height:36px;border-radius:9px;}
+  .kopf b{font-size:18px;}
+  h1{font-size:28px;font-weight:800;letter-spacing:-0.5px;line-height:1.15;margin-bottom:6px;}
+  .lead{color:var(--soft);font-size:15px;margin-bottom:22px;}
+  .frage{background:var(--card);border-radius:16px;padding:18px 16px;margin-bottom:12px;}
+  .frage h2{font-size:17px;font-weight:700;margin-bottom:10px;}
+  .frage .hinweis{margin-top:-6px;}
+  .frage .hinweis{font-size:13px;color:var(--soft);margin-bottom:12px;}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:10px 14px;font-size:15px;font-weight:500;color:var(--ink);cursor:pointer;font-family:inherit;}
+  .chip[aria-pressed="true"]{background:#000;color:#fff;border-color:#000;}
+  .skala{display:grid;grid-template-columns:repeat(11,1fr);gap:4px;}
+  .skala .chip{padding:10px 0;text-align:center;border-radius:10px;font-variant-numeric:tabular-nums;}
+  .skala-text{display:flex;justify-content:space-between;font-size:12px;color:var(--soft);margin-top:6px;}
+  textarea{width:100%;min-height:84px;border:1px solid var(--line);border-radius:12px;padding:12px;font:inherit;font-size:15px;resize:vertical;background:#fff;}
+  .senden{width:100%;margin-top:8px;padding:16px;border:0;border-radius:14px;background:#000;color:#fff;font:inherit;font-size:17px;font-weight:700;cursor:pointer;}
+  .senden:disabled{background:#C7C7CC;cursor:default;}
+  .fehler{color:#C4161C;font-size:14px;margin-top:10px;text-align:center;min-height:20px;}
+  .danke{display:none;text-align:center;padding:60px 8px;}
+  .danke h1{margin-bottom:10px;}
+  .danke p{color:var(--soft);font-size:16px;}
+  .bewerten{margin-top:28px;background:#fff;border-radius:16px;padding:18px 16px;text-align:start;}
+  .bewerten p{font-size:15px;color:var(--ink);margin-bottom:6px;}
+  .bewerten .senden{display:block;text-align:center;text-decoration:none;margin-top:10px;}
+  .extra{margin-top:12px;padding:10px 12px;border-radius:10px;background:var(--muted);font-size:14px;color:var(--ink);}
+  .fuss{margin-top:22px;font-size:12.5px;color:var(--soft);text-align:center;}
+  .fuss a{color:var(--soft);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="kopf"><img src="/apple-touch-icon.png" alt=""><b>Linup</b></div>
+
+  <form id="form" novalidate>
+    <h1><span data-t="titel"></span> 💬</h1>
+    <p class="lead"><span data-t="lead"></span> 🙌</p>
+
+    <section class="frage" data-feld="nutzung" data-art="eins">
+      <h2>📅 <span data-t="f_nutzung"></span></h2>
+      <div class="chips">
+        <button type="button" class="chip" data-wert="taeglich">🔥 <span data-t="n_taeglich"></span></button>
+        <button type="button" class="chip" data-wert="woche">📆 <span data-t="n_woche"></span></button>
+        <button type="button" class="chip" data-wert="selten">🐢 <span data-t="n_selten"></span></button>
+        <button type="button" class="chip" data-wert="nicht_mehr">💤 <span data-t="n_nicht_mehr"></span></button>
+      </div>
+    </section>
+
+    <section class="frage" data-feld="hindernis" data-art="mehr">
+      <h2>🤔 <span data-t="f_hindernis"></span></h2>
+      <p class="hinweis" data-t="mehrere"></p>
+      <div class="chips">
+        <button type="button" class="chip" data-wert="dauert">⏳ <span data-t="h_dauert"></span></button>
+        <button type="button" class="chip" data-wert="werte_falsch">❌ <span data-t="h_werte_falsch"></span></button>
+        <button type="button" class="chip" data-wert="vergessen">🙈 <span data-t="h_vergessen"></span></button>
+        <button type="button" class="chip" data-wert="ziel_passt_nicht">🎯 <span data-t="h_ziel"></span></button>
+        <button type="button" class="chip" data-wert="keine_motivation">😴 <span data-t="h_motivation"></span></button>
+        <button type="button" class="chip" data-wert="nichts">👍 <span data-t="h_nichts"></span></button>
+      </div>
+    </section>
+
+    <section class="frage" data-feld="vorher" data-art="mehr">
+      <h2>📱 <span data-t="f_vorher"></span></h2>
+      <p class="hinweis" data-t="mehrere"></p>
+      <div class="chips">
+        <button type="button" class="chip" data-wert="yazio">🥗 Yazio</button>
+        <button type="button" class="chip" data-wert="myfitnesspal">💪 MyFitnessPal</button>
+        <button type="button" class="chip" data-wert="calai">📸 Cal AI</button>
+        <button type="button" class="chip" data-wert="fddb">📊 FDDB</button>
+        <button type="button" class="chip" data-wert="loseit">⚖️ Lose It!</button>
+        <button type="button" class="chip" data-wert="andere">📲 <span data-t="v_andere"></span></button>
+        <button type="button" class="chip" data-wert="keine">🆕 <span data-t="v_keine"></span></button>
+      </div>
+    </section>
+
+    <section class="frage" data-feld="fehlt" data-art="drei">
+      <h2>✨ <span data-t="f_fehlt"></span></h2>
+      <p class="hinweis" data-t="bis3"></p>
+      <div class="chips">
+        <button type="button" class="chip" data-wert="fasten">⏰ <span data-t="x_fasten"></span></button>
+        <button type="button" class="chip" data-wert="lebensmittel">🛒 <span data-t="x_lebensmittel"></span></button>
+        <button type="button" class="chip" data-wert="rezepte">🍳 <span data-t="x_rezepte"></span></button>
+        <button type="button" class="chip" data-wert="abends">🌙 <span data-t="x_abends"></span></button>
+        <button type="button" class="chip" data-wert="zunehmen">🏋️ <span data-t="x_zunehmen"></span></button>
+        <button type="button" class="chip" data-wert="makros">🥩 <span data-t="x_makros"></span></button>
+        <button type="button" class="chip" data-wert="fortschritt">📈 <span data-t="x_fortschritt"></span></button>
+        <button type="button" class="chip" data-wert="foto">🔍 <span data-t="x_foto"></span></button>
+      </div>
+      <p class="extra"><span data-t="extra"></span> 💡 <b data-t="f_wunsch"></b></p>
+    </section>
+
+    <section class="frage" data-feld="empfehlung" data-art="eins">
+      <h2>⭐ <span data-t="f_empfehlung"></span></h2>
+      <div class="chips skala" id="skala" dir="ltr"></div>
+      <div class="skala-text" dir="ltr"><span data-t="skala_min"></span><span data-t="skala_max"></span></div>
+    </section>
+
+    <section class="frage">
+      <h2>💡 <span data-t="f_wunsch"></span></h2>
+      <p class="hinweis" data-t="freiwillig"></p>
+      <textarea id="text" maxlength="800"></textarea>
+    </section>
+
+    <button type="submit" class="senden" id="senden" disabled data-t="senden"></button>
+    <p class="fehler" id="fehler" role="alert"></p>
+  </form>
+
+  <div class="danke" id="danke">
+    <h1><span data-t="danke"></span> ❤️</h1>
+    <p><span data-t="angekommen"></span> 🍀</p>
+    <div class="bewerten">
+      <p><b><span data-t="bitte_titel"></span> 🙏</b><br><span data-t="bitte_text"></span> ⭐</p>
+      <a class="senden" id="store-ios" data-ziel="ios" href="https://apps.apple.com/app/id6780292694?action=write-review">⭐ <span data-t="store_ios"></span></a>
+      <a class="senden" id="store-android" data-ziel="android" href="https://play.google.com/store/apps/details?id=de.linup.app">⭐ <span data-t="store_android"></span></a>
+    </div>
+  </div>
+
+  <p class="fuss"><span data-t="fuss"></span> <a href="/impressum/" data-t="impressum"></a></p>
+</div>
+
+<script src="texte.js"></script>
+<script>
+(function () {
+  var URL_API = 'https://vbxahjnbcjmexqnxacxs.supabase.co/rest/v1/umfrage_antworten';
+  var ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZieGFoam5iY2ptZXhxbnhhY3hzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA1MTg4MDgsImV4cCI6MjA5NjA5NDgwOH0.NC5_FKULzVm2s6Zx16J-0vU3fgp4AayTlwD0T2Kc8gY';
+  var params = new URLSearchParams(location.search);
+  // Persoenlicher Code aus Push oder App-Karte: markiert nur "erledigt", nie die Antworten.
+  var code = /^[0-9a-f-]{36}$/i.test(params.get('e') || '') ? params.get('e') : null;
+  var quelle = (params.get('q') || 'web').replace(/[^a-z0-9_-]/gi, '').slice(0, 32) || 'web';
+  // Sprache: aus der App (l), sonst Browser, sonst Englisch.
+  var TEXTE = window.UMFRAGE_TEXTE;
+  var sprache = (function () {
+    var wunsch = [params.get('l')].concat(navigator.languages || [navigator.language]);
+    for (var i = 0; i < wunsch.length; i++) {
+      var basis = String(wunsch[i] || '').toLowerCase().split(/[-_]/)[0];
+      if (TEXTE[basis]) return basis;
+    }
+    return 'en';
+  })();
+  var T = TEXTE[sprache];
+  document.documentElement.lang = sprache;
+  if (sprache === 'ar') document.documentElement.dir = 'rtl';
+  document.title = T.titel + ' 💬';
+  document.querySelectorAll('[data-t]').forEach(function (el) { el.textContent = T[el.dataset.t]; });
+  document.getElementById('text').placeholder = T.platzhalter;
+  if (sprache !== 'de') document.querySelector('[data-wert="fddb"]').remove();
+  var play = document.getElementById('store-android');
+  play.href += '&hl=' + sprache;
+  var antworten = { nutzung: null, hindernis: [], vorher: [], fehlt: [], empfehlung: null };
+  // Kontext kommt aus der App (Link-Parameter), nie Name oder Konto.
+  var plattform = /^(ios|android)$/.test(params.get('p') || '') ? params.get('p') : null;
+  var tage = parseInt(params.get('t'), 10);
+  var kontext = {
+    plattform: plattform,
+    version: /^\d+\.\d+\.\d+$/.test(params.get('v') || '') ? params.get('v') : null,
+    tage: isFinite(tage) && tage >= 0 && tage < 5000 ? tage : null,
+    ziel: /^(lose|maintain|gain|bulk)$/.test(params.get('z') || '') ? params.get('z') : null,
+    sprache: sprache
+  };
+  // Store-Knopf passend zur Plattform, ohne Angabe beide.
+  if (plattform === 'ios') document.getElementById('store-android').remove();
+  if (plattform === 'android') document.getElementById('store-ios').remove();
+
+  var skala = document.getElementById('skala');
+  for (var i = 0; i <= 10; i++) {
+    var b = document.createElement('button');
+    b.type = 'button'; b.className = 'chip'; b.dataset.wert = String(i); b.textContent = String(i);
+    skala.appendChild(b);
+  }
+
+  function pruefen() {
+    // Pflicht: Frage 1 und 4, der Rest ist freiwillig.
+    document.getElementById('senden').disabled = !(antworten.nutzung && antworten.empfehlung !== null);
+  }
+
+  document.querySelectorAll('.frage[data-feld]').forEach(function (frage) {
+    var feld = frage.dataset.feld, art = frage.dataset.art;
+    frage.addEventListener('click', function (ev) {
+      var chip = ev.target.closest('.chip');
+      if (!chip) return;
+      var wert = chip.dataset.wert;
+      if (art === 'eins') {
+        frage.querySelectorAll('.chip').forEach(function (c) { c.setAttribute('aria-pressed', c === chip ? 'true' : 'false'); });
+        antworten[feld] = feld === 'empfehlung' ? Number(wert) : wert;
+      } else {
+        var liste = antworten[feld];
+        var an = liste.indexOf(wert) === -1;
+        if (an && art === 'drei' && liste.length >= 3) return;
+        antworten[feld] = an ? liste.concat(wert) : liste.filter(function (w) { return w !== wert; });
+        chip.setAttribute('aria-pressed', an ? 'true' : 'false');
+      }
+      pruefen();
+    });
+  });
+
+  // Klick auf "Bewerten" zaehlen (nur Plattform und Sprache), ob jemand wirklich bewertet, sieht nur der Store.
+  document.querySelectorAll('.bewerten a[data-ziel]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      fetch(URL_API.replace('/umfrage_antworten', '/umfrage_klicks'), {
+        method: 'POST', keepalive: true,
+        headers: { apikey: ANON, Authorization: 'Bearer ' + ANON, 'Content-Type': 'application/json', Prefer: 'return=minimal' },
+        body: JSON.stringify({ ziel: a.dataset.ziel, sprache: sprache })
+      }).catch(function () {});
+    });
+  });
+
+  document.getElementById('form').addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var knopf = document.getElementById('senden');
+    var fehler = document.getElementById('fehler');
+    knopf.disabled = true; knopf.textContent = T.sendet; fehler.textContent = '';
+    var text = document.getElementById('text').value.trim().slice(0, 800);
+    var daten = Object.assign({}, antworten, { text: text || null, kontext: kontext });
+    fetch(URL_API, {
+      method: 'POST',
+      headers: { apikey: ANON, Authorization: 'Bearer ' + ANON, 'Content-Type': 'application/json', Prefer: 'return=minimal' },
+      body: JSON.stringify({ quelle: quelle, antworten: daten })
+    }).then(function (r) {
+      if (!r.ok) throw new Error('http_' + r.status);
+      if (code) {
+        // Fehler hier egal: Antwort ist gespeichert, schlimmstenfalls kommt noch ein Push.
+        fetch(URL_API.replace('/umfrage_antworten', '/rpc/umfrage_erledigt'), {
+          method: 'POST',
+          headers: { apikey: ANON, Authorization: 'Bearer ' + ANON, 'Content-Type': 'application/json' },
+          body: JSON.stringify({ p_code: code })
+        }).catch(function () {});
+      }
+      document.getElementById('form').style.display = 'none';
+      document.getElementById('danke').style.display = 'block';
+      window.scrollTo(0, 0);
+    }).catch(function () {
+      fehler.textContent = T.fehler;
+      knopf.textContent = T.senden;
+      pruefen();
+    });
+  });
+})();
+</script>
+</body>
+</html>
