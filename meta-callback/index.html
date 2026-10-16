@@ -40,7 +40,10 @@
   var hint = document.getElementById('hint');
   var errDesc = q.get('error_description') || q.get('error_reason') || '';
   if (err) {
-    msg.innerHTML = '<span class="err">Login abgebrochen: ' + err + (errDesc ? (': ' + errDesc) : '') + '</span>';
+    var errorMessage = document.createElement('span');
+    errorMessage.className = 'err';
+    errorMessage.textContent = 'Login abgebrochen: ' + err + (errDesc ? (': ' + errDesc) : '');
+    msg.replaceChildren(errorMessage);
     el.textContent = '-';
     hint.textContent = 'OAuth-Link neu öffnen (nicht diese Seite direkt).';
     return;

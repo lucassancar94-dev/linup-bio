@@ -39,7 +39,10 @@
   var el = document.getElementById('code');
   var hint = document.getElementById('hint');
   if (err) {
-    msg.innerHTML = '<span class="err">Login abgebrochen: ' + err + '</span>';
+    var errorMessage = document.createElement('span');
+    errorMessage.className = 'err';
+    errorMessage.textContent = 'Login abgebrochen: ' + err;
+    msg.replaceChildren(errorMessage);
     el.textContent = '-';
     return;
   }
