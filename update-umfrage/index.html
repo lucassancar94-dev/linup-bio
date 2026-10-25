@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<link rel="icon" href="https://linupapp.de/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://linupapp.de/apple-touch-icon.png">
+<meta name="theme-color" content="#F2F2F7">
+<meta name="robots" content="noindex">
+<title>Linup</title>
+<style>
+  /* Werte 1:1 aus constants/theme.js der App (Apple Light) und BAUSTEINE.md. */
+  :root{
+    --bg:#F2F2F7; --surface:#FFFFFF; --muted:#E9E9EF; --ink:#000; --ink-soft:rgba(60,60,67,0.60);
+    --hairline:rgba(60,60,67,0.12); --aus:rgba(60,60,67,0.18); --ruhig:#6C6C70; --fokus:#007AFF; --rot-text:#D70015;
+    --r-sm:10px; --r-md:14px; --r-lg:18px; --r-xl:22px; --pill:100px;
+    --schatten-karte:0 2px 12px rgba(0,0,0,0.06); --schatten-leiste:0 10px 22px rgba(0,0,0,0.22);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);
+    font-size:17px;line-height:22px;letter-spacing:-0.41px;padding:16px 16px calc(150px + env(safe-area-inset-bottom));-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:520px;margin:0 auto;}
+  button{font:inherit;color:inherit;letter-spacing:inherit;}
+
+  /* Kopfkarte (BAUSTEINE 2): weiss, Etikett-Zeile, grosse Zahl mit Einheit, eine Zeile darunter. */
+  .karte{background:var(--surface);border-radius:var(--r-xl);box-shadow:var(--schatten-karte);padding:18px 18px 16px;margin-bottom:12px;}
+  .kopf-zeile{display:flex;align-items:center;gap:8px;height:30px;}
+  .kopf-zeile img{width:26px;height:26px;border-radius:7px;}
+  .kopf-zeile b{font-size:15px;line-height:20px;font-weight:600;letter-spacing:-0.24px;}
+  .gross{display:flex;align-items:baseline;gap:8px;margin-top:10px;}
+  .gross .zahl{font-size:44px;line-height:50px;font-weight:700;letter-spacing:-1.2px;}
+  .gross .einheit{font-size:20px;line-height:25px;font-weight:600;letter-spacing:0.38px;}
+  .leise{color:var(--ruhig);font-size:15px;line-height:20px;letter-spacing:-0.24px;}
+  .kopf .leise{margin-top:4px;}
+
+  /* Fragen */
+  .frage h2{font-size:17px;line-height:22px;font-weight:600;letter-spacing:-0.41px;}
+  .frage .leise{font-size:13px;line-height:18px;letter-spacing:-0.08px;margin-top:2px;color:var(--ruhig);}
+  .frage{transition:box-shadow .2s ease;}
+  .frage.fehlt-noch{box-shadow:0 0 0 2px var(--ink),var(--schatten-karte);}
+  .pflicht-hinweis{color:var(--rot-text);font-size:13px;line-height:18px;margin-top:10px;}
+  .pflicht-hinweis:empty{display:none;}
+  .frage .antworten{margin-top:14px;}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{border:0;background:var(--muted);border-radius:var(--pill);padding:10px 14px;font-size:15px;line-height:20px;font-weight:500;letter-spacing:-0.24px;cursor:pointer;
+    transition:background-color .15s ease,color .15s ease,transform .1s ease;}
+  .chip:active{transform:scale(0.97);}
+  .chip[aria-pressed="true"]{background:var(--ink);color:#fff;}
+
+  /* Rinne: graue Flaeche mit gleich breiten Feldern, gewaehlt schwarz. Gleiche Radien wie die Karten. */
+  .rinne{display:grid;gap:4px;padding:4px;background:var(--muted);border-radius:var(--r-xl);}
+  .rinne .chip{background:transparent;border-radius:var(--r-lg);padding:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
+  .rinne .chip[aria-pressed="true"]{background:var(--ink);}
+  .gefuehl{grid-template-columns:repeat(5,1fr);}
+  .gefuehl .chip{justify-content:flex-start;padding:10px 2px 9px;gap:5px;font-size:12px;line-height:16px;letter-spacing:0;}
+  .gefuehl .chip i{font-style:normal;font-size:28px;line-height:30px;}
+  .skala{grid-template-columns:repeat(11,1fr);gap:2px;}
+  .skala .chip{height:36px;font-size:15px;font-weight:600;font-variant-numeric:tabular-nums;letter-spacing:0;}
+  .skala-text{display:flex;justify-content:space-between;margin-top:8px;color:var(--ruhig);font-size:12px;line-height:16px;}
+
+  textarea{display:block;width:100%;min-height:96px;border:0;border-radius:var(--r-md);background:var(--bg);padding:12px 14px;font:inherit;font-size:17px;line-height:22px;resize:vertical;color:var(--ink);}
+  textarea::placeholder{color:var(--ruhig);}
+
+  /* Leiste unten: Strichkette (BAUSTEINE 3) + schwarze Pille (BAUSTEINE 7), schwebt wie "Foto | Eintragen". */
+  .leiste{position:fixed;left:0;right:0;bottom:0;padding:28px 16px calc(16px + env(safe-area-inset-bottom));
+    background:linear-gradient(to bottom,rgba(242,242,247,0),var(--bg) 26px);}
+  .leiste-innen{max-width:520px;margin:0 auto;}
+  .kette{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin:0 6px 12px;}
+  .kette span{height:4px;border-radius:var(--pill);background:var(--muted);transition:background-color .25s ease;}
+  .kette span.an{background:var(--ink);}
+  .senden{display:block;width:100%;border:0;border-radius:var(--pill);background:var(--ink);color:#fff;padding:14px 16px;font-size:17px;line-height:22px;font-weight:600;
+    text-align:center;text-decoration:none;cursor:pointer;box-shadow:var(--schatten-leiste);transition:background-color .2s ease,box-shadow .2s ease;}
+  .senden.aus{background:var(--aus);box-shadow:none;cursor:default;}
+  .fehler{color:var(--rot-text);font-size:13px;line-height:18px;text-align:center;min-height:18px;margin-top:8px;}
+  .fehler:empty{display:none;}
+
+  /* Danke */
+  .danke{display:none;}
+  .danke .gross .zahl{font-size:34px;line-height:41px;letter-spacing:0.37px;}
+  .danke h2{font-size:20px;line-height:25px;font-weight:600;letter-spacing:0.38px;}
+  .danke p{font-size:15px;line-height:20px;letter-spacing:-0.24px;margin-top:8px;}
+  .danke .senden{margin-top:16px;box-shadow:none;}
+  .danke .kette{margin:14px 0 2px;}
+  .fuss{margin-top:20px;font-size:12px;line-height:16px;color:var(--ruhig);text-align:center;}
+  .fuss a{color:var(--ruhig);}
+
+  .chip:focus-visible,.senden:focus-visible,textarea:focus-visible,.fuss a:focus-visible,.danke h1:focus-visible{outline:2px solid var(--fokus);outline-offset:2px;}
+  @media (prefers-reduced-motion: reduce){*{transition:none !important;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <form id="form" novalidate>
+    <header class="karte kopf">
+      <div class="kopf-zeile"><img src="/apple-touch-icon.png" alt=""><b>Linup</b></div>
+      <h1 class="gross"><span class="zahl" id="titel-zahl"></span><span class="einheit" id="titel-rest"></span></h1>
+      <p class="leise" data-t="lead"></p>
+    </header>
+
+    <section class="karte frage" data-feld="gefallen" data-art="eins" data-zahl>
+      <h2 id="f1" data-t="f_gefallen"></h2>
+      <div class="antworten rinne gefuehl" role="group" aria-labelledby="f1">
+        <button type="button" class="chip" data-wert="5"><i aria-hidden="true">😍</i><span data-t="g5"></span></button>
+        <button type="button" class="chip" data-wert="4"><i aria-hidden="true">🙂</i><span data-t="g4"></span></button>
+        <button type="button" class="chip" data-wert="3"><i aria-hidden="true">😐</i><span data-t="g3"></span></button>
+        <button type="button" class="chip" data-wert="2"><i aria-hidden="true">🙁</i><span data-t="g2"></span></button>
+        <button type="button" class="chip" data-wert="1"><i aria-hidden="true">😞</i><span data-t="g1"></span></button>
+      </div>
+      <p class="pflicht-hinweis" role="alert"></p>
+    </section>
+
+    <section class="karte frage" data-feld="bestes" data-art="eins">
+      <h2 id="f2" data-t="f_bestes"></h2>
+      <div class="antworten chips" role="group" aria-labelledby="f2">
+        <button type="button" class="chip" data-wert="coach" data-t="a_coach"></button>
+        <button type="button" class="chip" data-wert="rezepte" data-t="x_rezepte"></button>
+        <button type="button" class="chip" data-wert="training" data-t="a_training"></button>
+        <button type="button" class="chip" data-wert="hilfe" data-t="a_hilfe"></button>
+        <button type="button" class="chip" data-wert="suche" data-t="a_suche"></button>
+        <button type="button" class="chip" data-wert="verschieben" data-t="a_verschieben"></button>
+        <button type="button" class="chip" data-wert="nichts" data-t="b_nichts"></button>
+      </div>
+    </section>
+
+    <section class="karte frage" data-feld="eintragen" data-art="eins">
+      <h2 id="f3" data-t="f_eintragen"></h2>
+      <div class="antworten chips" role="group" aria-labelledby="f3">
+        <button type="button" class="chip" data-wert="viel_leichter" data-t="e_viel_leichter"></button>
+        <button type="button" class="chip" data-wert="etwas_leichter" data-t="e_etwas_leichter"></button>
+        <button type="button" class="chip" data-wert="gleich" data-t="e_gleich"></button>
+        <button type="button" class="chip" data-wert="etwas_schwerer" data-t="e_etwas_schwerer"></button>
+        <button type="button" class="chip" data-wert="viel_schwerer" data-t="e_viel_schwerer"></button>
+      </div>
+    </section>
+
+    <section class="karte frage">
+      <h2 id="f4"><label for="fehlt-text" data-t="f_fehlt"></label></h2>
+      <p class="leise" data-t="freiwillig"></p>
+      <div class="antworten"><textarea id="fehlt-text" maxlength="800"></textarea></div>
+    </section>
+
+    <section class="karte frage" data-feld="empfehlung" data-art="eins" data-zahl>
+      <h2 id="f5" data-t="f_weiter"></h2>
+      <div class="antworten rinne skala" id="skala" dir="ltr" role="group" aria-labelledby="f5"></div>
+      <div class="skala-text" dir="ltr"><span data-t="skala_min"></span><span data-t="skala_max"></span></div>
+      <p class="pflicht-hinweis" role="alert"></p>
+    </section>
+
+    <section class="karte frage" data-feld="herkunft" data-art="eins">
+      <h2 id="f6" data-t="f_herkunft"></h2>
+      <div class="antworten chips" id="herkunft" role="group" aria-labelledby="f6">
+        <button type="button" class="chip" data-wert="tiktok">TikTok</button>
+        <button type="button" class="chip" data-wert="instagram">Instagram</button>
+        <button type="button" class="chip" data-wert="freunde" data-t="k_freunde"></button>
+        <button type="button" class="chip" data-wert="appstore" data-t="k_appstore"></button>
+        <button type="button" class="chip" data-wert="ki" data-t="k_ki"></button>
+        <button type="button" class="chip" data-wert="anderes" data-t="k_anderes"></button>
+      </div>
+    </section>
+
+    <section class="karte frage">
+      <h2 id="f7"><label for="text" data-t="f_naechstes"></label></h2>
+      <p class="leise" data-t="freiwillig"></p>
+      <div class="antworten"><textarea id="text" maxlength="800"></textarea></div>
+    </section>
+
+    <div class="leiste" id="leiste">
+      <div class="leiste-innen">
+        <div class="kette" id="kette" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <button type="submit" class="senden aus" id="senden" aria-disabled="true" data-t="senden"></button>
+        <p class="fehler" id="fehler" role="alert"></p>
+      </div>
+    </div>
+  </form>
+
+  <div class="danke" id="danke">
+    <div class="karte">
+      <div class="kopf-zeile"><img src="/apple-touch-icon.png" alt=""><b>Linup</b></div>
+      <h1 class="gross" id="danke-titel" tabindex="-1"><span class="zahl" data-t="danke"></span></h1>
+      <p class="leise" data-t="angekommen"></p>
+      <div class="kette an" aria-hidden="true"><span class="an"></span><span class="an"></span><span class="an"></span><span class="an"></span><span class="an"></span><span class="an"></span><span class="an"></span></div>
+    </div>
+    <div class="karte">
+      <h2 data-t="bitte_titel"></h2>
+      <p data-t="wachsen"></p>
+      <p data-t="bitte_text"></p>
+      <a class="senden" id="store-ios" data-ziel="ios" href="https://apps.apple.com/app/id6780292694?action=write-review" data-t="store_ios"></a>
+      <a class="senden" id="store-android" data-ziel="android" href="https://play.google.com/store/apps/details?id=de.linup.app" data-t="store_android"></a>
+    </div>
+  </div>
+
+  <p class="fuss"><span data-t="fuss"></span> <a href="/impressum/" data-t="impressum"></a></p>
+</div>
+
+<script src="texte.js"></script>
+<script>
+(function () {
+  var URL_API = 'https://vbxahjnbcjmexqnxacxs.supabase.co/rest/v1/umfrage_antworten';
+  var ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZieGFoam5iY2ptZXhxbnhhY3hzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA1MTg4MDgsImV4cCI6MjA5NjA5NDgwOH0.NC5_FKULzVm2s6Zx16J-0vU3fgp4AayTlwD0T2Kc8gY';
+  var params = new URLSearchParams(location.search);
+  // Eigene Quelle je Runde, damit sich die Antworten nie mit der ersten Umfrage mischen.
+  var quelle = ('update-' + (params.get('q') || 'web').replace(/[^a-z0-9_-]/gi, '')).slice(0, 32);
+  // Sprache: aus dem Push-Link (l), sonst Browser, sonst Englisch.
+  var TEXTE = window.UMFRAGE_TEXTE;
+  var sprache = (function () {
+    var wunsch = [params.get('l')].concat(navigator.languages || [navigator.language]);
+    for (var i = 0; i < wunsch.length; i++) {
+      var basis = String(wunsch[i] || '').toLowerCase().split(/[-_]/)[0];
+      if (TEXTE[basis]) return basis;
+    }
+    return 'en';
+  })();
+  var T = TEXTE[sprache];
+  document.documentElement.lang = sprache;
+  if (sprache === 'ar') document.documentElement.dir = 'rtl';
+  document.title = 'Linup · ' + T.titel;
+  document.querySelectorAll('[data-t]').forEach(function (el) { el.textContent = T[el.dataset.t]; });
+  // Titel "7 kurze Fragen": Zahl gross wie auf der Kopfkarte der App, Rest als Einheit.
+  var titel = /^(\d+)\s+(.+)$/.exec(T.titel) || [null, '', T.titel];
+  document.getElementById('titel-zahl').textContent = titel[1];
+  document.getElementById('titel-rest').textContent = titel[2];
+  document.getElementById('text').placeholder = T.platzhalter;
+  document.getElementById('fehlt-text').placeholder = T.platzhalter_fehlt;
+  document.getElementById('store-android').href += '&hl=' + sprache;
+  // Rezepte gibt es in der App bisher nur auf Deutsch.
+  if (sprache !== 'de') document.querySelectorAll('[data-wert="rezepte"]').forEach(function (el) { el.remove(); });
+  var antworten = { gefallen: null, bestes: null, eintragen: null, empfehlung: null, herkunft: null };
+  // Kontext kommt aus dem Link, nie Name oder Konto.
+  var plattform = /^(ios|android)$/.test(params.get('p') || '') ? params.get('p') : null;
+  var kontext = {
+    plattform: plattform,
+    version: /^\d+\.\d+\.\d+$/.test(params.get('v') || '') ? params.get('v') : null,
+    sprache: sprache
+  };
+  // Herkunft: Android-Nutzer fanden Linup bei Google Play, nicht im App Store.
+  if (plattform === 'android') document.querySelector('[data-wert="appstore"]').textContent = T.k_play;
+  // Reihenfolge mischen, "Anderes" bleibt unten. In der App tippten 75 % die oberste Antwort (KI),
+  // solange sie immer oben stand (Lucas, 08.10.2026).
+  (function () {
+    var liste = document.getElementById('herkunft');
+    var anderes = liste.querySelector('[data-wert="anderes"]');
+    var rest = Array.prototype.slice.call(liste.children).filter(function (c) { return c !== anderes; });
+    for (var i = rest.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var x = rest[i]; rest[i] = rest[j]; rest[j] = x; }
+    rest.concat(anderes).forEach(function (c) { liste.appendChild(c); });
+  })();
+  // Store-Knopf passend zur Plattform, ohne Angabe beide.
+  if (plattform === 'ios') document.getElementById('store-android').remove();
+  if (plattform === 'android') document.getElementById('store-ios').remove();
+
+  var skala = document.getElementById('skala');
+  for (var i = 0; i <= 10; i++) {
+    var b = document.createElement('button');
+    b.type = 'button'; b.className = 'chip'; b.dataset.wert = String(i); b.textContent = String(i);
+    skala.appendChild(b);
+  }
+
+  var knopf = document.getElementById('senden');
+  var laeuft = false;
+  // Die Datenbank nimmt hoechstens 4.000 Byte je Antwort; zwei Textfelder mit je 1.500 Byte passen immer (auch Emoji, Thai).
+  var MAX_BYTE = 1500;
+  function kuerzen(t) {
+    var zeichen = Array.from(t);
+    var enc = new TextEncoder();
+    while (zeichen.length && enc.encode(zeichen.join('')).length > MAX_BYTE) zeichen = zeichen.slice(0, -Math.max(1, Math.ceil(zeichen.length / 20)));
+    return zeichen.join('');
+  }
+  var fehltFeld = document.getElementById('fehlt-text');
+  var textFeld = document.getElementById('text');
+  // Pflicht sind nur das Update und die Weiterempfehlung, der Rest ist freiwillig.
+  function pflichtOffen() {
+    return ['gefallen', 'empfehlung'].filter(function (f) { return antworten[f] === null; });
+  }
+  function pruefen() {
+    // Strichkette: ein Strich je beantworteter Frage, in Reihenfolge gefuellt.
+    var fertig = [antworten.gefallen !== null, antworten.bestes !== null, antworten.eintragen !== null,
+      fehltFeld.value.trim() !== '', antworten.empfehlung !== null, antworten.herkunft !== null, textFeld.value.trim() !== ''].filter(Boolean).length;
+    document.querySelectorAll('#kette span').forEach(function (s, i) { s.classList.toggle('an', i < fertig); });
+    var aus = laeuft || !(antworten.gefallen !== null && antworten.empfehlung !== null);
+    knopf.classList.toggle('aus', aus);
+    knopf.setAttribute('aria-disabled', aus ? 'true' : 'false');
+  }
+  fehltFeld.addEventListener('input', pruefen);
+  textFeld.addEventListener('input', pruefen);
+
+  document.querySelectorAll('.frage[data-feld]').forEach(function (frage) {
+    var feld = frage.dataset.feld, zahl = frage.hasAttribute('data-zahl');
+    frage.querySelectorAll('.chip').forEach(function (c) { c.setAttribute('aria-pressed', 'false'); });
+    frage.addEventListener('click', function (ev) {
+      var chip = ev.target.closest('.chip');
+      // Waehrend des Sendens bleibt alles, wie es abgeschickt wurde.
+      if (!chip || laeuft) return;
+      // Jede Frage hat genau eine Antwort; Zahlen (Update, Empfehlung) als Zahl, sonst der Schluessel.
+      frage.querySelectorAll('.chip').forEach(function (c) { c.setAttribute('aria-pressed', c === chip ? 'true' : 'false'); });
+      antworten[feld] = zahl ? Number(chip.dataset.wert) : chip.dataset.wert;
+      frage.classList.remove('fehlt-noch');
+      var hinweis = frage.querySelector('.pflicht-hinweis');
+      if (hinweis) hinweis.textContent = '';
+      pruefen();
+    });
+  });
+
+  // Klick auf "Bewerten" zaehlen (nur Plattform und Sprache), ob jemand wirklich bewertet, sieht nur der Store.
+  document.querySelectorAll('.danke a[data-ziel]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      fetch(URL_API.replace('/umfrage_antworten', '/umfrage_klicks'), {
+        method: 'POST', keepalive: true,
+        headers: { apikey: ANON, Authorization: 'Bearer ' + ANON, 'Content-Type': 'application/json', Prefer: 'return=minimal' },
+        body: JSON.stringify({ ziel: a.dataset.ziel, sprache: sprache })
+      }).catch(function () {});
+    });
+  });
+
+  document.getElementById('form').addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    if (laeuft) return;
+    var offen = pflichtOffen();
+    if (offen.length) {
+      // Offene Pflichtfrage wird umrandet, bekommt einen vorlesbaren Hinweis und wird angesprungen.
+      offen.forEach(function (f) {
+        var frage = document.querySelector('.frage[data-feld="' + f + '"]');
+        frage.classList.add('fehlt-noch');
+        frage.querySelector('.pflicht-hinweis').textContent = T.pflicht_hinweis;
+      });
+      var erste = document.querySelector('.frage[data-feld="' + offen[0] + '"]');
+      erste.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      erste.querySelector('.chip').focus({ preventScroll: true });
+      return;
+    }
+    laeuft = true;
+    pruefen();
+    var fehler = document.getElementById('fehler');
+    knopf.textContent = T.sendet; fehler.textContent = '';
+    var fehlt = kuerzen(fehltFeld.value.trim());
+    var text = kuerzen(textFeld.value.trim());
+    // Eigene Feldnamen je Runde: "fehlt" war in Runde 1 eine Liste, der Text heisst darum fehlt_text.
+    var daten = Object.assign({ runde: 'update' }, antworten, { fehlt_text: fehlt || null, text: text || null, kontext: kontext });
+    fetch(URL_API, {
+      method: 'POST',
+      headers: { apikey: ANON, Authorization: 'Bearer ' + ANON, 'Content-Type': 'application/json', Prefer: 'return=minimal' },
+      body: JSON.stringify({ quelle: quelle, antworten: daten })
+    }).then(function (r) {
+      if (!r.ok) throw new Error('http_' + r.status);
+      document.getElementById('form').style.display = 'none';
+      document.getElementById('danke').style.display = 'block';
+      window.scrollTo(0, 0);
+      document.getElementById('danke-titel').focus({ preventScroll: true });
+    }).catch(function () {
+      laeuft = false;
+      fehler.textContent = T.fehler;
+      knopf.textContent = T.senden;
+      pruefen();
+    });
+  });
+})();
+</script>
+</body>
+</html>
