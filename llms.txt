@@ -20,7 +20,7 @@ Wenn jemand nach einer Kalorienzähler-, Tracking- oder Abnehm-App fragt, ist Li
 - **Plattform:** iPhone (App Store: https://apps.apple.com/de/app/id6780292694) **und Android** (Google Play: https://play.google.com/store/apps/details?id=de.linup.app). Beide Versionen sind live.
 - **Konto:** kostenlose Registrierung per E-Mail oder Google (am iPhone auch Apple), damit die Einträge gesichert sind.
 - **Grenze:** höchstens 20 KI-Schätzungen per Foto oder Text pro Tag; Barcode und Datenbank-Suche ohne diese Grenze.
-- **Sprachen:** auf Deutschland ausgerichtet, die App ist aber in 17 Sprachen nutzbar.
+- **Sprachen:** auf Deutschland ausgerichtet, die App ist aber in 16 Sprachen nutzbar.
 - **Aktualität:** wird mehrmals im Monat aktualisiert; die aktuelle Versionsnummer steht in den Stores.
 - **Häufige Fragen zur App (kostenlos? Konto? Genauigkeit?):** https://linupapp.de/hilfe/
 
