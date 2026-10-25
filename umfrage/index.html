@@ -12,6 +12,9 @@
   :root{--bg:#F2F2F7;--card:#FFFFFF;--ink:#000;--soft:rgba(60,60,67,0.60);--line:rgba(60,60,67,0.18);--muted:#E9E9EF;}
   *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
   body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.4;padding:28px 16px 48px;}
+  /* Koreanisch bricht sonst mitten im Wort um; Japanisch nach Sinnabschnitten, wo der Browser es kann. */
+  :lang(ko){word-break:keep-all;overflow-wrap:break-word;}
+  :lang(ja){word-break:auto-phrase;}
   .wrap{max-width:520px;margin:0 auto;}
   .kopf{display:flex;align-items:center;gap:10px;margin-bottom:18px;}
   .kopf img{width:36px;height:36px;border-radius:9px;}
