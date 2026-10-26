@@ -1,4 +1,4 @@
-# Linup – alle Crawler willkommen, inklusive KI-/Antwort-Maschinen.
+# Linup: alle Crawler willkommen, inklusive KI-/Antwort-Maschinen.
 # Wir wollen ausdrücklich, dass KI-Systeme unsere Inhalte lesen und zitieren.
 
 User-agent: *

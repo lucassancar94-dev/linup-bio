@@ -15,20 +15,20 @@
 <link rel="apple-touch-icon" href="https://linupapp.de/apple-touch-icon.png">
 <meta name="theme-color" content="#F4F4F6">
 <!--/favicon-->
-<title>Linup Kalorien-App – kostenlos mit KI per Foto &amp; Sprache</title>
+<title>Linup Kalorien-App: kostenlos mit KI per Foto &amp; Sprache</title>
 <meta name="description" content="Kostenlose Kalorien-App für iPhone und Android: Essen per Foto, Sprache oder Barcode eintragen und die Zutaten mit Gramm sehen. Kein Abo, keine Werbung.">
 <!--og-->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Linup">
 <meta property="og:locale" content="de_DE">
-<meta property="og:title" content="Linup Kalorien-App – kostenlos mit KI per Foto &amp; Sprache">
+<meta property="og:title" content="Linup Kalorien-App: kostenlos mit KI per Foto &amp; Sprache">
 <meta property="og:description" content="Kostenlose Kalorien-App für iPhone und Android: Essen per Foto, Sprache oder Barcode eintragen und die Zutaten mit Gramm sehen. Kein Abo, keine Werbung.">
 <meta property="og:url" content="https://linupapp.de/">
 <meta property="og:image" content="https://linupapp.de/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Linup Kalorien-App – kostenlos mit KI per Foto &amp; Sprache">
+<meta name="twitter:title" content="Linup Kalorien-App: kostenlos mit KI per Foto &amp; Sprache">
 <meta name="twitter:description" content="Kostenlose Kalorien-App für iPhone und Android: Essen per Foto, Sprache oder Barcode eintragen und die Zutaten mit Gramm sehen. Kein Abo, keine Werbung.">
 <meta name="twitter:image" content="https://linupapp.de/og-image.png">
 <!--/og-->
@@ -111,10 +111,7 @@
     --hell: #F5F5F7;
     --hell-2: #A1A1A6;
     --linie-dunkel: rgba(255, 255, 255, 0.14);
-    --ring: #007AFF;
     --protein: #FF3B30;
-    --kh: #FF9500;
-    --fett: #007AFF;
     --kopf: 52px;
     --rand-l: max(clamp(16px, 5vw, 40px), env(safe-area-inset-left, 0px));
     --rand-r: max(clamp(16px, 5vw, 40px), env(safe-area-inset-right, 0px));
@@ -206,7 +203,8 @@
     display: flex; align-items: center; gap: 8px;
     text-decoration: none; font-weight: 700; font-size: 19px; letter-spacing: -0.03em;
   }
-  .marke svg { width: 28px; height: 28px; }
+  .app-icon { display: block; border-radius: 22.5%; }
+  .marke .app-icon { width: 30px; height: 30px; }
   .kopf-nav { margin-left: auto; display: flex; gap: 26px; }
   .kopf-nav a { text-decoration: none; font-size: 14px; color: var(--tinte-2); padding: 6px 0; }
   .kopf-nav a:hover { color: var(--tinte); }
@@ -333,16 +331,6 @@
   .zutaten td:nth-child(2) { color: var(--hell-2); white-space: nowrap; padding-left: 16px; }
   .zutaten td:last-child { font-weight: 700; white-space: nowrap; padding-left: 24px; }
   .zutaten tfoot th, .zutaten tfoot td { border-bottom: 0; font-weight: 700; padding-top: 22px; }
-  .makros { margin-top: 36px; }
-  .makro-balken { display: flex; gap: 4px; height: 10px; }
-  .makro-balken span { border-radius: 999px; }
-  .p { background: var(--protein); }
-  .k { background: var(--kh); }
-  .f { background: var(--fett); }
-  .makro-legende { list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 15px; color: var(--hell-2); }
-  .makro-legende li { display: flex; align-items: center; gap: 8px; }
-  .makro-legende i { width: 10px; height: 10px; border-radius: 50%; }
-  .makro-legende b { color: var(--hell); font-weight: 600; }
   .fussnote { margin: 28px 0 0; font-size: 15px; color: var(--hell-2); max-width: 60ch; }
 
   /* Satz, Wort für Wort */
@@ -435,12 +423,133 @@
     .weg { min-height: 56vh; min-height: 56svh; justify-content: flex-start; padding-top: 28px; }
   }
 
-  /* Zahlen und Laufband */
+  /* Zahlen: bunte Kacheln in den App-Farben. Am Rechner nebeneinander, am Handy untereinander.
+     Text liegt immer auf der dunklen Seite des Verlaufs (Kontrast geprüft). */
+  @property --fuell { syntax: '<percentage>'; inherits: false; initial-value: 100%; }
   .zahlen { background: var(--grau); padding: clamp(72px, 14vh, 160px) 0 clamp(48px, 9vh, 96px); overflow: hidden; }
-  .zahlen-satz { margin: 0; font-size: clamp(34px, 5.8vw, 76px); font-weight: 800; letter-spacing: -0.045em; line-height: 1.06; }
-  .zahl-gruppe { display: block; }
-  .zahl-gruppe b { font-weight: 800; font-variant-numeric: tabular-nums; }
-  .zahl-gruppe span { color: var(--tinte-2); }
+  .kacheln {
+    list-style: none; margin: 0; padding: 0;
+    display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(10px, 1.1vw, 14px);
+  }
+  .kachel {
+    position: relative; min-width: 0; overflow: hidden; container-type: inline-size;
+    display: flex; flex-direction: column; justify-content: space-between; gap: 16px;
+    min-height: clamp(196px, 17vw, 224px); padding: clamp(16px, 1.6vw, 20px);
+    border-radius: 26px;
+  }
+  .k-text { margin: 0; display: flex; flex-direction: column; align-items: flex-start; min-width: 0; }
+  .k-klein { display: block; margin-bottom: 2px; font-size: 15px; font-weight: 700; line-height: 1.1; letter-spacing: -0.01em; }
+  .k-zahl {
+    display: block; white-space: nowrap; margin-left: -0.02em;
+    font-size: 48px; font-size: clamp(40px, 30cqi, 84px);
+    font-weight: 800; line-height: 0.95; letter-spacing: -0.05em; font-variant-numeric: tabular-nums;
+  }
+  .k-wort { display: block; margin-top: 8px; font-size: 15px; font-weight: 650; line-height: 1.2; letter-spacing: -0.01em; text-wrap: balance; }
+  .k-bild { flex: none; display: block; }
+  .k-icon { width: 46px; height: 46px; transform: rotate(-7deg); filter: drop-shadow(0 8px 12px rgba(120, 48, 0, 0.35)); }
+  .k-icon svg { display: block; width: 100%; height: 100%; }
+  .bogen { stroke-dasharray: 1 1; stroke-dashoffset: 0; }
+  .sterne {
+    --s: 16px; --fuell: var(--wert, 100%);
+    width: calc(var(--s) * 6); height: var(--s);
+    background: linear-gradient(90deg, currentColor var(--fuell), var(--spur) var(--fuell));
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 1.8l3.05 6.4 7 .86-5.15 4.84 1.32 6.95L12 17.5l-6.22 3.35 1.32-6.95L1.95 9.06l7-.86z'/%3E%3C/svg%3E") 0 0 / calc(var(--s) * 1.2) var(--s) repeat-x;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 1.8l3.05 6.4 7 .86-5.15 4.84 1.32 6.95L12 17.5l-6.22 3.35 1.32-6.95L1.95 9.06l7-.86z'/%3E%3C/svg%3E") 0 0 / calc(var(--s) * 1.2) var(--s) repeat-x;
+  }
+  .k-symbol { width: 42px; height: 42px; }
+  .k-chip { align-self: flex-start; padding: 5px 11px; border-radius: 999px; background: rgba(255, 255, 255, 0.16); font-size: 13px; font-weight: 650; line-height: 1.2; }
+
+  .k-konten {
+    color: #000;
+    background:
+      linear-gradient(155deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 40%),
+      radial-gradient(130% 110% at 0% 100%, #FF8A00 0%, #FF9500 55%, #FFAA2E 100%);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 24px 48px -28px rgba(255, 149, 0, 0.8);
+  }
+  .k-apple {
+    color: #fff; --spur: rgba(255, 255, 255, 0.3);
+    background: radial-gradient(120% 95% at 100% 0%, #0A84FF 0%, #0062E6 55%, #0050C8 100%);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16), 0 24px 48px -28px rgba(10, 132, 255, 0.8);
+  }
+  .k-google {
+    color: #000; --spur: rgba(0, 0, 0, 0.2);
+    background:
+      linear-gradient(155deg, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0) 40%),
+      radial-gradient(120% 95% at 100% 0%, #3BE3B3 0%, #06C08F 60%, #05AE82 100%);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 24px 48px -28px rgba(6, 192, 143, 0.75);
+  }
+  .k-ki {
+    color: #fff;
+    background: radial-gradient(120% 110% at 100% 0%, #7472F0 0%, #5856D6 55%, #4A48C4 100%);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16), 0 24px 48px -28px rgba(88, 86, 214, 0.85);
+  }
+  .k-sprachen {
+    color: #fff;
+    background: radial-gradient(120% 110% at 100% 0%, #FF453A 0%, #E5202A 50%, #D70015 100%);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16), 0 24px 48px -28px rgba(255, 59, 48, 0.8);
+  }
+  /* Chip steht im HTML hinter der Zahl (Screenreader lesen „0 € im Monat, ohne Abo“), sichtbar oben */
+  .k-preis { color: #fff; background: #1B1D24; box-shadow: 0 24px 48px -28px rgba(0, 0, 0, 0.6); flex-direction: column-reverse; }
+
+  @media (min-width: 720px) {
+    /* Platz für zwei Zeilen, damit alle Zahlen einer Reihe auf gleicher Höhe stehen */
+    .k-wort { min-height: 2.4em; }
+  }
+  @media (min-width: 1080px) {
+    .kacheln { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  }
+  /* Handy: eine Kachel pro Zeile, Zahl links, Bild rechts */
+  @media (max-width: 719.98px) {
+    .kacheln { grid-template-columns: minmax(0, 1fr); }
+    .kachel { min-height: 0; flex-direction: row-reverse; align-items: center; gap: 12px; padding: 16px 20px; border-radius: 22px; }
+    .k-preis { flex-direction: row; }
+    .k-text { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 14px; align-items: center; }
+    .k-klein, .k-zahl { grid-column: 1; }
+    .k-zahl { font-size: 46px; }
+    .k-wort { grid-column: 2; grid-row: 1 / span 2; margin: 0; max-width: 13ch; }
+    .k-konten .k-wort { grid-row: 2; }
+    .k-icon { width: 54px; height: 54px; }
+    .k-chip { align-self: center; }
+  }
+  @media (max-width: 359.98px) {
+    .k-zahl { font-size: 40px; }
+    .sterne { --s: 13px; }
+  }
+
+  .zahlen-fuss {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px;
+    margin: clamp(20px, 3vh, 28px) 0 0; font-size: 15px; color: var(--tinte-2);
+  }
+  .zahlen-fuss a { color: var(--tinte-2); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  .zahlen-fuss a:hover { color: var(--tinte); }
+  .zahlen-fuss .presse {
+    display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 16px;
+    border-radius: 999px; background: var(--papier); box-shadow: inset 0 0 0 1px var(--linie);
+    color: var(--tinte); font-weight: 600; text-decoration: none;
+  }
+  .presse svg { width: 14px; height: 14px; flex: none; }
+  .bewertung-hinweis {
+    margin: 0 0 28px; max-width: 72ch; font-size: 13px; line-height: 1.45; color: var(--tinte-2);
+    scroll-margin-top: calc(var(--kopf) + 12px);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    /* "bereit" setzt nur das Skript; ohne JavaScript bleibt alles sichtbar */
+    .zahlen.bereit .kachel {
+      transition: opacity 0.6s ease calc(var(--n, 0) * 70ms), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) calc(var(--n, 0) * 70ms);
+    }
+    .zahlen.bereit .kachel:not(.an) { opacity: 0; transform: translateY(24px) scale(0.97); }
+    .zahlen.bereit .k-icon { transition: transform 1.1s cubic-bezier(0.2, 0.8, 0.2, 1) 0.2s; }
+    .zahlen.bereit .kachel:not(.an) .k-icon { transform: rotate(-26deg) scale(0.8); }
+    .zahlen.bereit .bogen { transition: stroke-dashoffset 1.3s cubic-bezier(0.3, 0.7, 0.2, 1) 0.4s; }
+    .zahlen.bereit .bogen.b2 { transition-delay: 0.6s; }
+    .zahlen.bereit .kachel:not(.an) .bogen { stroke-dashoffset: 1; }
+    .zahlen.bereit .sterne { transition: --fuell 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) 0.3s; }
+    .zahlen.bereit .kachel:not(.an) .sterne { --fuell: 0%; }
+    .zahlen.bereit .tick { transition: opacity 0.25s ease calc(0.3s + var(--i) * 45ms); }
+    .zahlen.bereit .kachel:not(.an) .tick { opacity: 0.25; }
+  }
+
   .laufband {
     margin-top: clamp(40px, 8vh, 80px); overflow: hidden;
     -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
@@ -518,8 +627,8 @@
 
   /* Laden */
   .laden { background: #000; color: #fff; text-align: center; padding: clamp(80px, 16vh, 180px) 0; }
-  .app-symbol { width: 88px; height: 88px; margin: 0 auto 28px; border-radius: 22px; background: #fff; display: grid; place-items: center; }
-  .app-symbol svg { width: 64px; height: 64px; }
+  .app-symbol { width: 88px; margin: 0 auto 28px; }
+  .app-symbol .app-icon { width: 88px; height: 88px; }
   .laden h2 { font-size: clamp(36px, 6vw, 72px); font-weight: 800; letter-spacing: -0.045em; line-height: 1.02; }
   .laden p { margin: 18px 0 0; color: var(--hell-2); font-size: clamp(17px, 1.6vw, 21px); }
   .laden .knopf { background: #fff; color: #000; }
@@ -547,10 +656,7 @@
 <header class="kopf">
   <div class="kopf-innen">
     <a class="marke" href="#top" aria-label="Linup, zum Seitenanfang">
-      <svg viewBox="0 0 100 100" aria-hidden="true">
-        <circle cx="50" cy="50" r="43" fill="#fff" stroke="#007AFF" stroke-width="7.5"/>
-        <path d="M33 58.5 L50 41 L67 58.5" fill="none" stroke="#0B0B0C" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
+      <img class="app-icon" src="/favicon.svg" width="64" height="64" alt="">
       <span>Linup</span>
     </a>
     <nav class="kopf-nav" aria-label="Abschnitte">
@@ -582,26 +688,26 @@
     <div class="szene-buehne">
       <h2 id="szene-titel" class="sr-only">Vom Foto zur Kalorienzahl, an einem echten Beispiel</h2>
       <div class="szene-text">
-        <p class="schritt-text" data-stufe="0"><span class="schritt-nr">Echtes Beispiel</span>Du fotografierst dein Frühstück.</p>
+        <p class="schritt-text" data-stufe="0"><span class="schritt-nr">Echtes Beispiel</span>Du fotografierst dein Essen.</p>
         <p class="schritt-text" data-stufe="1">Linup erkennt die Zutaten und schätzt die Gramm.</p>
         <p class="schritt-text schritt-zahl" data-stufe="2">
-          <span class="riesig" aria-hidden="true"><span data-ziel="359">359</span><span class="einheit">kcal</span></span>
-          <span class="sr-only">359 kcal.</span>
+          <span class="riesig" aria-hidden="true"><span data-ziel="743">743</span><span class="einheit">kcal</span></span>
+          <span class="sr-only">743 kcal.</span>
           <span class="zahl-unter">Und du siehst, woher die Zahl kommt.</span>
         </p>
       </div>
       <div class="telefone">
         <div class="telefon t1">
-          <img src="/assets/startseite/porridge.webp" width="562" height="1000" alt="Foto einer Schale Haferflocken-Porridge mit Himbeeren und Heidelbeeren">
+          <img src="/assets/startseite/mango.webp" width="750" height="1000" alt="Foto: Mango Sticky Rice mit weißem und lila Klebreis auf einem Bananenblatt">
           <ul class="etiketten" aria-label="Erkannte Zutaten">
-            <li style="--x:9%;--y:19%">Himbeeren <b>120 g</b></li>
-            <li style="--r:6%;--y:31%">Heidelbeeren <b>100 g</b></li>
-            <li style="--x:6%;--y:50%">Haferflocken <b>60 g</b></li>
-            <li style="--x:6%;--y:72%">Milch oder Wasser <b>100 g</b></li>
+            <li style="--x:5%;--y:11%">Weißer Klebreis <b>150 g</b></li>
+            <li style="--r:5%;--y:21%">Lila Klebreis <b>130 g</b></li>
+            <li style="--r:5%;--y:43%">Kokosmilch-Sauce <b>30 g</b></li>
+            <li style="--x:8%;--y:79%">Mango <b>250 g</b></li>
           </ul>
         </div>
         <div class="telefon t2">
-          <img src="/assets/startseite/app-bestaetigen.webp" width="570" height="1240" loading="lazy" alt="Linup-Bildschirm „Eintrag bestätigen“: Haferflocken-Porridge mit Beeren-Mix, vier Zutaten mit Gramm und Kalorien, zusammen 359 kcal">
+          <img src="/assets/startseite/app-eintrag.webp" width="570" height="1240" loading="lazy" alt="Linup-Bildschirm „Eintrag bestätigen“: Mango mit Klebreis, vier Zutaten mit Gramm und Kalorien, zusammen 743 kcal">
         </div>
       </div>
     </div>
@@ -609,28 +715,18 @@
 
   <section class="rechnung dunkel-flaeche" aria-labelledby="rechnung-titel">
     <div class="innen schmal">
-      <h2 class="abschnitt-titel" id="rechnung-titel">So kommt Linup auf 359 kcal.</h2>
+      <h2 class="abschnitt-titel" id="rechnung-titel">So kommt Linup auf 743 kcal.</h2>
       <table class="zutaten">
         <caption class="sr-only">Zutaten des Beispiels mit Menge und Kalorien</caption>
         <thead class="sr-only"><tr><th scope="col">Zutat</th><th scope="col">Menge</th><th scope="col">Kalorien</th></tr></thead>
         <tbody>
-          <tr><th scope="row">Haferflocken</th><td>60 g</td><td>220 kcal</td></tr>
-          <tr><th scope="row">Milch oder Wasser zum Einweichen</th><td>100 g</td><td>45 kcal</td></tr>
-          <tr><th scope="row">Himbeeren</th><td>120 g</td><td>37 kcal</td></tr>
-          <tr><th scope="row">Heidelbeeren</th><td>100 g</td><td>57 kcal</td></tr>
+          <tr><th scope="row">Mango</th><td>250 g</td><td>158 kcal</td></tr>
+          <tr><th scope="row">Weißer Klebreis mit Kokosmilch</th><td>150 g</td><td>285 kcal</td></tr>
+          <tr><th scope="row">Lila Klebreis mit Kokosmilch</th><td>130 g</td><td>245 kcal</td></tr>
+          <tr><th scope="row">Kokosmilch-Sauce</th><td>30 g</td><td>55 kcal</td></tr>
         </tbody>
-        <tfoot><tr><th scope="row">Zusammen</th><td></td><td>359 kcal</td></tr></tfoot>
+        <tfoot><tr><th scope="row">Zusammen</th><td>560 g</td><td>743 kcal</td></tr></tfoot>
       </table>
-      <div class="makros">
-        <div class="makro-balken" aria-hidden="true">
-          <span class="p" style="flex:44"></span><span class="k" style="flex:240"></span><span class="f" style="flex:54"></span>
-        </div>
-        <ul class="makro-legende" aria-label="Makronährstoffe">
-          <li><i class="p" aria-hidden="true"></i>Protein <b>11 g</b></li>
-          <li><i class="k" aria-hidden="true"></i>Kohlenhydrate <b>60 g</b></li>
-          <li><i class="f" aria-hidden="true"></i>Fett <b>6 g</b></li>
-        </ul>
-      </div>
       <p class="fussnote">Echtes Foto, echte Schätzung aus der App.</p>
     </div>
   </section>
@@ -649,7 +745,7 @@
         <div class="wege-bild" aria-hidden="true">
           <div class="ebene aktiv">
             <div class="sucher">
-              <img src="/assets/startseite/porridge.webp" alt="" loading="lazy">
+              <img src="/assets/startseite/mango.webp" alt="" loading="lazy">
               <span class="ecke e1"></span><span class="ecke e2"></span><span class="ecke e3"></span><span class="ecke e4"></span>
             </div>
             <span class="ausloeser"></span>
@@ -672,7 +768,7 @@
           <div class="ebene">
             <div class="feld">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-              <span>Haferflocken mit Beeren</span><i class="caret"></i>
+              <span>Mango mit Klebreis</span><i class="caret"></i>
             </div>
           </div>
         </div>
@@ -701,10 +797,73 @@
   <section class="zahlen" aria-labelledby="zahlen-titel">
     <div class="innen">
       <h2 id="zahlen-titel" class="sr-only">Linup in Zahlen</h2>
-      <p class="zahlen-satz">
-        <span class="zahl-gruppe"><b data-zaehl="20">20</b> <span>KI-Schätzungen am Tag.</span></span>
-        <span class="zahl-gruppe"><b data-zaehl="16">16</b> <span>Sprachen.</span></span>
-        <span class="zahl-gruppe"><b>0 €</b> <span>im Monat.</span></span>
+      <ul class="kacheln" role="list">
+        <li class="kachel k-konten" style="--n:0">
+          <span class="k-bild k-icon" aria-hidden="true">
+            <svg viewBox="0 0 1024 1024" focusable="false">
+              <rect width="1024" height="1024" rx="232" fill="#1B1D24"/>
+              <g fill="none" stroke-linecap="round" stroke-width="61">
+                <circle cx="512" cy="512" r="358" stroke="#343845"/>
+                <path class="bogen" pathLength="1" d="M 482.0 155.3 A 358 358 0 1 1 156.0 549.4" stroke="#3A7D62"/>
+                <circle cx="512" cy="512" r="260" stroke="#343845"/>
+                <path class="bogen b2" pathLength="1" d="M 482.1 253.7 A 260 260 0 0 1 563.4 766.9" stroke="#007AFF"/>
+                <path d="M 422 561 L 512 463 L 602 561" stroke="#FF6A00" stroke-width="84" stroke-linejoin="round"/>
+              </g>
+            </svg>
+          </span>
+          <p class="k-text"><span class="k-klein">Fast</span> <b class="k-zahl" data-zaehl="2000">2.000</b> <span class="k-wort">Konten</span></p>
+        </li>
+        <li class="kachel k-apple" style="--n:1">
+          <span class="k-bild sterne" style="--wert:95%" aria-hidden="true"></span>
+          <p class="k-text"><b class="k-zahl" data-zaehl="4.8" data-dez="1">4,8</b> <span class="k-wort">Sterne im App Store</span></p>
+        </li>
+        <li class="kachel k-google" style="--n:2">
+          <span class="k-bild sterne" style="--wert:100%" aria-hidden="true"></span>
+          <p class="k-text"><b class="k-zahl" data-zaehl="5" data-dez="1">5,0</b> <span class="k-wort">Sterne bei Google Play</span></p>
+        </li>
+        <li class="kachel k-ki" style="--n:3">
+          <svg class="k-bild k-symbol" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+            <g stroke="currentColor" stroke-width="6" stroke-linecap="round">
+              <line class="tick" style="--i:0" x1="60" y1="6" x2="60" y2="20" transform="rotate(0 60 60)"/>
+              <line class="tick" style="--i:1" x1="60" y1="6" x2="60" y2="20" transform="rotate(18 60 60)"/>
+              <line class="tick" style="--i:2" x1="60" y1="6" x2="60" y2="20" transform="rotate(36 60 60)"/>
+              <line class="tick" style="--i:3" x1="60" y1="6" x2="60" y2="20" transform="rotate(54 60 60)"/>
+              <line class="tick" style="--i:4" x1="60" y1="6" x2="60" y2="20" transform="rotate(72 60 60)"/>
+              <line class="tick" style="--i:5" x1="60" y1="6" x2="60" y2="20" transform="rotate(90 60 60)"/>
+              <line class="tick" style="--i:6" x1="60" y1="6" x2="60" y2="20" transform="rotate(108 60 60)"/>
+              <line class="tick" style="--i:7" x1="60" y1="6" x2="60" y2="20" transform="rotate(126 60 60)"/>
+              <line class="tick" style="--i:8" x1="60" y1="6" x2="60" y2="20" transform="rotate(144 60 60)"/>
+              <line class="tick" style="--i:9" x1="60" y1="6" x2="60" y2="20" transform="rotate(162 60 60)"/>
+              <line class="tick" style="--i:10" x1="60" y1="6" x2="60" y2="20" transform="rotate(180 60 60)"/>
+              <line class="tick" style="--i:11" x1="60" y1="6" x2="60" y2="20" transform="rotate(198 60 60)"/>
+              <line class="tick" style="--i:12" x1="60" y1="6" x2="60" y2="20" transform="rotate(216 60 60)"/>
+              <line class="tick" style="--i:13" x1="60" y1="6" x2="60" y2="20" transform="rotate(234 60 60)"/>
+              <line class="tick" style="--i:14" x1="60" y1="6" x2="60" y2="20" transform="rotate(252 60 60)"/>
+              <line class="tick" style="--i:15" x1="60" y1="6" x2="60" y2="20" transform="rotate(270 60 60)"/>
+              <line class="tick" style="--i:16" x1="60" y1="6" x2="60" y2="20" transform="rotate(288 60 60)"/>
+              <line class="tick" style="--i:17" x1="60" y1="6" x2="60" y2="20" transform="rotate(306 60 60)"/>
+              <line class="tick" style="--i:18" x1="60" y1="6" x2="60" y2="20" transform="rotate(324 60 60)"/>
+              <line class="tick" style="--i:19" x1="60" y1="6" x2="60" y2="20" transform="rotate(342 60 60)"/>
+            </g>
+            <path d="M60 41c1.8 12.4 6.6 17.2 19 19-12.4 1.8-17.2 6.6-19 19-1.8-12.4-6.6-17.2-19-19 12.4-1.8 17.2-6.6 19-19z" fill="currentColor"/>
+          </svg>
+          <p class="k-text"><b class="k-zahl" data-zaehl="20">20</b> <span class="k-wort">KI-Schätzungen am Tag</span></p>
+        </li>
+        <li class="kachel k-sprachen" style="--n:4">
+          <svg class="k-bild k-symbol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="9.5"/>
+            <path d="M2.5 12h19M12 2.5c2.6 2.7 3.9 5.9 3.9 9.5s-1.3 6.8-3.9 9.5c-2.6-2.7-3.9-5.9-3.9-9.5S9.4 5.2 12 2.5z"/>
+          </svg>
+          <p class="k-text"><b class="k-zahl" data-zaehl="16">16</b> <span class="k-wort">Sprachen</span></p>
+        </li>
+        <li class="kachel k-preis" style="--n:5">
+          <p class="k-text"><b class="k-zahl">0&nbsp;€</b> <span class="k-wort">im Monat</span></p>
+          <span class="k-bild k-chip">ohne Abo</span>
+        </li>
+      </ul>
+      <p class="zahlen-fuss">
+        <a class="presse" href="https://www.itopnews.de/2026/10/app-store-neues-zu-weekline-nevyn-und-linup/" target="_blank" rel="noopener">Vorgestellt bei iTopnews<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5 11 11 5M6 5h5v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="#bewertungen">Hinweis zu den Bewertungen</a>
       </p>
       <p class="sr-only">Linup gibt es auf Deutsch, Englisch, Spanisch, Französisch, Italienisch, Niederländisch, Polnisch, Portugiesisch, Türkisch, Schwedisch, Dänisch, Tschechisch, Ungarisch, Rumänisch, Griechisch und Bulgarisch.</p>
     </div>
@@ -772,7 +931,7 @@
         </li>
         <li>
           <h3>Dein Lieblingsessen in Sekunden.</h3>
-          <p>Was du oft isst, legst du als Favorit ab. Beim nächsten Mal ist es mit einem Tipp eingetragen.</p>
+          <p>Was du oft isst, legst du als Favorit ab. Beim nächsten Mal: Plus tippen, Mahlzeit wählen, fertig.</p>
         </li>
       </ul>
     </div>
@@ -803,10 +962,7 @@
   <section class="laden dunkel-flaeche" id="laden" aria-labelledby="laden-titel">
     <div class="innen">
       <div class="app-symbol" aria-hidden="true">
-        <svg viewBox="0 0 100 100">
-          <circle cx="50" cy="50" r="43" fill="none" stroke="#007AFF" stroke-width="7.5"/>
-          <path d="M33 58.5 L50 41 L67 58.5" fill="none" stroke="#0B0B0C" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+        <img class="app-icon" src="/favicon.svg" width="64" height="64" alt="">
       </div>
       <h2 id="laden-titel">Probier es beim<br>nächsten Essen.</h2>
       <p>Kostenlos für iPhone und Android.</p>
@@ -820,6 +976,7 @@
 
 <footer class="fuss">
   <div class="innen">
+    <p class="bewertung-hinweis" id="bewertungen">Bewertungen: Durchschnitt im deutschen App Store (66 Bewertungen) und bei Google Play (14), Stand 26. Oktober 2026. Bewerten kann nur, wer die App geladen hat. Wir prüfen die Bewertungen nicht selbst.</p>
     <div class="fuss-raster">
       <nav aria-labelledby="f1">
         <h2 id="f1">Linup</h2>
@@ -936,27 +1093,32 @@
     ebenen.forEach((e, i) => e.classList.toggle('aktiv', i === a));
   }
 
-  // Zahlen zählen hoch, sobald sie im Bild sind
+  // Kacheln erscheinen und ihre Zahlen zählen hoch, sobald sie im Bild sind
+  const zahlFormat = (wert, dez) => wert.toLocaleString('de-DE', { minimumFractionDigits: dez, maximumFractionDigits: dez });
   function hochzaehlen(el) {
     const ziel = Number(el.dataset.zaehl);
+    const dez = Number(el.dataset.dez || 0);
     const start = performance.now();
-    const DAUER = 1100;
+    const DAUER = 1300;
     const schritt = (jetzt) => {
       const t = clamp((jetzt - start) / DAUER);
-      el.textContent = String(Math.round(ziel * (1 - Math.pow(1 - t, 3))));
+      el.textContent = zahlFormat(ziel * (1 - Math.pow(1 - t, 3)), dez);
       if (t < 1) requestAnimationFrame(schritt);
     };
     requestAnimationFrame(schritt);
   }
-  if (!ruhig && 'IntersectionObserver' in window) {
+  const zahlen = document.querySelector('.zahlen');
+  if (zahlen && !ruhig && 'IntersectionObserver' in window) {
+    zahlen.classList.add('bereit');
     const beobachter = new IntersectionObserver((eintraege) => {
       eintraege.forEach((e) => {
         if (!e.isIntersecting) return;
         beobachter.unobserve(e.target);
-        hochzaehlen(e.target);
+        e.target.classList.add('an');
+        e.target.querySelectorAll('[data-zaehl]').forEach(hochzaehlen);
       });
-    }, { threshold: 0.6 });
-    document.querySelectorAll('[data-zaehl]').forEach((z) => beobachter.observe(z));
+    }, { threshold: 0.3 });
+    zahlen.querySelectorAll('.kachel').forEach((k) => beobachter.observe(k));
   }
 
   // Karten kippen mit der Maus (nur mit Maus, nicht bei „weniger Bewegung")

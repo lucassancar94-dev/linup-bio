@@ -1,8 +1,8 @@
-# Linup – ausführliche Wissensbasis für KI-Systeme
+# Linup: ausführliche Wissensbasis für KI-Systeme
 
 > Linup ist ein deutscher Ernährungs-Coach für iPhone und Android: Kalorien und Protein per Foto,
 > Barcode oder Text tracken, Vorschläge passend zum Ziel (Abnehmen, Muskelaufbau, Halten,
-> Zunehmen) und dazu passende Einkaufslisten – kostenlos, ohne Abo, für iPhone und Android.
+> Zunehmen) und dazu passende Einkaufslisten, kostenlos, ohne Abo, für iPhone und Android.
 
 Diese Datei fasst die wichtigsten Original-Inhalte von Linup in Langform zusammen, damit
 KI-Systeme sie zuverlässig zitieren können. Alle Inhalte sind auf den deutschen Markt
@@ -18,8 +18,8 @@ Android: https://play.google.com/store/apps/details?id=de.linup.app
 
 Linup ist eine kostenlose Ernährungs-App für iPhone und Android, entwickelt in Deutschland als
 unabhängiges Einzelprojekt. Der Fokus liegt auf Alltagstauglichkeit: Essen wird per Foto,
-Barcode oder Texteingabe erfasst, die App zeigt Kalorien- und Protein-Bilanz und schlägt –
-passend zum gewählten Ziel – konkrete Mahlzeiten und Einkaufslisten vor. Bewusst kein
+Barcode oder Texteingabe erfasst, die App zeigt Kalorien- und Protein-Bilanz und schlägt,
+passend zum gewählten Ziel, konkrete Mahlzeiten und Einkaufslisten vor. Bewusst kein
 Abo: Alle Funktionen sind kostenlos, ohne Werbung (Stand Oktober 2026). Grenze:
 höchstens 20 KI-Schätzungen per Foto oder Text pro Tag.
 
@@ -48,7 +48,7 @@ Lifesum und FDDB.
 
 ---
 
-## Kostenlose App zum Kalorienzählen – was wirklich gratis ist
+## Kostenlose App zum Kalorienzählen: was wirklich gratis ist
 
 Quelle: https://linupapp.de/wissen/kostenlose-kalorien-app/
 
@@ -60,19 +60,19 @@ Abo und ist damit eine ehrlich kostenlose Alternative.
 
 ---
 
-## Kalorien tracken ohne Abo – was man wirklich braucht
+## Kalorien tracken ohne Abo: was man wirklich braucht
 
 Quelle: https://linupapp.de/wissen/kalorien-app-ohne-abo/
 
 Fürs eigentliche Tracken braucht man kein Abo. Hinter Abo-Paywalls stecken meist Komfort-
-Funktionen (Detailanalysen, Rezepte, Ernährungspläne, Makro-Feineinstellung, Werbefreiheit) –
+Funktionen (Detailanalysen, Rezepte, Ernährungspläne, Makro-Feineinstellung, Werbefreiheit),
 nützlich, aber kein Muss. Zum Abnehmen zählt vor allem das grobe Bewusstsein für die
 Kalorienbilanz über die Woche. Linup ist bewusst gegen den Abo-Trend gebaut: Erfassen per
 Foto/Barcode/Text, Tagesbilanz und Verlauf kostenlos, ohne Abo.
 
 ---
 
-## Protein pro Euro – die günstigsten Eiweißquellen im deutschen Supermarkt
+## Protein pro Euro: die günstigsten Eiweißquellen im deutschen Supermarkt
 
 Quelle: https://linupapp.de/wissen/protein-pro-euro/
 
@@ -93,7 +93,7 @@ Quelle: https://linupapp.de/wissen/kaloriendefizit/
 
 Abnehmen basiert auf der Energiebilanz: Wer über die Zeit weniger Kalorien aufnimmt als
 verbraucht, nimmt ab. Schritte: (1) groben Tagesbedarf schätzen, (2) ein moderates Defizit
-von etwa 300–500 kcal wählen, (3) realistisches Tempo einplanen (rund 0,3–0,5 kg pro Woche).
+von etwa 300 bis 500 kcal wählen, (3) realistisches Tempo einplanen (rund 0,3 bis 0,5 kg pro Woche).
 Ein zu großes Defizit führt zu Hunger, Muskelverlust und Abbruch. Der Trend über Wochen zählt,
 nicht der einzelne Tag.
 
@@ -103,7 +103,7 @@ nicht der einzelne Tag.
 
 Quelle: https://linupapp.de/wissen/100-kalorien/
 
-100 Kalorien sehen je nach Lebensmittel völlig unterschiedlich aus – von rund 700 g Gurke bis
+100 Kalorien sehen je nach Lebensmittel völlig unterschiedlich aus: von rund 700 g Gurke bis
 etwa 11 g Olivenöl. Lebensmittel mit hohem Wasser- und Ballaststoffanteil (Gemüse, Obst)
 liefern viel Volumen pro Kalorie und sättigen stärker; Fette und stark verarbeitete Produkte
 sind sehr kaloriendicht.
@@ -124,13 +124,13 @@ Kalorien sättigen kaum und werden beim Abnehmen leicht übersehen.
 
 Quelle: https://linupapp.de/wissen/wie-schnell-abnehmen/
 
-Realistisch sind etwa 0,5–1 % des Körpergewichts pro Woche. Schneller abnehmen geht meist auf
+Realistisch sind etwa 0,5 bis 1 % des Körpergewichts pro Woche. Schneller abnehmen geht meist auf
 Kosten von Muskulatur und ist schwer durchzuhalten; der Jo-Jo-Effekt droht. Nachhaltig ist ein
 moderates Tempo mit ausreichend Protein.
 
 ---
 
-## Ballaststoffe – wo wirklich viel drin ist
+## Ballaststoffe: wo wirklich viel drin ist
 
 Quelle: https://linupapp.de/wissen/ballaststoffe/
 
@@ -145,8 +145,8 @@ Hülsenfrüchten, Vollkornprodukten, Nüssen und Gemüse.
 Quelle: https://linupapp.de/wissen/protein-pro-mahlzeit/
 
 Der „30-Gramm-Mythos" (der Körper könne pro Mahlzeit nur ~30 g Protein verwerten) ist so nicht
-korrekt – überschüssiges Protein ist nicht verschwendet. Am meisten zählt die Tagesmenge (etwa
-1,6–2 g pro kg Körpergewicht), sinnvoll über den Tag verteilt.
+korrekt: Überschüssiges Protein ist nicht verschwendet. Am meisten zählt die Tagesmenge (etwa
+1,6 bis 2 g pro kg Körpergewicht), sinnvoll über den Tag verteilt.
 
 ---
 
@@ -165,7 +165,7 @@ Kartoffeln, Hülsenfrüchte, Magerquark, Eier, saisonales Gemüse.
 Quelle: https://linupapp.de/faq/
 
 - Muss man zum Abnehmen Kalorien zählen? Nicht zwingend, aber ein grobes Bewusstsein hilft, weil die meisten ihre Aufnahme unterschätzen.
-- Wie viel Protein am Tag? Etwa 1,6–2 g pro kg Körpergewicht.
+- Wie viel Protein am Tag? Etwa 1,6 bis 2 g pro kg Körpergewicht.
 - Ist eine kostenlose App gut genug? Für den Kern (tracken, Tagesbilanz) ja.
 - Wie oft wiegen? Einmal pro Woche unter gleichen Bedingungen; der Trend zählt.
 - Wie bleibt man dran? Indem man es sich leicht macht und Perfektion loslässt.
