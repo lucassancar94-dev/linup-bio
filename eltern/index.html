@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#FFFFFF">
+<!-- Nur eigene Skripte, nur Verbindung zur Funktion "eltern". Kein Tracker, kein Cookie. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'unsafe-inline'; img-src 'self'; connect-src https://vbxahjnbcjmexqnxacxs.supabase.co; base-uri 'none'; form-action 'none'">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>Linup</title>
+<style>
+  :root{--ink:#000;--soft:rgba(60,60,67,0.62);--line:rgba(60,60,67,0.14);--box:#F2F2F7;--rand:#D1D1D6;}
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  [hidden]{display:none !important;}
+  html{-webkit-text-size-adjust:100%;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#fff;color:var(--ink);line-height:1.45;padding:40px 16px 28px;overflow-wrap:break-word;}
+  .wrap{max-width:440px;margin:0 auto;}
+  .logo{display:block;width:64px;height:64px;border-radius:15px;}
+  h1{font-size:30px;font-weight:800;letter-spacing:-0.6px;line-height:1.15;margin:24px 0 12px;}
+  h1:focus{outline:none;}
+  .lead{font-size:17px;color:var(--soft);}
+  .box{background:var(--box);border-radius:18px;padding:14px 18px 2px;margin:24px 0 22px;}
+  .box h2{font-size:12.5px;font-weight:700;letter-spacing:.7px;text-transform:uppercase;color:var(--soft);padding-bottom:10px;border-bottom:1px solid var(--line);}
+  .box ul{list-style:none;}
+  .box li{font-size:16px;padding:12px 0;border-bottom:1px solid var(--line);}
+  .box li:last-child{border-bottom:0;}
+  .knopf{display:block;width:100%;min-height:54px;margin-top:12px;padding:14px 20px;border-radius:999px;border:1.5px solid #000;background:#000;color:#fff;font:inherit;font-size:17px;font-weight:700;line-height:1.25;cursor:pointer;}
+  .knopf.hell{background:#fff;color:#000;border-color:var(--rand);}
+  .knopf:disabled{opacity:.45;cursor:default;}
+  .knopf:focus-visible,a:focus-visible{outline:3px solid #007AFF;outline-offset:2px;}
+  .klein{font-size:14px;color:var(--soft);text-align:center;margin-top:18px;}
+  .klein a,.fuss a{color:var(--soft);}
+  .klein a{color:#000;}
+  .haken{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:#000;margin-top:28px;}
+  .warten{display:flex;align-items:center;gap:12px;margin-top:28px;color:var(--soft);font-size:16px;}
+  .kreis{width:22px;height:22px;border-radius:50%;border:2.5px solid var(--rand);border-top-color:#000;animation:drehen .8s linear infinite;}
+  @keyframes drehen{to{transform:rotate(360deg);}}
+  @media (prefers-reduced-motion: reduce){.kreis{animation:none;}}
+  .fuss{margin-top:40px;font-size:13px;color:var(--soft);text-align:center;}
+  @media (max-width:360px){h1{font-size:26px;}.lead{font-size:16px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <img class="logo" src="/apple-touch-icon.png" alt="Linup">
+  <main>
+    <section data-zustand="laden">
+      <div class="warten" role="status"><span class="kreis" aria-hidden="true"></span><span data-t="laden"></span></div>
+    </section>
+
+    <section data-zustand="offen" hidden>
+      <h1 tabindex="-1" data-t="offen_titel"></h1>
+      <p class="lead" id="offen-text"></p>
+      <div class="box">
+        <h2 data-t="speichert_titel"></h2>
+        <ul><li data-t="speichert_1"></li><li data-t="speichert_2"></li><li data-t="speichert_3"></li></ul>
+      </div>
+      <button type="button" class="knopf" id="ja" data-t="ja_knopf"></button>
+      <button type="button" class="knopf hell" id="nein" data-t="nein_knopf"></button>
+      <p class="klein"><span data-t="offen_fuss"></span> <a data-t="datenschutz" href="https://puffy-albatross-a4e.notion.site/37aa388a99a2804b95e9fa0d72bdb0ac" target="_blank" rel="noopener noreferrer"></a></p>
+    </section>
+
+    <section data-zustand="frage" hidden>
+      <h1 tabindex="-1" id="frage-titel"></h1>
+      <p class="lead" data-t="frage_text"></p>
+      <button type="button" class="knopf" id="frage-ok" data-t="frage_nein_knopf"></button>
+      <button type="button" class="knopf hell" id="abbrechen" data-t="abbrechen"></button>
+    </section>
+
+    <section data-zustand="danke" hidden>
+      <div class="haken" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+      <h1 tabindex="-1" data-t="danke_titel"></h1>
+      <p class="lead" data-t="danke_text"></p>
+      <p class="klein" data-t="danke_fuss"></p>
+      <button type="button" class="knopf hell" id="zuruecknehmen" data-t="zurueck_knopf"></button>
+    </section>
+
+    <section data-zustand="geloescht" hidden>
+      <h1 tabindex="-1" data-t="geloescht_titel"></h1>
+      <p class="lead" data-t="geloescht_text"></p>
+    </section>
+
+    <section data-zustand="unbekannt" hidden>
+      <h1 tabindex="-1" data-t="unbekannt_titel"></h1>
+      <p class="lead" data-t="unbekannt_text"></p>
+    </section>
+
+    <section data-zustand="ohne_link" hidden>
+      <h1 tabindex="-1" data-t="ohne_link_titel"></h1>
+      <p class="lead" data-t="ohne_link_text"></p>
+    </section>
+
+    <section data-zustand="fehler" hidden>
+      <h1 tabindex="-1" data-t="fehler_titel"></h1>
+      <p class="lead" data-t="fehler_text"></p>
+      <button type="button" class="knopf" id="nochmal" data-t="nochmal"></button>
+    </section>
+  </main>
+
+  <p class="fuss">
+    <a data-t="datenschutz" href="https://puffy-albatross-a4e.notion.site/37aa388a99a2804b95e9fa0d72bdb0ac" target="_blank" rel="noopener noreferrer"></a>
+    &middot;
+    <a data-t="impressum" href="/impressum/" target="_blank" rel="noopener"></a>
+  </p>
+</div>
+
+<script src="logik.js"></script>
+<script src="texte-1.js"></script>
+<script src="texte-2.js"></script>
+<script src="texte-3.js"></script>
+<script src="texte-4.js"></script>
+<script src="seite.js"></script>
+</body>
+</html>
