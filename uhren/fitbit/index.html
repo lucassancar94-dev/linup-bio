@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; script-src 'unsafe-inline'">
+<title>Zurück zu Linup</title>
+<!-- Ruecksprung nach der Anmeldung bei Google fuer Fitbit direkt (1.2.12,
+     docs/FITBIT-DIREKT.md). Gebaut wie web/uhren/polar/. Google schickt code,
+     state und scope (oder error) hierher, dazu eigene Felder wie authuser.
+     Die Seite reicht nur code, state, error und scope unveraendert an
+     liniup://uhren/fitbit weiter und tauscht nie selbst: das darf nur die
+     Function fitbit mit Client-Secret und PKCE-Verifier. Kein fremdes Skript,
+     kein Referer, damit der Code nirgends sonst landet. Farben wie constants/theme.js. -->
+<style>
+  :root{--bg:#F2F2F7;--surface:#FFFFFF;--ink:#000000;--soft:rgba(60,60,67,0.60);--faint:rgba(60,60,67,0.30);
+    --border:rgba(60,60,67,0.18);--green:#06A77D;--green-soft:#E4F4EF;--muted:#E9E9EF;}
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  html{-webkit-text-size-adjust:100%;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);
+    color:var(--ink);line-height:1.4;min-height:100vh;display:flex;flex-direction:column;align-items:center;
+    padding:32px 16px 20px;overflow-wrap:break-word;-webkit-font-smoothing:antialiased;}
+  .karte{width:100%;max-width:400px;margin:auto 0;background:var(--surface);border-radius:22px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.06);padding:36px 26px 30px;display:flex;flex-direction:column;align-items:center;text-align:center;}
+  .logo{display:block;width:68px;height:68px;border-radius:17px;box-shadow:0 4px 14px rgba(0,0,0,0.10);margin-bottom:22px;}
+  .pille{display:none;align-items:center;gap:6px;padding:4px 12px;border-radius:100px;background:var(--muted);color:var(--soft);
+    font-size:13px;font-weight:700;margin-bottom:14px;}
+  .pille.gut{background:var(--green-soft);color:var(--green);}
+  .punkt{width:8px;height:8px;border-radius:4px;background:currentColor;}
+  h1{font-size:26px;font-weight:800;line-height:32px;letter-spacing:-0.5px;margin-bottom:8px;}
+  .text{font-size:15px;line-height:21px;color:var(--soft);max-width:300px;}
+  .knopf{display:none;width:100%;min-height:54px;margin-top:24px;padding:15px 20px;border-radius:100px;background:var(--ink);color:#fff;
+    font-size:17px;font-weight:700;line-height:1.4;text-align:center;text-decoration:none;}
+  .knopf:focus-visible{outline:3px solid #007AFF;outline-offset:2px;}
+  .sicher{display:none;margin-top:20px;padding-top:18px;border-top:0.5px solid var(--border);font-size:12.5px;line-height:17px;
+    color:var(--soft);align-items:center;justify-content:center;gap:8px;text-align:left;}
+  .sicher svg{flex:none;}
+  .fuss{display:none;font-size:12px;color:var(--faint);text-align:center;margin-top:20px;}
+  @media (max-width:360px){h1{font-size:23px;line-height:29px;}.karte{padding:28px 20px 24px;}}
+</style>
+</head>
+<body>
+<div class="karte">
+  <!-- Das echte App-Symbol, wie auf der Eltern-Seite. Nicht nachzeichnen. -->
+  <img class="logo" src="/assets/linup-app-symbol.png" alt="Linup" width="68" height="68">
+  <div class="pille" id="pille"><span class="punkt"></span><span id="pilleText"></span></div>
+  <h1 id="titel">Zurück zu Linup</h1>
+  <p class="text" id="text">Linup öffnet sich gleich. Falls nicht, tippe auf den Knopf.</p>
+  <noscript><p class="text">Bitte JavaScript einschalten. Please turn on JavaScript.</p></noscript>
+  <a class="knopf" id="knopf" href="#">In Linup öffnen</a>
+  <div class="sicher" id="sicher">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+    <span id="sicherText"></span>
+  </div>
+</div>
+<p class="fuss" id="fuss"></p>
+<script>
+(function () {
+  // [Titel, Text, Knopf, ohne Code, angemeldet, nicht verbunden, Sicherheit, Fussnote]
+  var TEXTE = {
+    de: ['Zurück zu Linup', 'Linup öffnet sich gleich. Falls nicht, tippe auf den Knopf.', 'In Linup öffnen',
+         'Diese Seite öffnet sich nach der Anmeldung bei Google. Starte die Verbindung in der Linup-App unter Profil.',
+         'Bei Google angemeldet', 'Nicht verbunden', 'Diese Seite reicht den einmaligen Code nur an die Linup-App weiter.',
+         'Du kannst diesen Browsertab danach schließen.'],
+    en: ['Back to Linup', 'Linup will open in a moment. If it doesn’t, tap the button.', 'Open Linup',
+         'This page opens after you sign in to Google. Start the connection in the Linup app under Profile.',
+         'Signed in to Google', 'Not connected', 'This page only passes the one-time code on to the Linup app.',
+         'You can close this browser tab afterwards.'],
+    bg: ['Обратно към Linup', 'Linup ще се отвори след малко. Ако не стане, натисни бутона.', 'Отвори Linup',
+         'Тази страница се отваря след вход в Google. Започни свързването в приложението Linup, в Профил.',
+         'Влезе в Google', 'Не е свързано', 'Тази страница предава еднократния код само на приложението Linup.',
+         'След това можеш да затвориш този раздел на браузъра.'],
+    cs: ['Zpět do Linupu', 'Linup se za chvíli otevře. Pokud ne, klepni na tlačítko.', 'Otevřít Linup',
+         'Tato stránka se otevře po přihlášení u Googlu. Propojení spusť v aplikaci Linup v části Profil.',
+         'Přihlášeno u Googlu', 'Nepropojeno', 'Tato stránka předává jednorázový kód jen aplikaci Linup.',
+         'Potom můžeš tuto kartu prohlížeče zavřít.'],
+    da: ['Tilbage til Linup', 'Linup åbner om et øjeblik. Hvis ikke, så tryk på knappen.', 'Åbn Linup',
+         'Denne side åbner, når du har logget ind hos Google. Start forbindelsen i Linup-appen under Profil.',
+         'Logget ind hos Google', 'Ikke forbundet', 'Denne side sender kun engangskoden videre til Linup-appen.',
+         'Du kan lukke denne fane bagefter.'],
+    el: ['Πίσω στο Linup', 'Το Linup ανοίγει σε λίγο. Αν δεν ανοίξει, πάτησε το κουμπί.', 'Άνοιγμα Linup',
+         'Αυτή η σελίδα ανοίγει μετά τη σύνδεση στο Google. Ξεκίνα τη σύνδεση στην εφαρμογή Linup, στο Προφίλ.',
+         'Συνδέθηκες στο Google', 'Δεν συνδέθηκε', 'Αυτή η σελίδα δίνει τον κωδικό μίας χρήσης μόνο στην εφαρμογή Linup.',
+         'Μετά μπορείς να κλείσεις αυτή την καρτέλα.'],
+    es: ['Volver a Linup', 'Linup se abrirá en un momento. Si no, toca el botón.', 'Abrir Linup',
+         'Esta página se abre después de iniciar sesión en Google. Empieza la conexión en la app Linup, en Perfil.',
+         'Sesión iniciada en Google', 'No conectado', 'Esta página solo pasa el código de un solo uso a la app Linup.',
+         'Después puedes cerrar esta pestaña del navegador.'],
+    fr: ['Retour à Linup', 'Linup va s’ouvrir dans un instant. Sinon, touche le bouton.', 'Ouvrir Linup',
+         'Cette page s’ouvre après la connexion à Google. Lance la liaison dans l’app Linup, dans Profil.',
+         'Connexion à Google réussie', 'Non connecté', 'Cette page transmet le code à usage unique uniquement à l’app Linup.',
+         'Tu peux ensuite fermer cet onglet.'],
+    hu: ['Vissza a Linuphoz', 'A Linup mindjárt megnyílik. Ha nem, koppints a gombra.', 'Linup megnyitása',
+         'Ez az oldal a Google-bejelentkezés után nyílik meg. A kapcsolódást a Linup appban, a Profil részben indítsd el.',
+         'Bejelentkezve a Google-ba', 'Nincs összekapcsolva', 'Ez az oldal az egyszer használatos kódot csak a Linup appnak adja át.',
+         'Utána bezárhatod ezt a böngészőlapot.'],
+    it: ['Torna a Linup', 'Linup si apre tra un attimo. Se non succede, tocca il pulsante.', 'Apri Linup',
+         'Questa pagina si apre dopo l’accesso a Google. Avvia il collegamento nell’app Linup, in Profilo.',
+         'Accesso a Google riuscito', 'Non collegato', 'Questa pagina passa il codice monouso solo all’app Linup.',
+         'Dopo puoi chiudere questa scheda del browser.'],
+    nl: ['Terug naar Linup', 'Linup gaat zo open. Gebeurt dat niet, tik dan op de knop.', 'Linup openen',
+         'Deze pagina opent nadat je bent ingelogd bij Google. Start de koppeling in de Linup-app onder Profiel.',
+         'Ingelogd bij Google', 'Niet gekoppeld', 'Deze pagina geeft de eenmalige code alleen door aan de Linup-app.',
+         'Daarna kun je dit browsertabblad sluiten.'],
+    pl: ['Powrót do Linup', 'Linup zaraz się otworzy. Jeśli nie, dotknij przycisku.', 'Otwórz Linup',
+         'Ta strona otwiera się po zalogowaniu do Google. Połączenie uruchom w aplikacji Linup, w zakładce Profil.',
+         'Zalogowano do Google', 'Nie połączono', 'Ta strona przekazuje jednorazowy kod tylko do aplikacji Linup.',
+         'Potem możesz zamknąć tę kartę przeglądarki.'],
+    pt: ['Voltar ao Linup', 'O Linup vai abrir num instante. Se não abrir, toca no botão.', 'Abrir o Linup',
+         'Esta página abre depois de iniciares sessão na Google. Começa a ligação na app Linup, em Perfil.',
+         'Sessão iniciada na Google', 'Não ligado', 'Esta página só passa o código de utilização única para a app Linup.',
+         'Depois podes fechar este separador do navegador.'],
+    ro: ['Înapoi la Linup', 'Linup se deschide imediat. Dacă nu, apasă butonul.', 'Deschide Linup',
+         'Pagina aceasta se deschide după conectarea la Google. Pornește legătura în aplicația Linup, la Profil.',
+         'Autentificare la Google reușită', 'Neconectat', 'Această pagină transmite codul unic doar aplicației Linup.',
+         'Apoi poți închide această filă a browserului.'],
+    sv: ['Tillbaka till Linup', 'Linup öppnas strax. Om inte, tryck på knappen.', 'Öppna Linup',
+         'Den här sidan öppnas när du har loggat in hos Google. Starta kopplingen i Linup-appen under Profil.',
+         'Inloggad hos Google', 'Inte kopplat', 'Den här sidan skickar engångskoden bara vidare till Linup-appen.',
+         'Sedan kan du stänga den här fliken.'],
+    tr: ['Linup’a dön', 'Linup birazdan açılacak. Açılmazsa düğmeye dokun.', 'Linup’ı aç',
+         'Bu sayfa Google’a giriş yaptıktan sonra açılır. Bağlantıyı Linup uygulamasında Profil bölümünden başlat.',
+         'Google’a giriş yapıldı', 'Bağlanmadı', 'Bu sayfa tek kullanımlık kodu yalnızca Linup uygulamasına iletir.',
+         'Sonra bu tarayıcı sekmesini kapatabilirsin.']
+  };
+
+  var sprachen = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ''];
+  var sprache = 'en';
+  for (var i = 0; i < sprachen.length; i++) {
+    var kurz = String(sprachen[i] || '').slice(0, 2).toLowerCase();
+    if (TEXTE[kurz]) { sprache = kurz; break; }
+  }
+  var t = TEXTE[sprache];
+  var el = function (id) { return document.getElementById(id); };
+  document.documentElement.lang = sprache;
+  document.title = t[0];
+  el('titel').textContent = t[0];
+
+  var suche = location.search;
+  var teile = new URLSearchParams(suche);
+  if (!teile.has('code') && !teile.has('error')) {
+    el('text').textContent = t[3];
+    return;
+  }
+
+  // Gruen nur mit Code: ein error von Google heisst, es ist nichts verbunden.
+  var mitCode = teile.has('code') && !teile.has('error');
+  var pille = el('pille');
+  el('pilleText').textContent = mitCode ? t[4] : t[5];
+  if (mitCode) pille.className = 'pille gut';
+  pille.style.display = 'inline-flex';
+  if (mitCode) {
+    el('sicherText').textContent = t[6];
+    el('sicher').style.display = 'flex';
+  }
+  el('fuss').textContent = t[7];
+  el('fuss').style.display = 'block';
+
+  // Nur die vier Felder, jedes unveraendert (roh, nicht neu kodiert). Was Google
+  // sonst anhaengt (authuser, prompt, hd), braucht die App nicht. Die App prueft
+  // code und state selbst (lib/uhren/fitbitLink.js), den scope der Server.
+  var ERLAUBT = { code: 1, state: 1, error: 1, scope: 1 };
+  var paare = suche.replace(/^\?/, '').split('&').filter(function (paar) {
+    var name = paar.split('=')[0];
+    try { name = decodeURIComponent(name); } catch (e) { return false; }
+    return ERLAUBT[name] === 1;
+  });
+  var ziel = 'liniup://uhren/fitbit' + (paare.length ? '?' + paare.join('&') : '');
+  var knopf = el('knopf');
+  el('text').textContent = t[1];
+  knopf.textContent = t[2];
+  knopf.href = ziel;
+  knopf.style.display = 'block';
+  // Der Code soll nicht im Browser-Verlauf liegen bleiben. Der Knopf behaelt ihn.
+  try { history.replaceState(null, '', location.pathname); } catch (e) { /* alte Browser: egal */ }
+  location.replace(ziel);
+})();
+</script>
+</body>
+</html>
