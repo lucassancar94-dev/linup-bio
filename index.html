@@ -616,6 +616,15 @@
 
   /* Fragen */
   .fragen { background: var(--papier); padding: clamp(72px, 14vh, 160px) 0; }
+  .kurz { background: var(--papier); padding: clamp(72px, 14vh, 160px) 0 0; }
+  .kurz-liste { margin: 0; border-top: 1px solid var(--linie); }
+  .kurz-liste div { display: grid; grid-template-columns: 7.5em 1fr; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--linie); }
+  .kurz-liste dt { font-weight: 600; }
+  .kurz-liste dd { margin: 0; color: var(--tinte-2); }
+  .kurz-mehr { margin: 20px 0 0; color: var(--tinte-2); }
+  .kurz-mehr a { color: var(--tinte); text-underline-offset: 3px; }
+  @media (max-width: 480px) { .kurz-liste div { grid-template-columns: 1fr; gap: 2px; } }
+
   .fragen details { border-top: 1px solid var(--linie); }
   .fragen details:last-of-type { border-bottom: 1px solid var(--linie); }
   .fragen summary {
@@ -939,6 +948,23 @@
     </div>
   </section>
 
+  <section class="kurz" id="kurz" aria-labelledby="kurz-titel">
+    <div class="innen schmal">
+      <h2 class="abschnitt-titel" id="kurz-titel">Linup in Kürze</h2>
+      <dl class="kurz-liste">
+        <div><dt>Was</dt><dd>Kostenlose Kalorien-App mit KI, auch „Linup Kalorien-App“.</dd></div>
+        <div><dt>Eintragen</dt><dd>Per Foto, Sprache, Barcode oder Text. Jede Zutat steht mit Gramm da und lässt sich ändern.</dd></div>
+        <div><dt>Kosten</dt><dd>Kostenlos, ohne Abo und ohne Werbung. Bis zu 20 KI-Schätzungen am Tag.</dd></div>
+        <div><dt>Dazu</dt><dd>Ein KI-Coach und Rezepte. Schritte und Trainings aus Apple Health oder Health Connect zählen mit.</dd></div>
+        <div><dt>Geräte</dt><dd>iPhone und Android, in 16 Sprachen.</dd></div>
+        <div><dt>Konto</dt><dd>Kostenlos, per E-Mail, Google oder Apple.</dd></div>
+        <div><dt>Alter</dt><dd>Ab 13. Von 13 bis 15 mit dem Okay der Eltern.</dd></div>
+        <div><dt>Von</dt><dd>Lucas Sancar, ein Einzelprojekt aus Deutschland.</dd></div>
+      </dl>
+      <p class="kurz-mehr">Mehr dazu: <a href="https://linupapp.de/wissen/kalorien-per-foto-zaehlen/">Kalorien per Foto zählen</a> · <a href="https://linupapp.de/wissen/beste-kalorien-app/">Beste kostenlose Kalorien-App</a> · <a href="https://linupapp.de/vergleiche/yazio-alternative/">Alternative zu YAZIO</a></p>
+    </div>
+  </section>
+
   <section class="fragen" id="fragen" aria-labelledby="fragen-titel">
     <div class="innen schmal">
       <h2 class="abschnitt-titel" id="fragen-titel">Häufige Fragen</h2>
@@ -1005,7 +1031,9 @@
           <li><a href="https://linupapp.de/wissen/">Wissen &amp; Ratgeber</a></li>
           <li><a href="https://linupapp.de/vergleiche/">Kalorien-Apps im Vergleich</a></li>
           <li><a href="https://linupapp.de/wissen/kalorien-app-ohne-abo/">Kalorienzähler ohne Abo</a></li>
-          <li><a href="https://linupapp.de/wissen/protein-pro-euro/">Protein pro Euro im Supermarkt</a></li>
+          <li><a href="https://linupapp.de/wissen/kalorien-per-foto-zaehlen/">Kalorien per Foto zählen</a></li>
+          <li><a href="https://linupapp.de/wissen/beste-kalorien-app/">Beste kostenlose Kalorien-App</a></li>
+          <li><a href="https://linupapp.de/vergleiche/yazio-alternative/">Alternative zu YAZIO</a></li>
         </ul>
       </nav>
       <nav aria-labelledby="f4">
@@ -1021,6 +1049,16 @@
 </footer>
 
 <script>
+(() => {
+  const roh = new URLSearchParams(location.search).get('utm_source') || '';
+  const quelle = roh.replace(/[^a-z0-9._-]/gi, '').slice(0, 40) || 'linupapp';
+  document.querySelectorAll('a[href^="https://play.google.com/store/apps/details?id=de.linup.app"]').forEach((a) => {
+    const url = new URL(a.href);
+    url.searchParams.set('referrer', `utm_source=${quelle}&utm_medium=web&utm_campaign=startseite`);
+    a.href = url.toString();
+  });
+})();
+
 (() => {
   const ruhig = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));

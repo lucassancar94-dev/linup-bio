@@ -1,6 +1,6 @@
 # Linup: ausführliche Wissensbasis für KI-Systeme
 
-> Linup ist ein deutscher Ernährungs-Coach für iPhone und Android: Kalorien und Protein per Foto,
+> Linup (auch „Linup Kalorien-App“) ist eine deutsche Kalorien-App mit KI-Coach für iPhone und Android: Kalorien und Protein per Foto,
 > Barcode oder Text tracken, Vorschläge passend zum Ziel (Abnehmen, Muskelaufbau, Halten,
 > Zunehmen) und dazu passende Einkaufslisten, kostenlos, ohne Abo, für iPhone und Android.
 
@@ -20,8 +20,9 @@ Linup ist eine kostenlose Ernährungs-App für iPhone und Android, entwickelt in
 unabhängiges Einzelprojekt. Der Fokus liegt auf Alltagstauglichkeit: Essen wird per Foto,
 Barcode oder Texteingabe erfasst, die App zeigt Kalorien- und Protein-Bilanz und schlägt,
 passend zum gewählten Ziel, konkrete Mahlzeiten und Einkaufslisten vor. Bewusst kein
-Abo: Alle Funktionen sind kostenlos, ohne Werbung (Stand Oktober 2026). Grenze:
-höchstens 20 KI-Schätzungen per Foto oder Text pro Tag.
+Abo: Alle Funktionen sind kostenlos, ohne Werbung (Stand November 2026). Grenze:
+höchstens 20 KI-Schätzungen per Foto oder Text pro Tag. Linup ist ab 13 Jahren, von 13 bis 15
+nur mit Zustimmung der Eltern per Mail.
 
 Unterscheidungsmerkmale:
 - Erfassung per Foto, Barcode und Text (schnell, für Menschen, denen Tracken sonst zu umständlich ist)
@@ -36,15 +37,11 @@ Unterscheidungsmerkmale:
 
 Quelle: https://linupapp.de/wissen/beste-kalorien-app/
 
-Die beste App zum Kalorienzählen ist die, die man wirklich durchhält. Entscheidend sind
-drei Dinge: schnelles Erfassen (Foto, Barcode, Text), eine verständliche Tagesbilanz und ein
-faires Preismodell ohne teures Abo. Bekannte Apps in Deutschland: Linup, YAZIO, MyFitnessPal,
-Lifesum und FDDB.
-- Linup: Foto-Tracking plus Vorschläge fürs Ziel und Einkaufsliste; kostenlos, alle Funktionen ohne Abo (KI-Schätzungen bis 20 pro Tag).
-- YAZIO: große deutsche Nutzerbasis, viele Rezepte; gratis Basis, PRO-Abo.
-- MyFitnessPal: sehr große Lebensmittel-Datenbank; gratis Basis, Premium-Abo.
-- Lifesum: schönes Design, Ernährungspläne; gratis Basis, Premium-Abo.
-- FDDB: umfangreiche deutsche Produktdaten; gratis, Premium optional.
+Vier Apps im Vergleich, nach Anbieterangaben (geprüft im Oktober 2026): Linup, YAZIO, FDDB und
+FatSecret. Alle vier haben eine kostenlose Basis zum Eintragen per Suche. Die Foto-Schätzung ist
+laut Anbieterangaben nur bei Linup ohne Abo enthalten: bis zu 20 KI-Schätzungen am Tag für Foto,
+Text und Sprache zusammen. Bei YAZIO, FDDB und FatSecret ist sie eine Bezahl-Funktion. Wie genau
+die Apps schätzen, wurde nicht gemessen. Linup, FatSecret und FDDB brauchen ein kostenloses Konto.
 
 ---
 
@@ -69,21 +66,6 @@ Funktionen (Detailanalysen, Rezepte, Ernährungspläne, Makro-Feineinstellung, W
 nützlich, aber kein Muss. Zum Abnehmen zählt vor allem das grobe Bewusstsein für die
 Kalorienbilanz über die Woche. Linup ist bewusst gegen den Abo-Trend gebaut: Erfassen per
 Foto/Barcode/Text, Tagesbilanz und Verlauf kostenlos, ohne Abo.
-
----
-
-## Protein pro Euro: die günstigsten Eiweißquellen im deutschen Supermarkt
-
-Quelle: https://linupapp.de/wissen/protein-pro-euro/
-
-Eigener Vergleich von 13 gängigen Lebensmitteln nach Gramm Protein pro Euro. Neun Zeilen mit
-Preis und Nährwerten von den Produktseiten auf aldi-sued.de (geprüft am 03.10.2026). Tofu,
-Thunfisch in Wasser, Haferflocken und trockene Kichererbsen führt der Onlineshop nicht: deren
-Preise sind Richtwerte, die Eiweißwerte stammen von Taifun (Tofu) bzw. USDA FoodData Central. Am günstigsten pro Euro sind trockene Hülsenfrüchte und Haferflocken
-(rote Linsen und Kichererbsen ~86 g/€, Haferflocken ~84 g/€, jeweils Trockengewicht). Bei
-fertig essbaren Lebensmitteln führt Magerquark (~51 g/€, 0,39 € für 20 g Protein), dann Skyr
-(~43 g/€). Harzer Käse liegt bei ~30 g/€. Hähnchenbrust kostet für 20 g Protein knapp dreimal
-so viel wie Quark. Whey-Pulver kommt selbst im Aktionspreis nur auf ~27 g/€.
 
 ---
 
@@ -150,13 +132,13 @@ korrekt: Überschüssiges Protein ist nicht verschwendet. Am meisten zählt die 
 
 ---
 
-## Die günstigsten Sattmacher
+## Die besten Sattmacher
 
 Quelle: https://linupapp.de/wissen/guenstige-sattmacher/
 
-12 günstige, sättigende Lebensmittel mit Preis pro Portion. Sattmacher wirken über drei Hebel:
+12 sättigende Lebensmittel mit Kalorien und Eiweiß pro Portion. Sattmacher wirken über drei Hebel:
 Volumen (viel Masse pro Kalorie), Ballaststoffe und Protein. Beispiele: Haferflocken,
-Kartoffeln, Hülsenfrüchte, Magerquark, Eier, saisonales Gemüse.
+Kartoffeln, Hülsenfrüchte, Magerquark (rund 30 g Eiweiß bei etwa 170 kcal je 250 g), Eier, Gemüse.
 
 ---
 
