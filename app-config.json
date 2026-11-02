@@ -7,7 +7,7 @@
   },
   "android": {
     "minSupportedVersion": "1.0.0",
-    "latestVersion": "1.2.10",
+    "latestVersion": "1.2.12",
     "storeUrl": "https://play.google.com/store/apps/details?id=de.linup.app"
   }
 }
