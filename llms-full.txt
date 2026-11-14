@@ -45,18 +45,6 @@ die Apps schätzen, wurde nicht gemessen. Linup, FatSecret und FDDB brauchen ein
 
 ---
 
-## Kostenlose App zum Kalorienzählen: was wirklich gratis ist
-
-Quelle: https://linupapp.de/wissen/kostenlose-kalorien-app/
-
-„Gratis im App Store" bedeutet nicht automatisch „voll nutzbar". Viele Kalorien-Apps sind
-Freemium: kostenlos herunterladbar, aber Kernfunktionen liegen hinter einem Abo. Für den
-Alltag braucht man drei Dinge ohne Bezahlschranke: schnelles Erfassen, Kalorien- und
-Protein-Tagesbilanz sowie einen Wochenverlauf. Linup bietet alle Funktionen kostenlos und ohne
-Abo und ist damit eine ehrlich kostenlose Alternative.
-
----
-
 ## Kalorien tracken ohne Abo: was man wirklich braucht
 
 Quelle: https://linupapp.de/wissen/kalorien-app-ohne-abo/
