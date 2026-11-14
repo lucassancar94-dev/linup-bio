@@ -1,11 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Linup">
-  <title>Linup</title>
-  <!-- Das Zeichen so, wie es die App im Kopf traegt: ein blauer Ring,
-       darin der schwarze Haken. Masse abgenommen aus den Store-Bildern
-       (PlayStore-Metadaten/de-DE/images/phoneScreenshots).
-       Aendert sich das Zeichen in der App, wird NUR diese Datei getauscht,
-       nicht 114 HTML-Seiten. -->
-  <circle cx="50" cy="50" r="43" fill="none" stroke="#007AFF" stroke-width="7.5"/>
-  <path d="M33 58.5 L50 41 L67 58.5" fill="none" stroke="#0B0B0C" stroke-width="9.5"
-        stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="Linup"><title>Linup</title><defs><linearGradient id="grund" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1024"><stop offset="0" stop-color="#20232B"/><stop offset="1" stop-color="#0E1116"/></linearGradient></defs><rect width="1024" height="1024" rx="230.4" fill="url(#grund)"/><line x1="360" y1="383.8" x2="664" y2="383.8" stroke="#FFFFFF" stroke-width="76" stroke-linecap="round"/><line x1="276" y1="495.8" x2="748" y2="495.8" stroke="#6E7689" stroke-width="76" stroke-linecap="round"/><line x1="276" y1="495.8" x2="681.9" y2="495.8" stroke="#C7D2FE" stroke-width="76" stroke-linecap="round"/><line x1="267" y1="607.8" x2="757" y2="607.8" stroke="#6E7689" stroke-width="76" stroke-linecap="round"/><line x1="267" y1="607.8" x2="610" y2="607.8" stroke="#A5B4FC" stroke-width="76" stroke-linecap="round"/><line x1="304" y1="719.8" x2="720" y2="719.8" stroke="#6E7689" stroke-width="76" stroke-linecap="round"/><line x1="304" y1="719.8" x2="528.6" y2="719.8" stroke="#818CF8" stroke-width="76" stroke-linecap="round"/><line x1="397" y1="831.8" x2="627" y2="831.8" stroke="#FFFFFF" stroke-width="76" stroke-linecap="round"/><line x1="521" y1="271.8" x2="620.6" y2="188.2" stroke="#A5B4FC" stroke-width="76" stroke-linecap="round"/></svg>
