@@ -305,6 +305,11 @@ span.best { background: var(--pille); border-radius: 100px; padding: 2px 9px; }
   transition: transform .14s ease, box-shadow .14s ease;
 }
 .cta { margin-top: 44px; padding: 17px 24px; }
+/* Zwei Laeden nebeneinander, auf dem Handy untereinander. */
+.cta-block { margin-top: 44px; text-align: center; }
+.cta-titel { font-weight: 700; color: var(--ink); margin: 0 0 14px; }
+.cta-paar { display: flex; flex-wrap: wrap; gap: 10px; }
+.cta-paar .cta { margin-top: 0; flex: 1 1 210px; text-align: center; }
 .cta:hover, .btn-primary:hover, .store-btn:hover, .primary:hover, .app-strip a:hover {
   transform: translateY(-1px);
   box-shadow: 0 10px 26px rgba(0,0,0,0.19);
@@ -482,6 +487,7 @@ a:focus-visible, summary:focus-visible, details:focus-visible {
   .tldr, .methodik { padding: 20px; }
   .app-strip { padding: 22px 18px; }
   .cta { margin-top: 34px; }
+  .cta-block { margin-top: 34px; }
   .related, .links, .quick { gap: 10px; }
   .related a, .links a, .quick a { padding: 8px 13px; font-size: 13px; }
   .wrap > .logo { width: 56px; height: 56px; margin-bottom: 16px; }
