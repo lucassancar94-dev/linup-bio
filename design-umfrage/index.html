@@ -147,12 +147,15 @@
     transition:background-color .2s ease,color .2s ease,transform .12s ease;}
   .knopf:active{transform:scale(.97);}
   .knopf:disabled{background:var(--aus);color:var(--aus-text);cursor:default;transform:none;}
+  /* „Überspringen“ unter „Weiter“: verschwindet nach einer Wahl, behält aber seinen Platz (kein Springen) */
+  .ueberspringen{display:block;margin:4px auto 0;min-height:44px;padding:0 20px;font-size:15px;font-weight:600;color:var(--leise);touch-action:manipulation;}
+  .ueberspringen.weg{visibility:hidden;}
   .fehler{margin-top:8px;font-size:13px;line-height:18px;font-weight:500;color:var(--warn);}
   .fehler:empty{display:none;}
   .kleingedrucktes{margin-top:12px;font-size:13px;line-height:18px;color:var(--leise);}
   .kleingedrucktes a{font-weight:600;color:var(--text);text-decoration:none;}
 
-  .stern:focus-visible,.bildwahl:focus-visible,.zeilenwahl:focus-visible,.knopf:focus-visible,.zurueck:focus-visible,a:focus-visible{
+  .stern:focus-visible,.bildwahl:focus-visible,.zeilenwahl:focus-visible,.knopf:focus-visible,.zurueck:focus-visible,.ueberspringen:focus-visible,a:focus-visible{
     outline:2px solid var(--text);outline-offset:2px;}
 
   /* Kleine Stufe (iPhone SE in Safari, rund 548 pt sichtbar) */
@@ -258,7 +261,7 @@
           </div>
         </div>
       </div>
-      <div class="fuss"><button type="button" class="knopf" data-aktion="weiter" data-braucht="gefallen" disabled>Weiter</button></div>
+      <div class="fuss"><button type="button" class="knopf" data-aktion="weiter" data-braucht="gefallen" disabled>Weiter</button><button type="button" class="ueberspringen" data-ueberspringt="gefallen">Überspringen</button></div>
     </div>
   </section>
 
@@ -283,7 +286,7 @@
           </div>
         </div>
       </div>
-      <div class="fuss"><button type="button" class="knopf" data-aktion="weiter" data-braucht="vergleich" disabled>Weiter</button></div>
+      <div class="fuss"><button type="button" class="knopf" data-aktion="weiter" data-braucht="vergleich" disabled>Weiter</button><button type="button" class="ueberspringen" data-ueberspringt="vergleich">Überspringen</button></div>
     </div>
   </section>
 
@@ -315,7 +318,7 @@
         <div class="block">
           <span class="fertig" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="#C7D2FE" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 21l6.5 6.5L30 14"/></svg></span>
           <h2 class="titel gross" id="t4" tabindex="-1">Danke.</h2>
-          <p class="unter">Deine Antwort ist angekommen. Sie hilft uns beim nächsten Update.</p>
+          <p class="unter" id="danke-text">Deine Antwort ist angekommen. Sie hilft uns beim nächsten Update.</p>
         </div>
       </div>
       <div class="fuss">
@@ -353,8 +356,13 @@
   var textFeld = document.getElementById('text');
   var senden = document.getElementById('senden');
   var fehler = document.getElementById('fehler');
+  var dankeText = document.getElementById('danke-text');
   var antworten = { gefallen: null, vergleich: null };
   var stand = 0, laeuft = false;
+  // Nach jedem Folienwechsel kurz keine Knoepfe: die neue Folie nimmt Tipps sofort an, ein Doppeltipp
+  // traefe sonst schon den Knopf an derselben Stelle der naechsten Folie (Ueberspringen, Abschicken, Zurueck).
+  var SPERRE_MS = 400, gewechselt = 0;
+  function frisch() { return Date.now() - gewechselt < SPERRE_MS; }
 
   // Sichtbare Hoehe statt 100vh: so passt alles auch bei offener Tastatur.
   function passeHoehe() {
@@ -380,6 +388,9 @@
       k.disabled = antworten[k.dataset.braucht] === null;
     });
     document.querySelectorAll('[data-aktion="zurueck"]').forEach(function (k) { k.disabled = laeuft; });
+    document.querySelectorAll('[data-ueberspringt]').forEach(function (k) {
+      k.classList.toggle('weg', antworten[k.dataset.ueberspringt] !== null);
+    });
   }
 
   function gehe(ziel) {
@@ -387,6 +398,7 @@
     if (document.activeElement === textFeld) textFeld.blur();
     fehler.textContent = '';
     stand = ziel;
+    gewechselt = Date.now();
     folien.forEach(function (f, i) {
       f.classList.toggle('aktiv', i === stand);
       f.classList.toggle('davor', i < stand);
@@ -437,10 +449,17 @@
   });
 
   document.querySelectorAll('[data-aktion="weiter"]').forEach(function (k) {
-    k.addEventListener('click', function () { if (!k.disabled) gehe(stand + 1); });
+    k.addEventListener('click', function () { if (!k.disabled && !frisch()) gehe(stand + 1); });
   });
   document.querySelectorAll('[data-aktion="zurueck"]').forEach(function (k) {
-    k.addEventListener('click', function () { if (!laeuft) gehe(stand - 1); });
+    k.addEventListener('click', function () { if (!laeuft && !frisch()) gehe(stand - 1); });
+  });
+  // Frage 1 und 2 duerfen leer bleiben: die Antwort bleibt null, die Auswertung zaehlt null als „uebersprungen“.
+  document.querySelectorAll('[data-ueberspringt]').forEach(function (k) {
+    k.addEventListener('click', function () {
+      if (frisch()) return;
+      antworten[k.dataset.ueberspringt] = null; zeichne(); gehe(stand + 1);
+    });
   });
 
   // Die Datenbank nimmt hoechstens 4.000 Byte je Antwort, der Text bekommt hoechstens 1.500.
@@ -460,13 +479,19 @@
   }
 
   senden.addEventListener('click', function () {
-    if (laeuft || antworten.gefallen === null || antworten.vergleich === null) return;
+    if (laeuft || frisch()) return;
+    var text = kuerzen(textFeld.value.trim());
+    // Alles uebersprungen und kein Text: nichts senden und das auch so sagen.
+    if (antworten.gefallen === null && antworten.vergleich === null && !text) {
+      dankeText.textContent = 'Du hast alles übersprungen, darum wurde nichts gesendet.';
+      gehe(FOLGE.indexOf('danke'));
+      return;
+    }
     laeuft = true;
     senden.disabled = true;
     senden.textContent = 'Wird gesendet';
     fehler.textContent = '';
     zeichne();
-    var text = kuerzen(textFeld.value.trim());
     var daten = { runde: 'design', gefallen: antworten.gefallen, vergleich: antworten.vergleich, text: text || null,
       kontext: kontext, kennung: kennung };
     var fertig = function () { laeuft = false; gehe(FOLGE.indexOf('danke')); };
