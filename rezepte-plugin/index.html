@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--favicon-->
+<link rel="icon" href="https://linupapp.de/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="https://linupapp.de/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://linupapp.de/favicon-48.png" sizes="48x48" type="image/png">
+<link rel="icon" href="https://linupapp.de/favicon-192.png" sizes="192x192" type="image/png">
+<link rel="icon" href="https://linupapp.de/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="https://linupapp.de/apple-touch-icon.png">
+<meta name="theme-color" content="#F4F4F6">
+<!--/favicon-->
+<title>Linup Rezepte für ChatGPT und Claude</title>
+<meta name="description" content="Linup Rezepte als Plugin: deutsche Rezepte zum Abnehmen mit Kalorien und Protein je Portion, direkt in ChatGPT und Claude.">
+
+
+<style>
+  :root {
+    --bg: #0E1116;
+    --bg2: #14171d;
+    --orange: #FF6A00;
+    --orange-soft: #FF8A2E;
+    --ink: #F4F1EC;
+    --ink-soft: #A5A29B;
+    --card: #1a1e25;
+    --border: #2a2f38;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: radial-gradient(120% 80% at 50% 0%, #1a120a 0%, var(--bg2) 45%, var(--bg) 100%);
+    color: var(--ink);
+    line-height: 1.6;
+    padding: 48px 20px 64px;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; }
+  .brandrow { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+  .logo { width: 40px; height: 40px; }
+  .brand { font-size: 20px; font-weight: 800; }
+  .brand .up { color: var(--orange); }
+  h1 { font-size: 28px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 24px; }
+  .card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+    padding: 22px 24px; font-size: 15px; color: var(--ink-soft);
+  }
+  .card strong { color: var(--ink); font-weight: 600; }
+  .card a { color: var(--orange-soft); }
+  .sec { margin-top: 22px; }
+  .sec:first-child { margin-top: 0; }
+  .back { display: inline-block; margin-top: 28px; color: var(--ink-soft); font-size: 14px;
+          text-decoration: none; border: 1px solid var(--border); border-radius: 12px; padding: 10px 16px; }
+  footer { margin-top: 32px; text-align: center; color: var(--ink-soft); font-size: 13px; opacity: .7; }
+  ul { padding-left: 20px; } li { margin-top: 6px; }
+  code { color: var(--ink); background: var(--bg2); border-radius: 6px; padding: 2px 6px; font-size: 13px; word-break: break-all; }
+  h2 { color: var(--ink); font-size: 17px; margin-bottom: 8px; }
+</style>
+<link rel="stylesheet" href="/assets/linup.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="brandrow">
+      <img class="logo" src="/assets/linup-mark.svg" alt="Linup" width="44" height="44">
+      <span class="brand">Lin<span class="up">up</span></span>
+    </div>
+
+    <h1>Linup Rezepte in ChatGPT und Claude</h1>
+
+    <div class="card">
+      <div class="sec">
+        <h2>Was es kann</h2>
+        Rund 260 deutsche Rezepte zum Abnehmen und für mehr Protein. Zu jedem Rezept Kalorien, Protein, Kohlenhydrate und Fett je Portion. Bei Rezepten dazu Zutaten mit Mengen und die Zubereitung.
+      </div>
+      <div class="sec">
+        <h2>Zwei Werkzeuge</h2>
+        <ul>
+          <li><strong>Rezepte suchen</strong>: nach Stichwort (Hähnchen, Linsensuppe, vegan, proteinreich), Kaloriengrenze je Portion und Mahlzeit (Frühstück, Hauptgericht, Suppe, Dessert).</li>
+          <li><strong>Rezept anzeigen</strong>: das ganze Rezept zu einem Treffer.</li>
+        </ul>
+      </div>
+      <div class="sec">
+        <h2>Beispielfragen</h2>
+        <ul>
+          <li>Hast du ein Rezept mit Hähnchen unter 450 kcal?</li>
+          <li>Gib mir 3 proteinreiche Frühstücksideen.</li>
+          <li>Zeig mir eine Linsensuppe mit allen Zutaten.</li>
+        </ul>
+      </div>
+      <div class="sec">
+        <h2>Gut zu wissen</h2>
+        <ul>
+          <li>Nur lesend. Keine Anmeldung, kein Konto, keine Nutzerdaten.</li>
+          <li>Suchanfragen werden nicht gespeichert.</li>
+          <li>Markiert sind nur Milch, Gluten, Nuss und Fisch. Das ist keine vollständige Allergenliste, bei Allergien die Zutaten prüfen.</li>
+          <li>Richtwerte ohne Zutatenliste können je nach Zubereitung etwa 10 % abweichen.</li>
+          <li>Keine medizinische oder Ernährungsberatung.</li>
+        </ul>
+      </div>
+      <div class="sec">
+        <h2>Server-Adresse</h2>
+        <code>https://api.linupapp.de/functions/v1/rezepte-mcp?forceFunctionRegion=eu-west-1</code><br>
+        Streamable HTTP, ohne Anmeldung. Der Server läuft bei Supabase in Irland (EU).
+      </div>
+      <div class="sec">
+        <h2>Hilfe und Datenschutz</h2>
+        Fragen: <a href="/hilfe/">Hilfe</a> · <a href="https://puffy-albatross-a4e.notion.site/37aa388a99a2804b95e9fa0d72bdb0ac">Datenschutz</a> · <a href="/impressum/">Impressum</a>
+      </div>
+    </div>
+
+    <a class="back" href="/">Zur Startseite</a>
+  </div>
+</body>
+</html>
