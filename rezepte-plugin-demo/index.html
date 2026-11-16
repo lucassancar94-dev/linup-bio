@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Linup Rezepte: Demo</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0; padding: 24px 16px; font-family: -apple-system, system-ui, sans-serif; background: #111; color: #eee; }
+  main { max-width: 1100px; margin: 0 auto; }
+  h1 { font-size: 1.4rem; margin: 0 0 8px; }
+  p { color: #bbb; line-height: 1.5; }
+  video { width: 100%; height: auto; border-radius: 8px; background: #000; }
+  ol { color: #ccc; line-height: 1.6; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Linup Rezepte: Demo</h1>
+  <p>Aufnahme im OpenAI Playground mit dem MCP-Server von Linup Rezepte (nur lesend, ohne Konto).</p>
+  <video src="linup-rezepte-demo.mp4" controls playsinline muted loop></video>
+  <ol>
+    <li>„Zeig mir proteinreiche Frühstücke unter 400 kcal“: Werkzeug <code>rezepte_suchen</code> liefert 8 Treffer mit Nährwerten.</li>
+    <li>„Zeig mir das Rezept für den Quark-Grießbrei mit Zimt“: Werkzeug <code>rezept_anzeigen</code> liefert Zutaten, Schritte und Nährwerte.</li>
+    <li>„Wie wird das Wetter morgen in Berlin?“: kein Rezept-Thema, das Plugin wird nicht aufgerufen.</li>
+  </ol>
+</main>
+</body>
+</html>
