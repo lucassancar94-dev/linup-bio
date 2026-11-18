@@ -4,11 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex">
-<title>Neues Passwort für dein Linup-Konto</title>
+<title data-t="titel">Neues Passwort für dein Linup-Konto</title>
 <!-- Der Schluessel hier ist der oeffentliche Anon-Key. Er steckt in jeder
      ausgelieferten App und darf hier stehen. Schreiben kann er nur mit dem
      Einmal-Token aus der Mail, das der Browser im Adress-Fragment traegt
-     und das nie an unseren Server geht. -->
+     und das nie an unseren Server geht.
+     Sprachen (18.11.2026): Die Seite spricht die 16 App-Sprachen. Die Texte
+     stehen unten in TEXTE, weil der Deploy (deploy-website.yml) web/ nur
+     spiegelt und nichts baut. Knopfname, Platzhalter und "zu viele Versuche"
+     sind woertlich die App-Texte aus locales/; scripts/test-passwort-seite.cjs
+     prueft das. Servertext (error_description, msg) kommt nie auf die Seite. -->
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
   body{background:#F4F4F6;color:#0B0B0C;font-family:-apple-system,'Helvetica Neue',Arial,sans-serif;
@@ -31,12 +36,12 @@
 <body>
 <div class="karte">
   <img class="logo" src="/assets/linup-app-symbol.png" alt="Linup" width="64" height="64">
-  <h1>Neues Passwort setzen</h1>
-  <p id="intro">Wähle ein neues Passwort für dein Linup-Konto. Danach kannst du dich in der App damit anmelden.</p>
+  <h1 data-t="h1">Neues Passwort setzen</h1>
+  <p id="intro" data-t="intro">Wähle ein neues Passwort für dein Linup-Konto. Danach kannst du dich in der App damit anmelden.</p>
   <form id="formular">
-    <label for="pw">Neues Passwort</label>
-    <input id="pw" type="password" minlength="8" required autocomplete="new-password" placeholder="mindestens 8 Zeichen">
-    <button id="knopf" type="submit">Passwort speichern</button>
+    <label for="pw" data-t="label">Neues Passwort</label>
+    <input id="pw" type="password" minlength="8" required autocomplete="new-password" data-tp="platzhalter" placeholder="mindestens 8 Zeichen">
+    <button id="knopf" type="submit" data-t="knopf">Passwort speichern</button>
   </form>
   <p class="meldung" id="meldung"></p>
 </div>
@@ -44,6 +49,45 @@
 (function () {
   var SUPABASE = 'https://vbxahjnbcjmexqnxacxs.supabase.co';
   var ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZieGFoam5iY2ptZXhxbnhhY3hzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA1MTg4MDgsImV4cCI6MjA5NjA5NDgwOH0.NC5_FKULzVm2s6Zx16J-0vU3fgp4AayTlwD0T2Kc8gY';
+  var TEXTE = {
+    bg: {"titel":"Нова парола за твоя профил в Linup","h1":"Задай нова парола","intro":"Избери нова парола за профила си в Linup. След това можеш да влезеш с нея в приложението.","label":"Нова парола","knopf":"Запази паролата","ohneLink":"Тази страница е за смяна на забравена парола. Отвори линка от имейла от Linup и тук ще можеш да избереш нова парола.","zuKurz":"Паролата трябва да е поне 8 знака.","gespeichert":"Паролата е запазена. Вече можеш да влезеш в приложението Linup.","keinNetz":"Няма връзка. Опитай отново.","abgelaufen":"Линкът е изтекъл. Поискай нов в приложението чрез „Забравена парола?“.","nichtGeklappt":"Не се получи. Ако е нужно, поискай нов линк.","gleich":"Това е сегашната ти парола. Избери друга.","schwach":"Тази парола е твърде лесна за отгатване. Избери друга.","platzhalter":"поне 8 знака","zuVieleVersuche":"Твърде много опити. Изчакай малко и опитай отново.","zuLang":"Паролата е твърде дълга. Използвай най-много 72 знака."},
+    cs: {"titel":"Nové heslo pro tvůj účet Linup","h1":"Nastavit nové heslo","intro":"Vyber si nové heslo pro svůj účet Linup. Pak se s ním můžeš přihlásit v aplikaci.","label":"Nové heslo","knopf":"Uložit heslo","ohneLink":"Tato stránka slouží k obnovení hesla. Otevři odkaz z e-mailu od Linup a pak si tady můžeš zvolit nové heslo.","zuKurz":"Heslo musí mít alespoň 8 znaků.","gespeichert":"Heslo uloženo. Teď se můžeš přihlásit v aplikaci Linup.","keinNetz":"Žádné připojení. Zkus to prosím znovu.","abgelaufen":"Platnost odkazu vypršela. Požádej o nový v aplikaci přes „Zapomenuté heslo?“.","nichtGeklappt":"Nepovedlo se. Případně si vyžádej nový odkaz.","gleich":"To je tvoje současné heslo. Zvol prosím jiné.","schwach":"Toto heslo se dá snadno uhodnout. Zvol prosím jiné.","platzhalter":"alespoň 8 znaků","zuVieleVersuche":"Příliš mnoho pokusů. Chvíli počkej a zkus to znovu.","zuLang":"Heslo je příliš dlouhé. Použij prosím nejvýš 72 znaků."},
+    da: {"titel":"Ny adgangskode til din Linup-konto","h1":"Vælg ny adgangskode","intro":"Vælg en ny adgangskode til din Linup-konto. Bagefter kan du logge ind med den i appen.","label":"Ny adgangskode","knopf":"Gem adgangskode","ohneLink":"Denne side hører til nulstilling af adgangskoden. Åbn linket fra mailen fra Linup, så kan du vælge en ny adgangskode her.","zuKurz":"Adgangskoden skal have mindst 8 tegn.","gespeichert":"Adgangskoden er gemt. Du kan nu logge ind i Linup-appen.","keinNetz":"Ingen forbindelse. Prøv igen.","abgelaufen":"Linket er udløbet. Bed om et nyt i appen under »Glemt adgangskode?«.","nichtGeklappt":"Det lykkedes ikke. Bed om nødvendigt om et nyt link.","gleich":"Det er din nuværende adgangskode. Vælg en anden.","schwach":"Denne adgangskode er for let at gætte. Vælg en anden.","platzhalter":"mindst 8 tegn","zuVieleVersuche":"For mange forsøg. Vent et øjeblik, og prøv igen.","zuLang":"Adgangskoden er for lang. Brug højst 72 tegn."},
+    de: {"titel":"Neues Passwort für dein Linup-Konto","h1":"Neues Passwort setzen","intro":"Wähle ein neues Passwort für dein Linup-Konto. Danach kannst du dich in der App damit anmelden.","label":"Neues Passwort","knopf":"Passwort speichern","ohneLink":"Diese Seite gehört zum Passwort-Zurücksetzen. Öffne den Link aus der E-Mail von Linup, dann kannst du hier ein neues Passwort wählen.","zuKurz":"Das Passwort braucht mindestens 8 Zeichen.","gespeichert":"Passwort gespeichert. Du kannst dich jetzt in der Linup-App anmelden.","keinNetz":"Keine Verbindung. Bitte noch einmal versuchen.","abgelaufen":"Der Link ist abgelaufen. Fordere in der App unter „Passwort vergessen?“ einen neuen an.","nichtGeklappt":"Das hat nicht geklappt. Fordere notfalls einen neuen Link an.","gleich":"Das ist dein bisheriges Passwort. Wähle bitte ein anderes.","schwach":"Dieses Passwort ist zu leicht zu erraten. Wähle bitte ein anderes.","platzhalter":"mindestens 8 Zeichen","zuVieleVersuche":"Zu viele Versuche. Warte kurz und probier es noch einmal.","zuLang":"Das Passwort ist zu lang. Nimm bitte höchstens 72 Zeichen."},
+    el: {"titel":"Νέος κωδικός για τον λογαριασμό σου στο Linup","h1":"Όρισε νέο κωδικό","intro":"Διάλεξε νέο κωδικό για τον λογαριασμό σου στο Linup. Μετά μπορείς να συνδεθείς με αυτόν στην εφαρμογή.","label":"Νέος κωδικός","knopf":"Αποθήκευση κωδικού","ohneLink":"Αυτή η σελίδα είναι για την επαναφορά κωδικού. Άνοιξε τον σύνδεσμο από το email του Linup και εδώ θα μπορείς να διαλέξεις νέο κωδικό.","zuKurz":"Ο κωδικός χρειάζεται τουλάχιστον 8 χαρακτήρες.","gespeichert":"Ο κωδικός αποθηκεύτηκε. Τώρα μπορείς να συνδεθείς στην εφαρμογή Linup.","keinNetz":"Δεν υπάρχει σύνδεση. Δοκίμασε ξανά.","abgelaufen":"Ο σύνδεσμος έληξε. Ζήτησε νέο στην εφαρμογή από το «Ξέχασες τον κωδικό;».","nichtGeklappt":"Δεν πέτυχε. Αν χρειάζεται, ζήτησε νέο σύνδεσμο.","gleich":"Αυτός είναι ο τωρινός σου κωδικός. Διάλεξε άλλον.","schwach":"Αυτός ο κωδικός μαντεύεται πολύ εύκολα. Διάλεξε άλλον.","platzhalter":"τουλάχιστον 8 χαρακτήρες","zuVieleVersuche":"Πάρα πολλές προσπάθειες. Περίμενε λίγο και δοκίμασε ξανά.","zuLang":"Ο κωδικός είναι πολύ μεγάλος. Χρησιμοποίησε το πολύ 72 χαρακτήρες."},
+    en: {"titel":"New password for your Linup account","h1":"Set a new password","intro":"Choose a new password for your Linup account. Then you can sign in with it in the app.","label":"New password","knopf":"Save password","ohneLink":"This page is for resetting your password. Open the link in the email from Linup, then you can choose a new password here.","zuKurz":"Your password needs at least 8 characters.","gespeichert":"Password saved. You can now sign in to the Linup app.","keinNetz":"No connection. Please try again.","abgelaufen":"The link has expired. Request a new one in the app under “Forgot password?”.","nichtGeklappt":"That didn't work. If needed, request a new link.","gleich":"That is your current password. Please choose a different one.","schwach":"This password is too easy to guess. Please choose a different one.","platzhalter":"at least 8 characters","zuVieleVersuche":"Too many attempts. Wait a moment and try again.","zuLang":"That password is too long. Please use at most 72 characters."},
+    es: {"titel":"Nueva contraseña para tu cuenta de Linup","h1":"Establecer nueva contraseña","intro":"Elige una nueva contraseña para tu cuenta de Linup. Después podrás iniciar sesión con ella en la app.","label":"Nueva contraseña","knopf":"Guardar contraseña","ohneLink":"Esta página sirve para restablecer la contraseña. Abre el enlace del correo de Linup y aquí podrás elegir una nueva contraseña.","zuKurz":"La contraseña necesita al menos 8 caracteres.","gespeichert":"Contraseña guardada. Ya puedes iniciar sesión en la app de Linup.","keinNetz":"Sin conexión. Inténtalo de nuevo.","abgelaufen":"El enlace ha caducado. Pide uno nuevo en la app en «¿Has olvidado tu contraseña?».","nichtGeklappt":"No ha funcionado. Si hace falta, pide un enlace nuevo.","gleich":"Esa es tu contraseña actual. Elige otra, por favor.","schwach":"Esta contraseña es demasiado fácil de adivinar. Elige otra, por favor.","platzhalter":"al menos 8 caracteres","zuVieleVersuche":"Demasiados intentos. Espera un momento e inténtalo de nuevo.","zuLang":"La contraseña es demasiado larga. Usa como máximo 72 caracteres."},
+    fr: {"titel":"Nouveau mot de passe pour ton compte Linup","h1":"Définir un nouveau mot de passe","intro":"Choisis un nouveau mot de passe pour ton compte Linup. Ensuite, tu pourras te connecter avec dans l'app.","label":"Nouveau mot de passe","knopf":"Enregistrer le mot de passe","ohneLink":"Cette page sert à réinitialiser ton mot de passe. Ouvre le lien de l'e-mail de Linup, puis tu pourras choisir ici un nouveau mot de passe.","zuKurz":"Le mot de passe doit contenir au moins 8 caractères.","gespeichert":"Mot de passe enregistré. Tu peux maintenant te connecter dans l'app Linup.","keinNetz":"Pas de connexion. Réessaie, s'il te plaît.","abgelaufen":"Le lien a expiré. Demandes-en un nouveau dans l'app sous « Mot de passe oublié ? ».","nichtGeklappt":"Ça n'a pas marché. Si besoin, demande un nouveau lien.","gleich":"C'est ton mot de passe actuel. Choisis-en un autre, s'il te plaît.","schwach":"Ce mot de passe est trop facile à deviner. Choisis-en un autre, s'il te plaît.","platzhalter":"au moins 8 caractères","zuVieleVersuche":"Trop de tentatives. Attends un instant et réessaie.","zuLang":"Le mot de passe est trop long. Utilise 72 caractères au maximum."},
+    hu: {"titel":"Új jelszó a Linup-fiókodhoz","h1":"Új jelszó beállítása","intro":"Válassz új jelszót a Linup-fiókodhoz. Utána ezzel tudsz belépni az appban.","label":"Új jelszó","knopf":"Jelszó mentése","ohneLink":"Ez az oldal a jelszó visszaállításához tartozik. Nyisd meg a Linup e-mailjében lévő linket, és itt választhatsz új jelszót.","zuKurz":"A jelszónak legalább 8 karakterből kell állnia.","gespeichert":"A jelszó elmentve. Most már be tudsz lépni a Linup appba.","keinNetz":"Nincs kapcsolat. Próbáld újra.","abgelaufen":"A link lejárt. Kérj újat az appban itt: „Elfelejtetted a jelszavad?”.","nichtGeklappt":"Nem sikerült. Ha kell, kérj új linket.","gleich":"Ez a jelenlegi jelszavad. Válassz másikat.","schwach":"Ezt a jelszót túl könnyű kitalálni. Válassz másikat.","platzhalter":"legalább 8 karakter","zuVieleVersuche":"Túl sok próbálkozás. Várj egy kicsit, és próbáld meg újra.","zuLang":"A jelszó túl hosszú. Legfeljebb 72 karaktert használj."},
+    it: {"titel":"Nuova password per il tuo account Linup","h1":"Imposta una nuova password","intro":"Scegli una nuova password per il tuo account Linup. Poi potrai accedere con questa nell'app.","label":"Nuova password","knopf":"Salva password","ohneLink":"Questa pagina serve per reimpostare la password. Apri il link nell'e-mail di Linup, poi potrai scegliere qui una nuova password.","zuKurz":"La password deve avere almeno 8 caratteri.","gespeichert":"Password salvata. Ora puoi accedere all'app Linup.","keinNetz":"Nessuna connessione. Riprova.","abgelaufen":"Il link è scaduto. Richiedine uno nuovo nell'app in «Password dimenticata?».","nichtGeklappt":"Non ha funzionato. Se serve, richiedi un nuovo link.","gleich":"Questa è la tua password attuale. Scegline un'altra.","schwach":"Questa password è troppo facile da indovinare. Scegline un'altra.","platzhalter":"almeno 8 caratteri","zuVieleVersuche":"Troppi tentativi. Aspetta un momento e riprova.","zuLang":"La password è troppo lunga. Usa al massimo 72 caratteri."},
+    nl: {"titel":"Nieuw wachtwoord voor je Linup-account","h1":"Nieuw wachtwoord instellen","intro":"Kies een nieuw wachtwoord voor je Linup-account. Daarna kun je daarmee inloggen in de app.","label":"Nieuw wachtwoord","knopf":"Wachtwoord opslaan","ohneLink":"Deze pagina hoort bij het resetten van je wachtwoord. Open de link uit de e-mail van Linup, dan kun je hier een nieuw wachtwoord kiezen.","zuKurz":"Het wachtwoord moet minstens 8 tekens hebben.","gespeichert":"Wachtwoord opgeslagen. Je kunt nu inloggen in de Linup-app.","keinNetz":"Geen verbinding. Probeer het nog een keer.","abgelaufen":"De link is verlopen. Vraag in de app onder ‘Wachtwoord vergeten?’ een nieuwe aan.","nichtGeklappt":"Dat is niet gelukt. Vraag zo nodig een nieuwe link aan.","gleich":"Dat is je huidige wachtwoord. Kies een ander.","schwach":"Dit wachtwoord is te makkelijk te raden. Kies een ander.","platzhalter":"minstens 8 tekens","zuVieleVersuche":"Te veel pogingen. Wacht even en probeer het opnieuw.","zuLang":"Het wachtwoord is te lang. Gebruik maximaal 72 tekens."},
+    pl: {"titel":"Nowe hasło do Twojego konta Linup","h1":"Ustaw nowe hasło","intro":"Wybierz nowe hasło do swojego konta Linup. Potem zalogujesz się nim w aplikacji.","label":"Nowe hasło","knopf":"Zapisz hasło","ohneLink":"Ta strona służy do resetowania hasła. Otwórz link z e-maila od Linup, a potem wybierzesz tu nowe hasło.","zuKurz":"Hasło musi mieć co najmniej 8 znaków.","gespeichert":"Hasło zapisane. Możesz teraz zalogować się w aplikacji Linup.","keinNetz":"Brak połączenia. Spróbuj jeszcze raz.","abgelaufen":"Link wygasł. Poproś o nowy w aplikacji, wybierając „Nie pamiętasz hasła?”.","nichtGeklappt":"Nie udało się. W razie potrzeby poproś o nowy link.","gleich":"To jest Twoje obecne hasło. Wybierz inne.","schwach":"To hasło jest zbyt łatwe do odgadnięcia. Wybierz inne.","platzhalter":"co najmniej 8 znaków","zuVieleVersuche":"Za dużo prób. Odczekaj chwilę i spróbuj jeszcze raz.","zuLang":"Hasło jest za długie. Użyj maksymalnie 72 znaków."},
+    pt: {"titel":"Nova palavra-passe para a tua conta Linup","h1":"Definir nova palavra-passe","intro":"Escolhe uma nova palavra-passe para a tua conta Linup. Depois podes iniciar sessão com ela na app.","label":"Nova palavra-passe","knopf":"Guardar palavra-passe","ohneLink":"Esta página serve para repor a palavra-passe. Abre o link do e-mail da Linup e aqui podes escolher uma nova palavra-passe.","zuKurz":"A palavra-passe precisa de pelo menos 8 caracteres.","gespeichert":"Palavra-passe guardada. Já podes iniciar sessão na app Linup.","keinNetz":"Sem ligação. Tenta novamente.","abgelaufen":"O link expirou. Pede um novo na app em «Esqueceste-te da palavra-passe?».","nichtGeklappt":"Não funcionou. Se for preciso, pede um novo link.","gleich":"Essa é a tua palavra-passe atual. Escolhe outra, por favor.","schwach":"Esta palavra-passe é demasiado fácil de adivinhar. Escolhe outra, por favor.","platzhalter":"pelo menos 8 caracteres","zuVieleVersuche":"Demasiadas tentativas. Espera um pouco e tenta novamente.","zuLang":"A palavra-passe é demasiado longa. Usa no máximo 72 caracteres."},
+    ro: {"titel":"Parolă nouă pentru contul tău Linup","h1":"Setează o parolă nouă","intro":"Alege o parolă nouă pentru contul tău Linup. Apoi te poți conecta cu ea în aplicație.","label":"Parolă nouă","knopf":"Salvează parola","ohneLink":"Această pagină ține de resetarea parolei. Deschide linkul din e-mailul de la Linup, apoi poți alege aici o parolă nouă.","zuKurz":"Parola trebuie să aibă cel puțin 8 caractere.","gespeichert":"Parola a fost salvată. Acum te poți conecta în aplicația Linup.","keinNetz":"Nu există conexiune. Încearcă din nou.","abgelaufen":"Linkul a expirat. Cere unul nou în aplicație, la „Ai uitat parola?”.","nichtGeklappt":"Nu a mers. Dacă e nevoie, cere un link nou.","gleich":"Aceasta este parola ta actuală. Alege alta.","schwach":"Această parolă e prea ușor de ghicit. Alege alta.","platzhalter":"cel puțin 8 caractere","zuVieleVersuche":"Prea multe încercări. Așteaptă puțin și mai încearcă o dată.","zuLang":"Parola este prea lungă. Folosește cel mult 72 de caractere."},
+    sv: {"titel":"Nytt lösenord för ditt Linup-konto","h1":"Ange nytt lösenord","intro":"Välj ett nytt lösenord för ditt Linup-konto. Sedan kan du logga in med det i appen.","label":"Nytt lösenord","knopf":"Spara lösenord","ohneLink":"Den här sidan hör till återställning av lösenordet. Öppna länken i mejlet från Linup, så kan du välja ett nytt lösenord här.","zuKurz":"Lösenordet behöver minst 8 tecken.","gespeichert":"Lösenordet är sparat. Nu kan du logga in i Linup-appen.","keinNetz":"Ingen anslutning. Försök igen.","abgelaufen":"Länken har gått ut. Begär en ny i appen under ”Glömt lösenordet?”.","nichtGeklappt":"Det gick inte. Begär en ny länk om det behövs.","gleich":"Det är ditt nuvarande lösenord. Välj ett annat.","schwach":"Lösenordet är för lätt att gissa. Välj ett annat.","platzhalter":"minst 8 tecken","zuVieleVersuche":"För många försök. Vänta en stund och försök igen.","zuLang":"Lösenordet är för långt. Använd högst 72 tecken."},
+    tr: {"titel":"Linup hesabın için yeni şifre","h1":"Yeni şifre belirle","intro":"Linup hesabın için yeni bir şifre seç. Sonra uygulamada bu şifreyle giriş yapabilirsin.","label":"Yeni şifre","knopf":"Şifreyi kaydet","ohneLink":"Bu sayfa şifre sıfırlama içindir. Linup'tan gelen e-postadaki bağlantıyı aç, sonra burada yeni bir şifre seçebilirsin.","zuKurz":"Şifre en az 8 karakter olmalı.","gespeichert":"Şifre kaydedildi. Artık Linup uygulamasında giriş yapabilirsin.","keinNetz":"Bağlantı yok. Lütfen tekrar dene.","abgelaufen":"Bağlantının süresi doldu. Uygulamada “Şifreni mi unuttun?” üzerinden yenisini iste.","nichtGeklappt":"Olmadı. Gerekirse yeni bir bağlantı iste.","gleich":"Bu senin mevcut şifren. Lütfen başka bir tane seç.","schwach":"Bu şifre çok kolay tahmin edilir. Lütfen başka bir şifre seç.","platzhalter":"en az 8 karakter","zuVieleVersuche":"Çok fazla deneme oldu. Biraz bekle ve tekrar dene.","zuLang":"Şifre çok uzun. En fazla 72 karakter kullan."},
+  };
+  var RUECKFALL = 'en';
+
+  /** Erste Wunschsprache des Browsers, die Linup kann. "pt-BR" zaehlt als pt. */
+  function spracheWaehlen(wunsch) {
+    for (var i = 0; i < wunsch.length; i++) {
+      var kurz = String(wunsch[i] || '').toLowerCase().split(/[-_]/)[0];
+      if (Object.prototype.hasOwnProperty.call(TEXTE, kurz)) return kurz;
+    }
+    return RUECKFALL;
+  }
+
+  var wunsch = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language];
+  var sprache = spracheWaehlen(wunsch);
+  var T = TEXTE[sprache];
+  document.documentElement.lang = sprache;
+  var stellen = document.querySelectorAll('[data-t]');
+  for (var s = 0; s < stellen.length; s++) stellen[s].textContent = T[stellen[s].getAttribute('data-t')];
+  var platz = document.querySelectorAll('[data-tp]');
+  for (var q = 0; q < platz.length; q++) platz[q].setAttribute('placeholder', T[platz[q].getAttribute('data-tp')]);
+  document.title = T.titel;
+
   var teile = new URLSearchParams(location.hash.replace(/^#/, ''));
   var token = teile.get('access_token');
   var meldung = document.getElementById('meldung');
@@ -56,38 +100,64 @@
     meldung.style.display = 'block';
   }
 
-  var fehlerText = teile.get('error_description');
-  if (fehlerText) {
+  // Abgelaufener oder schon benutzter Link: GoTrue haengt error,
+  // error_code und error_description (englisch) an. Wir zeigen nur unseren Satz.
+  if (teile.get('error') || teile.get('error_code') || teile.get('error_description')) {
     formular.style.display = 'none';
-    zeige('Der Link ist nicht mehr gültig: ' + decodeURIComponent(fehlerText.replace(/\+/g, ' ')) +
-          '. Fordere in der App unter "Passwort vergessen?" einen neuen an.', false);
+    zeige(T.abgelaufen, false);
   } else if (!token) {
     formular.style.display = 'none';
-    document.getElementById('intro').textContent =
-      'Diese Seite gehört zum Passwort-Zurücksetzen. Öffne den Link aus der E-Mail von Linup, dann kannst du hier ein neues Passwort wählen.';
+    document.getElementById('intro').textContent = T.ohneLink;
+  }
+
+  /** Antwort von PUT /auth/v1/user auf einen eigenen Satz abbilden, nie Servertext. */
+  function fehlerSatz(status, d) {
+    var code = String((d && (d.error_code || d.code || d.error)) || '');
+    if (code === 'weak_password') return T.schwach;
+    if (code === 'same_password') return T.gleich;
+    if (status === 429 || code === 'over_request_rate_limit') return T.zuVieleVersuche;
+    if (status === 401 || status === 403 || /session|jwt|otp|expired|not_found|no_authorization/.test(code)) return T.abgelaufen;
+    return T.nichtGeklappt;
+  }
+
+  /** Laenge in UTF-8-Bytes, wie der Server zaehlt. */
+  function utf8Laenge(text) {
+    var n = 0;
+    for (var i = 0; i < text.length; i++) {
+      var c = text.charCodeAt(i);
+      if (c < 0x80) n += 1;
+      else if (c < 0x800) n += 2;
+      else if (c >= 0xd800 && c < 0xdc00) { n += 4; i++; }
+      else n += 3;
+    }
+    return n;
   }
 
   formular.addEventListener('submit', function (e) {
     e.preventDefault();
     var pw = document.getElementById('pw').value;
-    if (pw.length < 8) { zeige('Das Passwort braucht mindestens 8 Zeichen.', false); return; }
+    if (pw.length < 8) { zeige(T.zuKurz, false); return; }
+    // GoTrue nimmt hoechstens 72 Bytes (ein „ä" zaehlt doppelt). Darueber kam
+    // vorher „Fordere notfalls einen neuen Link an", und ein Link hilft da nicht.
+    if (utf8Laenge(pw) > 72) { zeige(T.zuLang, false); return; }
     knopf.disabled = true;
     fetch(SUPABASE + '/auth/v1/user', {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json', apikey: ANON, Authorization: 'Bearer ' + token },
       body: JSON.stringify({ password: pw })
-    }).then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
+    }).then(function (r) {
+      return r.json().catch(function () { return {}; }).then(function (d) { return { ok: r.ok, status: r.status, d: d }; });
+    })
       .then(function (a) {
         if (a.ok) {
           formular.style.display = 'none';
-          zeige('Passwort gespeichert. Du kannst dich jetzt in der Linup-App anmelden.', true);
+          zeige(T.gespeichert, true);
         } else {
           knopf.disabled = false;
-          zeige('Das hat nicht geklappt: ' + (a.d.msg || a.d.error_description || 'unbekannter Fehler') +
-                '. Fordere notfalls einen neuen Link an.', false);
+          zeige(fehlerSatz(a.status, a.d), false);
         }
       })
-      .catch(function () { knopf.disabled = false; zeige('Keine Verbindung. Bitte noch einmal versuchen.', false); });
+      .catch(function () { knopf.disabled = false; zeige(T.keinNetz, false); });
   });
 })();
 </script>
