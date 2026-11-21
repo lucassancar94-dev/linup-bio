@@ -75,6 +75,24 @@ nicht der einzelne Tag.
 
 ---
 
+## Protein pro Euro: die günstigsten Eiweißquellen im deutschen Supermarkt
+
+Quelle: https://linupapp.de/wissen/protein-pro-euro/
+
+Preise Stand Oktober 2026, sie schwanken je Filiale. Eigener Vergleich von 13 gängigen
+Lebensmitteln nach Gramm Protein pro Euro. Neun Zeilen mit Preis und Nährwerten von den
+Produktseiten auf aldi-sued.de (geprüft am 03.10.2026). Tofu, Thunfisch in Wasser, Haferflocken
+und trockene Kichererbsen führt der Onlineshop nicht: deren Preise sind Richtwerte, die
+Eiweißwerte stammen von Taifun (Tofu) bzw. USDA FoodData Central. Am günstigsten pro Euro sind
+trockene Hülsenfrüchte und Haferflocken (rote Linsen und Kichererbsen ~86 g/€, Haferflocken
+~84 g/€, jeweils Trockengewicht). Bei fertig essbaren Lebensmitteln führt Magerquark (~51 g/€,
+0,39 € für 20 g Protein), dann Skyr (~43 g/€), fettarme Milch und Tofu (je ~40 g/€). Harzer Käse
+liegt bei ~30 g/€. Hähnchenbrust kostet für 20 g Protein knapp dreimal so viel wie Quark
+(1,14 € gegen 0,39 €). Whey-Pulver kommt selbst im Aktionspreis nur auf ~27 g/€. Andere
+Supermarktketten wurden nicht verglichen.
+
+---
+
 ## Was 100 Kalorien wirklich sind
 
 Quelle: https://linupapp.de/wissen/100-kalorien/
@@ -126,11 +144,11 @@ korrekt: Überschüssiges Protein ist nicht verschwendet. Am meisten zählt die 
 
 ---
 
-## Die besten Sattmacher
+## Die günstigsten Sattmacher
 
 Quelle: https://linupapp.de/wissen/guenstige-sattmacher/
 
-12 sättigende Lebensmittel mit Kalorien und Eiweiß pro Portion. Sattmacher wirken über drei Hebel:
+12 günstige, sättigende Lebensmittel mit Preis, Kalorien und Eiweiß pro Portion (Preise Stand Juli 2026, sie schwanken je Filiale). Haferflocken, Reis, Linsen und Kartoffeln kosten 10 bis 30 Cent pro Portion. Sattmacher wirken über drei Hebel:
 Volumen (viel Masse pro Kalorie), Ballaststoffe und Protein. Beispiele: Haferflocken,
 Kartoffeln, Hülsenfrüchte, Magerquark (rund 30 g Eiweiß bei etwa 170 kcal je 250 g), Eier, Gemüse.
 
