@@ -121,6 +121,7 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://linupapp.de/ll
 - [Frühstück: Kalorien & Nährwerte](https://linupapp.de/lebensmittel/fruehstueck/): 4 kalorienbewusste Frühstücksoptionen mit Nährwerten pro Portion.
 - [Nüsse: Kalorien & Nährwerte](https://linupapp.de/lebensmittel/nuesse/): 4 Nusssorten mit Kalorien und Nährwerten pro Portion.
 - [Vegane Proteinquellen: Kalorien & Eiweiß](https://linupapp.de/lebensmittel/vegane-proteinquellen/): 4 vegane Proteinquellen mit Kalorien und Eiweiß pro Portion.
+- [Weihnachtsgebäck Kalorien: Lebkuchen, Stollen, Plätzchen, Spekulatius](https://linupapp.de/lebensmittel/weihnachten-kalorien/): 15 Produkte mit kcal, Zucker und Fett pro 100 g, Quelle je Zeile. Lebkuchen 360 bis 437 kcal, Stollen rund 400, Spekulatius 455 bis 502, Vanillekipferl 554.
 - [Käse: Kalorien & Protein](https://linupapp.de/lebensmittel/kaese/): 4 Käsesorten mit Kalorien und Eiweiß pro Portion.
 
 ## Fast Food & Restaurants (Kalorien pro Gericht)
