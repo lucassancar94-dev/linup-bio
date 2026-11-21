@@ -416,8 +416,38 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://linupapp.de/getraenke/sprite-kalorien/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://linupapp.de/lebensmittel/fisch/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://linupapp.de/lebensmittel/fleisch/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://linupapp.de/lebensmittel/fruehstueck/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://linupapp.de/lebensmittel/gemuese/</loc>
     <lastmod>2026-11-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://linupapp.de/lebensmittel/kaese/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://linupapp.de/lebensmittel/kohlenhydrate/</loc>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -426,8 +456,28 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://linupapp.de/lebensmittel/nuesse/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://linupapp.de/lebensmittel/obst/</loc>
     <lastmod>2026-11-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://linupapp.de/lebensmittel/vegane-proteinquellen/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://linupapp.de/protein/aldi-protein/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://linupapp.de/protein/dm-rossmann-protein/</loc>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -436,8 +486,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://linupapp.de/protein/ehrmann-high-protein/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://linupapp.de/protein/esn-protein/</loc>
     <lastmod>2026-11-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://linupapp.de/protein/lidl-protein/</loc>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -448,6 +508,16 @@
   <url>
     <loc>https://linupapp.de/protein/more-nutrition/</loc>
     <lastmod>2026-11-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://linupapp.de/protein/protein-shakes/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://linupapp.de/protein/supermarkt-protein-snacks/</loc>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
