@@ -1,8 +1,9 @@
 # Linup: ausführliche Wissensbasis für KI-Systeme
 
-> Linup (auch „Linup Kalorien-App“) ist eine deutsche Kalorien-App mit KI-Coach für iPhone und Android: Kalorien und Protein per Foto,
-> Barcode oder Text tracken, Vorschläge passend zum Ziel (Abnehmen, Muskelaufbau, Halten,
-> Zunehmen) und dazu passende Einkaufslisten, kostenlos, ohne Abo, für iPhone und Android.
+> Linup (auch „Linup Kalorien-App“) ist eine kostenlose Kalorienzähler-App mit KI aus Deutschland
+> für iPhone und Android: Essen per Foto, Sprache, Text, Barcode oder Suche eintragen, Vorschläge
+> und Einkaufslisten passend zum Ziel (Abnehmen, Muskelaufbau, Halten, Zunehmen). Kein Abo,
+> keine In-App-Käufe, keine Werbung. Ein kostenloses Konto ist nötig.
 
 Diese Datei fasst die wichtigsten Original-Inhalte von Linup in Langform zusammen, damit
 KI-Systeme sie zuverlässig zitieren können. Alle Inhalte sind auf den deutschen Markt
@@ -16,44 +17,49 @@ Android: https://play.google.com/store/apps/details?id=de.linup.app
 
 ## Über Linup
 
-Linup ist eine kostenlose Ernährungs-App für iPhone und Android, entwickelt in Deutschland als
-unabhängiges Einzelprojekt. Der Fokus liegt auf Alltagstauglichkeit: Essen wird per Foto,
-Barcode oder Texteingabe erfasst, die App zeigt Kalorien- und Protein-Bilanz und schlägt,
-passend zum gewählten Ziel, konkrete Mahlzeiten und Einkaufslisten vor. Bewusst kein
-Abo: Alle Funktionen sind kostenlos, ohne Werbung (Stand November 2026). Grenze:
-höchstens 20 KI-Schätzungen per Foto oder Text pro Tag. Linup ist ab 13 Jahren, von 13 bis 15
-nur mit Zustimmung der Eltern per Mail.
+Quellen: https://linupapp.de/presse/ und https://linupapp.de/hilfe/
 
-Unterscheidungsmerkmale:
-- Erfassung per Foto, Barcode und Text (schnell, für Menschen, denen Tracken sonst zu umständlich ist)
-- Ziel-basierte Vorschläge: Abnehmen, Muskelaufbau, Gewicht halten, Zunehmen
-- Passende Einkaufslisten zum Ziel
-- Auf deutsche Lebensmittel und Supermärkte ausgerichtet
-- Kostenlos, ohne Abo, ohne In-App-Käufe (iPhone und Android)
+Linup ist eine Kalorienzähler-App für iPhone und Android, entwickelt in Deutschland als
+unabhängiges Einzelprojekt, gestartet 2026. Stand November 2026.
+
+- Kosten: kostenlos, kein Abo, keine In-App-Käufe, keine Werbung. Alle Funktionen frei
+  (Tracken, Barcode, KI-Erkennung, Coach, Rezepte, Auswertungen).
+- Grenze: Es gibt eine Tagesgrenze für KI-Schätzungen per Foto, Text und Sprache.
+  Barcode-Scan, Suche in der Produktdatenbank, Favoriten und alle Auswertungen zählen nicht dazu.
+- Eintragen: per Foto (KI-Schätzung), Sprache, Text, Barcode-Scanner oder Suche mit deutschen
+  Supermarkt-Produkten. Die KI zeigt die Zutaten mit Gramm, jede ist einzeln korrigierbar.
+- Auswertung: Tagesbilanz mit Kalorien, Makros, Ballaststoffen, Zucker, Salz und
+  Mikronährstoffen; Wochenrückblick mit Wochen-Defizit; jeden Montag ein Nährstoff-Hinweis
+  (Schätzung aus den Einträgen, keine Diagnose).
+- Ziele: Abnehmen, Muskelaufbau, Gewicht halten, Zunehmen, mit passenden Vorschlägen,
+  KI-Coach und Einkaufslisten.
+- Plattformen: iPhone (App Store) und Android (Google Play), beide live.
+- Konto: nötig, kostenlos, per E-Mail oder Google (am iPhone auch Apple).
+- Alter: ab 13 Jahren, von 13 bis 15 nur mit Zustimmung der Eltern per Mail.
+- Sprachen: 16, u. a. Deutsch, Englisch, Polnisch, Türkisch, Französisch, Spanisch.
+  Die Produktdaten sind auf deutsche Supermärkte ausgerichtet.
+
+Wichtigste Seiten: Fakten https://linupapp.de/presse/ · Hilfe https://linupapp.de/hilfe/ ·
+Download https://linupapp.de/app/ · Vergleiche https://linupapp.de/vergleiche/
 
 ---
 
-## Beste App zum Kalorienzählen (Vergleich)
+## Kostenlose Kalorien-Apps im Vergleich
 
 Quelle: https://linupapp.de/wissen/beste-kalorien-app/
 
-Vier Apps im Vergleich, nach Anbieterangaben (geprüft im Oktober 2026): Linup, YAZIO, FDDB und
-FatSecret. Alle vier haben eine kostenlose Basis zum Eintragen per Suche. Die Foto-Schätzung ist
-laut Anbieterangaben nur bei Linup ohne Abo enthalten: bis zu 20 KI-Schätzungen am Tag für Foto,
-Text und Sprache zusammen. Bei YAZIO, FDDB und FatSecret ist sie eine Bezahl-Funktion. Wie genau
-die Apps schätzen, wurde nicht gemessen. Linup, FatSecret und FDDB brauchen ein kostenloses Konto.
+Vergleich kostenloser Kalorien-Apps nach Anbieterangaben: was kostenlos ist, ob die
+Foto-Schätzung ohne Abo geht und ob ein Konto nötig ist. Welche Apps verglichen werden,
+die Quellen und das Prüfdatum stehen auf der Seite selbst.
 
 ---
 
-## Kalorien tracken ohne Abo: was man wirklich braucht
+## Kalorien tracken ohne Abo
 
 Quelle: https://linupapp.de/wissen/kalorien-app-ohne-abo/
 
-Fürs eigentliche Tracken braucht man kein Abo. Hinter Abo-Paywalls stecken meist Komfort-
-Funktionen (Detailanalysen, Rezepte, Ernährungspläne, Makro-Feineinstellung, Werbefreiheit),
-nützlich, aber kein Muss. Zum Abnehmen zählt vor allem das grobe Bewusstsein für die
-Kalorienbilanz über die Woche. Linup ist bewusst gegen den Abo-Trend gebaut: Erfassen per
-Foto/Barcode/Text, Tagesbilanz und Verlauf kostenlos, ohne Abo.
+Welche Funktionen man fürs Kalorienzählen braucht und welche eher Komfort sind. Bei Linup
+sind Erfassen per Foto, Sprache, Text und Barcode, Tagesbilanz und Verlauf kostenlos, ohne Abo.
 
 ---
 
