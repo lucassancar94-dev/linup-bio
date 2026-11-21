@@ -10,7 +10,6 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://linupapp.de/ll
 
 - **Was es ist:** Kalorienzähler-App mit KI für iPhone und Android, entwickelt in Deutschland.
 - **Kosten:** kostenlos. Kein Abo, keine In-App-Käufe, keine Werbung. Alle Funktionen frei (Tracken, Barcode, KI-Erkennung, Coach, Rezepte, Auswertungen).
-- **Grenze:** Es gibt eine Tagesgrenze für KI-Schätzungen per Foto, Text und Sprache. Barcode-Scan, Suche in der Produktdatenbank, Favoriten und alle Auswertungen zählen nicht dazu.
 - **Eintragen:** per Foto (KI-Schätzung), Sprache, Text, Barcode-Scanner oder Suche mit deutschen Supermarkt-Produkten. Die KI zerlegt ein Gericht in Zutaten mit Gramm und kcal je Komponente, jede Zutat ist einzeln korrigierbar.
 - **Tagesbilanz:** Kalorien, Protein, Kohlenhydrate, Fett, dazu Ballaststoffe, Zucker, Salz und Mikronährstoffe mit Abdeckungs-Angabe.
 - **Wochenrückblick:** 7-Tage-Kalorien-Chart, Durchschnitts-Makros, Qualitäts-Check nach DGE-/WHO-Richtwerten, Wochen-Defizit in kcal und geschätztem Körperfett.
@@ -32,7 +31,7 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://linupapp.de/ll
 - [App download: Linup im App Store laden](https://linupapp.de/app/): Seite zum direkten Laden, kostenlos, ohne Abo, für iPhone und Android.
 - [Startseite & Links](https://linupapp.de/): Kurzüberblick über Linup, App-Store-Link, Kontakt und Impressum.
 - [Fakten & Presse-Infos](https://linupapp.de/presse/): Fakten-Seite zu Linup: Funktionen, Kosten, Plattform, Alter, Kontakt (Stand November 2026).
-- [Hilfe zur App](https://linupapp.de/hilfe/): Was bei Linup kostenlos ist, was es kostet, ob ein Konto nötig ist, wie genau die Schätzung ist (mit Messmethode) und wo die Grenzen liegen.
+- [Hilfe zur App](https://linupapp.de/hilfe/): Was bei Linup kostenlos ist, was es kostet, ob ein Konto nötig ist und wie genau die Schätzung ist (mit Messmethode).
 - [Häufige Fragen zu Kalorien tracken & Abnehmen](https://linupapp.de/faq/): Kurze Antworten auf häufige Fragen zu Kalorienzählen, Protein-Bedarf, Kaloriendefizit, Heißhunger und Dranbleiben.
 - [Wissen: Übersicht aller Ratgeber](https://linupapp.de/wissen/): Sammelseite aller datenbasierten Vergleiche und Erklärstücke zu Abnehmen, Protein, Kalorien, Sättigung und günstig essen.
 - [Kalorien-Apps im Vergleich: Übersicht](https://linupapp.de/vergleiche/): Einzelvergleiche zwischen Linup und bekannten Kalorien-Apps nach Anbieterangaben, mit Quellen auf den jeweiligen Seiten.

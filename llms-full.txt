@@ -24,8 +24,6 @@ unabhängiges Einzelprojekt, gestartet 2026. Stand November 2026.
 
 - Kosten: kostenlos, kein Abo, keine In-App-Käufe, keine Werbung. Alle Funktionen frei
   (Tracken, Barcode, KI-Erkennung, Coach, Rezepte, Auswertungen).
-- Grenze: Es gibt eine Tagesgrenze für KI-Schätzungen per Foto, Text und Sprache.
-  Barcode-Scan, Suche in der Produktdatenbank, Favoriten und alle Auswertungen zählen nicht dazu.
 - Eintragen: per Foto (KI-Schätzung), Sprache, Text, Barcode-Scanner oder Suche mit deutschen
   Supermarkt-Produkten. Die KI zeigt die Zutaten mit Gramm, jede ist einzeln korrigierbar.
 - Auswertung: Tagesbilanz mit Kalorien, Makros, Ballaststoffen, Zucker, Salz und
