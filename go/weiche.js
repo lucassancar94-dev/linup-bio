@@ -5,12 +5,15 @@
   var APP_STORE = 'https://apps.apple.com/de/app/id6780292694';
   var PLAY_STORE = 'https://play.google.com/store/apps/details?id=de.linup.app';
   var QUELLEN = ['tiktok', 'instagram', 'facebook'];
+  // Apple-Kampagnenlink: pt = Anbieterkennung aus App Store Connect, ct = Herkunft.
+  // Ohne ct zaehlt Apple den Download nur als Store-Suche oder unbekannt.
+  var APPLE_ANBIETER = '129038709';
 
   function ziel(ua, quelle, touchPunkte) {
     var text = String(ua || '');
     var herkunft = QUELLEN.indexOf(quelle) >= 0 ? quelle : 'bio';
     var istIos = /iPhone|iPad|iPod/.test(text) || (/Macintosh/.test(text) && touchPunkte > 1);
-    if (istIos) return APP_STORE;
+    if (istIos) return APP_STORE + '?pt=' + APPLE_ANBIETER + '&ct=' + herkunft + '&mt=8';
     if (/Android/.test(text)) {
       var referrer = 'utm_source=' + herkunft + '&utm_medium=bio&utm_campaign=bio-link';
       return PLAY_STORE + '&referrer=' + encodeURIComponent(referrer);
