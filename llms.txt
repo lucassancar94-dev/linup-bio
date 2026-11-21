@@ -43,7 +43,7 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://linupapp.de/ll
 - [Warum du ständig Hunger hast: die 6 echten Gründe](https://linupapp.de/wissen/staendig-hunger/): Die häufigsten Ursachen für ständigen Hunger (zu wenig Protein, Volumen, Schlaf, flüssige Kalorien, zu großes Defizit, Durst) mit einfachen Gegenmitteln.
 - [Protein pro Euro: günstige proteinreiche Lebensmittel](https://linupapp.de/wissen/protein-pro-euro/): Eigener Vergleich von 13 gängigen deutschen Supermarkt-Eiweißquellen nach Gramm Protein pro Euro und Preis pro 20 g Protein, mit Methodik und maschinenlesbarem Datensatz. Preise Stand Oktober 2026 (ALDI SÜD Onlineshop), sie schwanken je Filiale.
 - [Was 100 Kalorien wirklich sind](https://linupapp.de/wissen/100-kalorien/): Mengenvergleich von 15 Lebensmitteln für jeweils 100 kcal (von ~700 g Gurke bis 11 g Olivenöl) mit Kaloriendichte und Dataset.
-- [Zucker in Getränken: was wirklich drin ist](https://linupapp.de/wissen/zucker-in-getraenken/): Zuckergehalt gängiger Getränke in Gramm und Würfelzucker pro 0,5 Liter, mit WHO-Tagesempfehlung als Maßstab.
+- [Zucker in Getränken: was wirklich drin ist](https://linupapp.de/wissen/zucker-in-getraenken/): Zuckergehalt gängiger Getränke in Gramm und Würfelzucker pro 0,5 Liter, jede Zeile mit Quelle. 0,5 l Coca-Cola: 53 g Zucker, etwa 18 Würfel. WHO: besser unter 25 g freier Zucker am Tag.
 - [Wie schnell kann man realistisch abnehmen?](https://linupapp.de/wissen/wie-schnell-abnehmen/): Realistisches Abnehmtempo (0,5 bis 1 % Körpergewicht pro Woche) als Tabelle nach Startgewicht, plus warum schneller nach hinten losgeht.
 - [Ballaststoffe: wo wirklich viel drin ist](https://linupapp.de/wissen/ballaststoffe/): 14 Lebensmittel nach Ballaststoffgehalt pro 100 g mit Tagesziel (30 g) als Maßstab und warum Ballaststoffe satt machen.
 - [Wie viel Protein pro Mahlzeit wirklich zählt](https://linupapp.de/wissen/protein-pro-mahlzeit/): Der 30-Gramm-Mythos erklärt, ideale Proteinmenge pro Mahlzeit nach Körpergewicht und warum die Tagesmenge am meisten zählt.
@@ -71,14 +71,17 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://linupapp.de/ll
 ## Getränke-Nährwerte (Kalorien, Zucker & Koffein)
 
 - [Getränke: Übersicht Kalorien, Zucker & Koffein](https://linupapp.de/getraenke/): Sammelseite mit echten Nährwerten bekannter Getränke, alle Sorten und Größen im Vergleich.
-- [Coca-Cola: Kalorien, Zucker & Koffein](https://linupapp.de/getraenke/coca-cola-kalorien/): Alle 16 Coca-Cola-Sorten (Original, Zero, Light, Cherry, Vanilla, Mezzo Mix u. a.) mit kcal, Zucker und Koffein pro Portion.
-- [Pepsi: Kalorien, Zucker & Koffein](https://linupapp.de/getraenke/pepsi-kalorien/): 10 Pepsi-Varianten (Original, Max, Zero) mit echten Nährwerten pro Portion.
-- [Fanta: Kalorien & Zucker](https://linupapp.de/getraenke/fanta-kalorien/): 15 Fanta-Sorten mit Kalorien und Zucker pro Portion, inkl. Zero-Varianten.
-- [Sprite: Kalorien & Zucker](https://linupapp.de/getraenke/sprite-kalorien/): 7 Sprite-Sorten mit echten Nährwerten pro Portion.
-- [Monster Energy: Kalorien, Zucker & Koffein](https://linupapp.de/getraenke/monster-energy-kalorien/): 20 Monster-Energy-Sorten mit kcal, Zucker und Koffein pro Dose.
-- [Red Bull: Kalorien, Zucker & Koffein](https://linupapp.de/getraenke/red-bull-kalorien/): 15 Red-Bull-Sorten (Original, Sugarfree, Editions) mit echten Nährwerten und Koffein pro Dose.
+- [Coca-Cola: Kalorien, Zucker & Koffein](https://linupapp.de/getraenke/coca-cola-kalorien/): 19 Coca-Cola-Sorten (Original, Zero, Light, Cherry, Vanilla, Mezzo Mix u. a.), 13 davon mit Herstellerbeleg, mit kcal und Zucker pro 100 ml und pro Portion. Original: 139 kcal und 35 g Zucker pro 330-ml-Dose, Quelle Herstellerseite.
+- [Pepsi: Kalorien, Zucker & Koffein](https://linupapp.de/getraenke/pepsi-kalorien/): 13 Pepsi-Varianten (Original, Max, Zero, light u. a.), 8 davon mit Beleg, mit kcal und Zucker pro 100 ml und pro Portion. Pepsi in Deutschland: 92 kcal und 23,1 g Zucker pro 330-ml-Dose.
+- [Zuckerfreie Cola im Vergleich: Zero, Light, Pepsi Max](https://linupapp.de/getraenke/cola-zero-light-vergleich/): 14 zuckerfreie Colas inkl. Eigenmarken von Aldi, Lidl, Rewe, Edeka und Penny. 0 bis 1 kcal pro 100 ml, Süßstoffe laut Zutatenliste, Koffeinangabe.
+- [Fanta: Kalorien & Zucker](https://linupapp.de/getraenke/fanta-kalorien/): 21 Fanta-Sorten, 11 davon mit Herstellerbeleg, mit Kalorien und Zucker pro 100 ml und pro Portion, inkl. Zero-Varianten. Fanta Orange (Deutschland): 106 kcal und 25,1 g Zucker pro 330-ml-Dose.
+- [Sprite: Kalorien & Zucker](https://linupapp.de/getraenke/sprite-kalorien/): 12 Sprite-Sorten und Größen, 8 davon mit Herstellerbeleg, mit kcal und Zucker pro 100 ml und pro Portion. Sprite (Deutschland): 109 kcal und 26,1 g Zucker pro 330-ml-Dose.
+- [Monster Energy: Kalorien, Zucker & Koffein](https://linupapp.de/getraenke/monster-energy-kalorien/): 20 Monster-Energy-Sorten, 12 davon mit Beleg, mit kcal, Zucker und Koffein pro Dose. Original grün: 235 kcal, 55 g Zucker und 160 mg Koffein pro 500-ml-Dose.
+- [Red Bull: Kalorien, Zucker & Koffein](https://linupapp.de/getraenke/red-bull-kalorien/): 20 Red-Bull-Sorten (Original, Sugarfree, Zero, Editions), 10 davon mit Beleg, mit Nährwerten und Koffein pro Dose. Original: 115 kcal, 27 g Zucker und 80 mg Koffein pro 250-ml-Dose.
+- [Koffein in Getränken: Cola, Energydrink, Mate, Kaffee und Tee](https://linupapp.de/getraenke/koffein-in-getraenken/): Koffein von 15 Getränken in mg pro 100 ml und pro Dose oder Tasse, mit Quelle je Wert. Energydrinks 32 mg pro 100 ml, Mate 20 mg, EFSA-Richtwert 400 mg am Tag.
 - [Sportdrinks: Kalorien & Zucker](https://linupapp.de/getraenke/sportdrinks-kalorien/): Powerade, Gatorade, Nocco, Isostar & Co. mit Nährwerten pro Portion.
 - [Energy-Drinks & neue Limos: Kalorien & Zucker](https://linupapp.de/getraenke/energy-drinks-limonaden-kalorien/): 25 angesagte Limonaden und Energy-Drinks (Gönergy, Celsius, Lemonaid, Almdudler u. a.) mit echten Nährwerten.
+- [Zuckerfreie Energydrinks: kcal, Koffein & Süßstoffe](https://linupapp.de/getraenke/zuckerfreie-energy-drinks/): 13 zuckerfreie Energydrinks (Red Bull, Monster Ultra, Rockstar, effect, Kong Strong von Lidl, Flying Power von Aldi) mit kcal, Zucker, Koffein und Süßungsmitteln pro 100 ml und pro Dose. 5 bis 20 kcal pro Dose.
 
 ## Gerichte & Snacks zum Abnehmen (Kalorien & Eiweiß pro Portion)
 
@@ -92,8 +95,8 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://linupapp.de/ll
 - [Wok- & Pfannengerichte (kalorienarm)](https://linupapp.de/gerichte/wok-pfannengerichte-kalorienarm/): 5 kalorienarme Wok- und Pfannengerichte.
 - [Curry- & Asia-Gerichte zum Abnehmen](https://linupapp.de/gerichte/curry-asia-abnehmen/): 4 Curry- und Asia-Gerichte im Kalorienvergleich.
 - [Kalorienarme Ofengerichte](https://linupapp.de/gerichte/kalorienarme-ofengerichte/): 5 Ofengerichte zum Abnehmen mit Nährwerten pro Portion.
-- [Proteinriegel im Vergleich](https://linupapp.de/gerichte/proteinriegel-vergleich/): 12 Proteinriegel mit Kalorien, Eiweiß und Zucker pro Riegel.
-- [Herzhafte kalorienarme Snacks](https://linupapp.de/gerichte/herzhafte-snacks-kalorienarm/): 15 herzhafte Snacks mit wenig Kalorien pro Portion.
+- [Proteinriegel im Vergleich](https://linupapp.de/gerichte/proteinriegel-vergleich/): 17 Proteinriegel mit Kalorien und Eiweiß pro Riegel, 7 davon mit Quelle je Zeile und Zucker. Barebells Caramel Cashew: 20 g Eiweiß bei 202 kcal.
+- [Herzhafte kalorienarme Snacks](https://linupapp.de/gerichte/herzhafte-snacks-kalorienarm/): 15 herzhafte Snacks mit wenig Kalorien pro Portion, 11 davon mit Quelle je Zeile. Am leichtesten: Mini Babybel Balance mit 42 kcal.
 - [Rohes Gemüse als Snack](https://linupapp.de/gerichte/gemuese-snacks-kalorien/): 12 Gemüse-Snacks mit Kalorien pro Portion.
 - [Obst als Snack: Kalorien im Vergleich](https://linupapp.de/gerichte/obst-snack-kalorien/): 13 Obstsorten als Snack mit Kalorien pro Portion.
 - [Süße Snacks mit wenig Kalorien](https://linupapp.de/gerichte/suesse-snacks-kalorienarm/): 8 kalorienarme süße Snacks im Vergleich.
@@ -123,9 +126,9 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://linupapp.de/ll
 ## Fast Food & Restaurants (Kalorien pro Gericht)
 
 - [Fast Food & Restaurants: Übersicht](https://linupapp.de/fastfood/): Sammelseite mit Kalorien der Gerichte großer Fast-Food- und Restaurant-Ketten.
-- [McDonald's: Kalorien der Gerichte](https://linupapp.de/fastfood/mcdonalds-kalorien/): 15 McDonald's-Gerichte (Big Mac, Cheeseburger u. a.) mit Kalorien und Eiweiß pro Portion.
-- [Burger King: Kalorien der Gerichte](https://linupapp.de/fastfood/burger-king-kalorien/): 18 Burger-King-Gerichte (Whopper u. a.) mit Kalorien pro Portion.
-- [KFC: Kalorien der Gerichte](https://linupapp.de/fastfood/kfc-kalorien/): 17 KFC-Gerichte mit Kalorien und Eiweiß pro Portion.
+- [McDonald's: Kalorien der Gerichte](https://linupapp.de/fastfood/mcdonalds-kalorien/): 15 McDonald's-Gerichte (Big Mac, Cheeseburger u. a.) mit Kalorien, Eiweiß und Zucker pro Portion. Big Mac: 545 kcal, 27 g Eiweiß.
+- [Burger King: Kalorien der Gerichte](https://linupapp.de/fastfood/burger-king-kalorien/): 18 Burger-King-Gerichte (Whopper u. a.), 13 davon mit Herstellerbeleg, mit Kalorien, Eiweiß und Zucker pro Portion. Whopper: 613 kcal, 27,3 g Eiweiß.
+- [KFC: Kalorien der Gerichte](https://linupapp.de/fastfood/kfc-kalorien/): 17 KFC-Gerichte mit Kalorien und Eiweiß pro Portion, Stand Juli 2026, nicht neu geprüft.
 - [Subway: Kalorien der Subs](https://linupapp.de/fastfood/subway-kalorien/): 10 Subway-Subs mit Kalorien pro Portion.
 - [Domino's Pizza: Kalorien](https://linupapp.de/fastfood/dominos-kalorien/): Kalorien pro Pizzastück bei Domino's.
 - [Pizza Hut: Kalorien](https://linupapp.de/fastfood/pizza-hut-kalorien/): Kalorien pro Pizzastück bei Pizza Hut.
@@ -141,10 +144,12 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://linupapp.de/ll
 - [ESN Protein-Produkte](https://linupapp.de/protein/esn-protein/): 13 ESN-Produkte (Riegel, Pulver u. a.) im Vergleich.
 - [Dr. Oetker High Protein](https://linupapp.de/protein/dr-oetker-high-protein/): 10 Dr.-Oetker-High-Protein-Produkte mit Nährwerten pro Portion.
 - [Mahlzeitersatz & Trinkmahlzeiten](https://linupapp.de/protein/mahlzeitersatz-shakes/): yfood und andere Trinkmahlzeiten: Kalorien & Protein pro Portion.
-- [Supermarkt Protein-Snacks](https://linupapp.de/protein/supermarkt-protein-snacks/): Magerquark, Skyr & Co. aus dem Supermarkt im Vergleich.
+- [Supermarkt Protein-Snacks](https://linupapp.de/protein/supermarkt-protein-snacks/): 9 Protein-Snacks aus dem Supermarkt, sortiert nach Eiweiß je 100 kcal, 8 davon mit Quelle je Zeile. Harzer Käse: 24 g Eiweiß je 100 kcal.
 - [dm & Rossmann Protein](https://linupapp.de/protein/dm-rossmann-protein/): Protein-Produkte aus dm und Rossmann.
 - [ALDI Protein-Produkte](https://linupapp.de/protein/aldi-protein/): ALDI SPORTS & Co. mit Kalorien und Eiweiß.
 - [Lidl Milbona High Protein](https://linupapp.de/protein/lidl-protein/): Lidl High-Protein-Produkte im Vergleich.
+- [High Protein bei Rewe und Edeka](https://linupapp.de/protein/rewe-edeka-protein/): 12 Eigenmarken-Produkte (REWE Beste Wahl, ja!, EDEKA, gut&günstig) mit Eiweiß, kcal und Zucker pro 100 g und pro Portion, belegt per Barcode.
+- [Kaufland, Netto, Penny: High-Protein-Produkte](https://linupapp.de/protein/kaufland-netto-penny-protein/): 15 Eigenmarken-Produkte (K-Classic, Gutes Land, Elite) mit Kalorien und Eiweiß pro 100 g und pro Portion, Nährwerte per Barcode aus Open Food Facts, Stand November 2026.
 - [Ehrmann High Protein](https://linupapp.de/protein/ehrmann-high-protein/): Ehrmann High-Protein-Puddings und Snacks.
 - [Whey Protein Pulver](https://linupapp.de/protein/whey-protein-pulver/): Whey-Pulver von Body Attack & Co.: Kalorien & Eiweiß pro Portion.
 - [Protein-Shakes im Supermarkt](https://linupapp.de/protein/protein-shakes/): Fertige Protein-Shakes aus dem Supermarkt.

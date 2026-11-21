@@ -108,9 +108,51 @@ sind sehr kaloriendicht.
 
 Quelle: https://linupapp.de/wissen/zucker-in-getraenken/
 
-Viele Getränke enthalten überraschend viel Zucker, gemessen in Würfelzucker pro 0,5 Liter.
-Cola, Säfte und Eistee liegen weit über der WHO-Tagesempfehlung für freien Zucker. Flüssige
-Kalorien sättigen kaum und werden beim Abnehmen leicht übersehen.
+Ein halber Liter Coca-Cola enthält 53 g Zucker, etwa 18 Würfelzucker (10,6 g pro 100 ml).
+Apfelsaft liegt mit 48 g pro 0,5 l kaum darunter. Die WHO rät, freien Zucker unter 10 % der
+täglichen Energie zu halten, besser unter 5 %, also etwa 25 g am Tag. Jede Zeile der Tabelle
+nennt ein konkretes Produkt mit Quelle (Hersteller oder Open Food Facts mit Barcode).
+
+---
+
+## Getränke, Fast Food und Snacks: Kernwerte der meistgenutzten Seiten
+
+Stand 21.11.2026. Werte von der Herstellerseite oder aus Open Food Facts (Barcode auf der Seite).
+Keine Verbindung zu den genannten Herstellern, Angaben ohne Gewähr.
+
+- Coca-Cola Original: 42 kcal und 10,6 g Zucker pro 100 ml, 139 kcal und 35 g Zucker pro 330-ml-Dose,
+  210 kcal und 53 g pro 0,5 l. Zero Sugar und light: 0,2 kcal pro 100 ml, kein Zucker.
+  Quelle: https://linupapp.de/getraenke/coca-cola-kalorien/
+- Monster Energy Original (grün): 235 kcal, 55 g Zucker und 160 mg Koffein pro 500-ml-Dose.
+  Monster Ultra: 10 bis 15 kcal pro Dose, kein Zucker.
+  Quelle: https://linupapp.de/getraenke/monster-energy-kalorien/
+- McDonald's Big Mac: 545 kcal, 27 g Eiweiß und 8,6 g Zucker pro Stück (232 g). Leichtester Burger:
+  Hamburger mit 259 kcal. Quelle: https://linupapp.de/fastfood/mcdonalds-kalorien/
+- Fanta Orange (Deutschland): 32 kcal und 7,6 g Zucker pro 100 ml, 106 kcal und 25,1 g Zucker pro
+  330-ml-Dose. Kein Koffein. Quelle: https://linupapp.de/getraenke/fanta-kalorien/
+- Red Bull Energy Drink: 115 kcal, 27 g Zucker und 80 mg Koffein pro 250-ml-Dose. Sugarfree und Zero:
+  kein Zucker, 8 bzw. 5 kcal, 80 mg Koffein. Quelle: https://linupapp.de/getraenke/red-bull-kalorien/
+- Sprite (Deutschland): 33 kcal und 7,9 g Zucker pro 100 ml, 109 kcal und 26,1 g Zucker pro
+  330-ml-Dose. Quelle: https://linupapp.de/getraenke/sprite-kalorien/
+- Supermarkt Protein-Snacks: am meisten Eiweiß je 100 kcal haben Harzer Käse (24 g) und Thunfisch
+  ohne Öl (23,7 g, 18,4 g Eiweiß bei 78 kcal pro 80-g-Dose). Magerquark: 29,5 g pro 250-g-Becher.
+  Quelle: https://linupapp.de/protein/supermarkt-protein-snacks/
+- Herzhafte kalorienarme Snacks: 6 von 11 geprüften Snacks unter 100 kcal pro Portion, am leichtesten
+  Mini Babybel Balance mit 42 kcal. Quelle: https://linupapp.de/gerichte/herzhafte-snacks-kalorienarm/
+- Proteinriegel (7 geprüfte): 158 bis 268 kcal und 11,5 bis 20,4 g Eiweiß pro Riegel. Barebells Caramel Cashew:
+  20 g Eiweiß bei 202 kcal. Quelle: https://linupapp.de/gerichte/proteinriegel-vergleich/
+- Burger King Whopper: 613 kcal und 27,3 g Eiweiß pro Stück (282 g).
+  Quelle: https://linupapp.de/fastfood/burger-king-kalorien/
+- Koffein: Energydrinks 32 mg pro 100 ml (80 mg pro 250 ml), Mate 20 mg pro 100 ml, Filterkaffee
+  90 mg pro 200 ml (EFSA). Quelle: https://linupapp.de/getraenke/koffein-in-getraenken/
+- Zuckerfreie Energydrinks: 13 Sorten, 5 bis 20 kcal pro Dose, 500 ml bringen 150 bis 160 mg Koffein.
+  Quelle: https://linupapp.de/getraenke/zuckerfreie-energy-drinks/
+- Zuckerfreie Colas: 14 Sorten mit 0 bis 1 kcal pro 100 ml. Nur fritz-kola superzero nennt eine
+  Koffeinmenge (25 mg pro 100 ml). Quelle: https://linupapp.de/getraenke/cola-zero-light-vergleich/
+- High Protein bei Rewe und Edeka: Quarkcremes von REWE Beste Wahl mit 24,6 bis 25 g Eiweiß pro
+  200-g-Becher. Quelle: https://linupapp.de/protein/rewe-edeka-protein/
+- High Protein bei Kaufland, Netto und Penny: 15 Eigenmarken-Produkte, die Quarkcremes liefern rund
+  18 g Eiweiß pro 100 kcal. Quelle: https://linupapp.de/protein/kaufland-netto-penny-protein/
 
 ---
 
