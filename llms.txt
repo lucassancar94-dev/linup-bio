@@ -79,7 +79,7 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://linupapp.de/ll
 - [Red Bull: Kalorien, Zucker & Koffein](https://linupapp.de/getraenke/red-bull-kalorien/): 20 Red-Bull-Sorten (Original, Sugarfree, Zero, Editions), 10 davon mit Beleg, mit Nährwerten und Koffein pro Dose. Original: 115 kcal, 27 g Zucker und 80 mg Koffein pro 250-ml-Dose.
 - [Koffein in Getränken: Cola, Energydrink, Mate, Kaffee und Tee](https://linupapp.de/getraenke/koffein-in-getraenken/): Koffein von 15 Getränken in mg pro 100 ml und pro Dose oder Tasse, mit Quelle je Wert. Energydrinks 32 mg pro 100 ml, Mate 20 mg, EFSA-Richtwert 400 mg am Tag.
 - [Sportdrinks: Kalorien & Zucker](https://linupapp.de/getraenke/sportdrinks-kalorien/): Powerade, Gatorade, Nocco, Isostar & Co. mit Nährwerten pro Portion.
-- [Energy-Drinks & neue Limos: Kalorien & Zucker](https://linupapp.de/getraenke/energy-drinks-limonaden-kalorien/): 25 angesagte Limonaden und Energy-Drinks (Gönergy, Celsius, Lemonaid, Almdudler u. a.) mit echten Nährwerten.
+- [Energy-Drinks & neue Limos: Kalorien & Zucker](https://linupapp.de/getraenke/energy-drinks-limonaden-kalorien/): 25 Limonaden und Energy-Drinks (Rockstar, Kong Strong, Club-Mate, Almdudler u. a.), jede Zeile mit Barcode-Quelle.
 - [Zuckerfreie Energydrinks: kcal, Koffein & Süßstoffe](https://linupapp.de/getraenke/zuckerfreie-energy-drinks/): 13 zuckerfreie Energydrinks (Red Bull, Monster Ultra, Rockstar, effect, Kong Strong von Lidl, Flying Power von Aldi) mit kcal, Zucker, Koffein und Süßungsmitteln pro 100 ml und pro Dose. 5 bis 20 kcal pro Dose.
 - [Rockstar Energy: Kalorien und Zucker je Sorte](https://linupapp.de/getraenke/rockstar-energy-kalorien/): 12 Rockstar-Sorten von 295 kcal (Juiced) bis 7 kcal (Peach) pro 500-ml-Dose, jede mit Barcode-Beleg.
 - [Spezi und Cola-Mix: Kalorien und Zucker](https://linupapp.de/getraenke/spezi-kalorien/): 15 Sorten Spezi und Cola-Mix von Paulaner bis Aldi, mit Kalorien und Zucker pro Flasche und pro 100 ml.
@@ -154,7 +154,7 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://linupapp.de/ll
 - [ALDI Protein-Produkte](https://linupapp.de/protein/aldi-protein/): ALDI SPORTS & Co. mit Kalorien und Eiweiß.
 - [Lidl Milbona High Protein](https://linupapp.de/protein/lidl-protein/): Lidl High-Protein-Produkte im Vergleich.
 - [High Protein bei Rewe und Edeka](https://linupapp.de/protein/rewe-edeka-protein/): 12 Eigenmarken-Produkte (REWE Beste Wahl, ja!, EDEKA, gut&günstig) mit Eiweiß, kcal und Zucker pro 100 g und pro Portion, belegt per Barcode.
-- [Kaufland, Netto, Penny: High-Protein-Produkte](https://linupapp.de/protein/kaufland-netto-penny-protein/): 15 Eigenmarken-Produkte (K-Classic, Gutes Land, Elite) mit Kalorien und Eiweiß pro 100 g und pro Portion, Nährwerte per Barcode aus Open Food Facts, Stand November 2026.
+- [Kaufland, Netto, Penny: High-Protein-Produkte](https://linupapp.de/protein/kaufland-netto-penny-protein/): 14 Eigenmarken-Produkte (K-Classic, Gutes Land, Elite) mit Kalorien und Eiweiß pro 100 g und pro Portion, Nährwerte per Barcode aus Open Food Facts, Stand November 2026.
 - [Ehrmann High Protein](https://linupapp.de/protein/ehrmann-high-protein/): Ehrmann High-Protein-Puddings und Snacks.
 - [Whey Protein Pulver](https://linupapp.de/protein/whey-protein-pulver/): Whey-Pulver von Body Attack & Co.: Kalorien & Eiweiß pro Portion.
 - [Protein-Shakes im Supermarkt](https://linupapp.de/protein/protein-shakes/): Fertige Protein-Shakes aus dem Supermarkt.
