@@ -32,22 +32,22 @@
   </url>
   <url>
     <loc>https://linupapp.de/gerichte/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://linupapp.de/getraenke/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://linupapp.de/lebensmittel/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://linupapp.de/protein/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
@@ -97,7 +97,7 @@
   </url>
   <url>
     <loc>https://linupapp.de/wissen/ballaststoffe/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -227,7 +227,7 @@
   </url>
   <url>
     <loc>https://linupapp.de/wissen/wie-viel-eiweiss-am-tag/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -252,7 +252,7 @@
   </url>
   <url>
     <loc>https://linupapp.de/fastfood/dominos-kalorien/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -277,7 +277,7 @@
   </url>
   <url>
     <loc>https://linupapp.de/fastfood/pizza-hut-kalorien/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -292,7 +292,7 @@
   </url>
   <url>
     <loc>https://linupapp.de/gerichte/curry-asia-abnehmen/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -321,18 +321,23 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://linupapp.de/gerichte/instant-nudeln-kalorien/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://linupapp.de/gerichte/kalorienarme-eintoepfe-fertig/</loc>
     <lastmod>2026-11-15</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://linupapp.de/gerichte/kalorienarme-fertigsuppen/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://linupapp.de/gerichte/kalorienarme-ofengerichte/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -366,6 +371,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://linupapp.de/gerichte/tiefkuehlpizza-kalorien/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://linupapp.de/gerichte/to-go-boxen-kalorien/</loc>
     <lastmod>2026-11-15</lastmod>
     <priority>0.7</priority>
@@ -377,7 +387,7 @@
   </url>
   <url>
     <loc>https://linupapp.de/getraenke/coca-cola-kalorien/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -387,7 +397,7 @@
   </url>
   <url>
     <loc>https://linupapp.de/getraenke/energy-drinks-limonaden-kalorien/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -407,12 +417,12 @@
   </url>
   <url>
     <loc>https://linupapp.de/getraenke/monster-energy-kalorien/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://linupapp.de/getraenke/pepsi-kalorien/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -421,8 +431,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://linupapp.de/getraenke/rockstar-energy-kalorien/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://linupapp.de/getraenke/saefte-eistee-schorlen-kalorien/</loc>
     <lastmod>2026-11-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://linupapp.de/getraenke/spezi-kalorien/</loc>
+    <lastmod>2026-11-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -437,7 +457,7 @@
   </url>
   <url>
     <loc>https://linupapp.de/getraenke/zuckerfreie-energy-drinks/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -467,7 +487,7 @@
   </url>
   <url>
     <loc>https://linupapp.de/lebensmittel/kohlenhydrate/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -491,6 +511,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://linupapp.de/lebensmittel/vollkornbrot-ballaststoffe/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://linupapp.de/lebensmittel/weihnachten-kalorien/</loc>
     <lastmod>2026-11-21</lastmod>
     <priority>0.7</priority>
@@ -507,12 +532,12 @@
   </url>
   <url>
     <loc>https://linupapp.de/protein/dr-oetker-high-protein/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://linupapp.de/protein/ehrmann-high-protein/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -522,7 +547,7 @@
   </url>
   <url>
     <loc>https://linupapp.de/protein/kaufland-netto-penny-protein/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -546,13 +571,28 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://linupapp.de/protein/proteinbrot-vergleich/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://linupapp.de/protein/proteinpudding-vergleich/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://linupapp.de/protein/rewe-edeka-protein/</loc>
     <lastmod>2026-11-21</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://linupapp.de/protein/skyr-vergleich/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://linupapp.de/protein/supermarkt-protein-snacks/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>

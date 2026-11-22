@@ -81,6 +81,8 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://linupapp.de/ll
 - [Sportdrinks: Kalorien & Zucker](https://linupapp.de/getraenke/sportdrinks-kalorien/): Powerade, Gatorade, Nocco, Isostar & Co. mit Nährwerten pro Portion.
 - [Energy-Drinks & neue Limos: Kalorien & Zucker](https://linupapp.de/getraenke/energy-drinks-limonaden-kalorien/): 25 angesagte Limonaden und Energy-Drinks (Gönergy, Celsius, Lemonaid, Almdudler u. a.) mit echten Nährwerten.
 - [Zuckerfreie Energydrinks: kcal, Koffein & Süßstoffe](https://linupapp.de/getraenke/zuckerfreie-energy-drinks/): 13 zuckerfreie Energydrinks (Red Bull, Monster Ultra, Rockstar, effect, Kong Strong von Lidl, Flying Power von Aldi) mit kcal, Zucker, Koffein und Süßungsmitteln pro 100 ml und pro Dose. 5 bis 20 kcal pro Dose.
+- [Rockstar Energy: Kalorien und Zucker je Sorte](https://linupapp.de/getraenke/rockstar-energy-kalorien/): 12 Rockstar-Sorten von 295 kcal (Juiced) bis 7 kcal (Peach) pro 500-ml-Dose, jede mit Barcode-Beleg.
+- [Spezi und Cola-Mix: Kalorien und Zucker](https://linupapp.de/getraenke/spezi-kalorien/): 15 Sorten Spezi und Cola-Mix von Paulaner bis Aldi, mit Kalorien und Zucker pro Flasche und pro 100 ml.
 
 ## Gerichte & Snacks zum Abnehmen (Kalorien & Eiweiß pro Portion)
 
@@ -102,6 +104,8 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://linupapp.de/ll
 - [Nüsse & Samen: Kalorien pro Portion](https://linupapp.de/gerichte/nuesse-samen-kalorien/): 5 Nuss- und Samen-Snacks mit Kalorien pro Snack-Portion.
 - [To-Go-Boxen & kalte Fertiggerichte](https://linupapp.de/gerichte/to-go-boxen-kalorien/): 8 kalte To-Go-Boxen und Fertiggerichte mit Nährwerten pro Portion.
 - [Eier & Eiergerichte: Kalorien & Eiweiß](https://linupapp.de/gerichte/eier-gerichte-kalorien/): 25 Eiergerichte (Rührei, Omelett, gekochte Eier u. a.) mit Kalorien und Eiweiß pro Portion.
+- [Instant-Nudeln und 5-Minuten-Terrinen: Kalorien je Packung](https://linupapp.de/gerichte/instant-nudeln-kalorien/): 15 Instant-Nudeln und 5-Minuten-Terrinen mit Kalorien und Eiweiß je Packung, von 152 bis 555 kcal.
+- [Tiefkühlpizza: Kalorien ganz und pro Viertel](https://linupapp.de/gerichte/tiefkuehlpizza-kalorien/): 13 Tiefkühlpizzen mit Barcode: ganze Pizza 612 bis 1.097 kcal, ein Viertel 153 bis 274 kcal.
 
 ## Getränke-Ergänzungen
 
@@ -122,6 +126,7 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://linupapp.de/ll
 - [Vegane Proteinquellen: Kalorien & Eiweiß](https://linupapp.de/lebensmittel/vegane-proteinquellen/): 4 vegane Proteinquellen mit Kalorien und Eiweiß pro Portion.
 - [Weihnachtsgebäck Kalorien: Lebkuchen, Stollen, Plätzchen, Spekulatius](https://linupapp.de/lebensmittel/weihnachten-kalorien/): 15 Produkte mit kcal, Zucker und Fett pro 100 g, Quelle je Zeile. Lebkuchen 360 bis 437 kcal, Stollen rund 400, Spekulatius 455 bis 502, Vanillekipferl 554.
 - [Käse: Kalorien & Protein](https://linupapp.de/lebensmittel/kaese/): 4 Käsesorten mit Kalorien und Eiweiß pro Portion.
+- [Wie viele Ballaststoffe hat eine Scheibe Vollkornbrot?](https://linupapp.de/lebensmittel/vollkornbrot-ballaststoffe/): 11 Roggenvollkornbrote und Pumpernickel mit 4,5 bis 7,3 g Ballaststoffen pro Scheibe, Scheibengewicht und Barcode-Quelle je Zeile.
 
 ## Fast Food & Restaurants (Kalorien pro Gericht)
 
@@ -154,6 +159,9 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://linupapp.de/ll
 - [Whey Protein Pulver](https://linupapp.de/protein/whey-protein-pulver/): Whey-Pulver von Body Attack & Co.: Kalorien & Eiweiß pro Portion.
 - [Protein-Shakes im Supermarkt](https://linupapp.de/protein/protein-shakes/): Fertige Protein-Shakes aus dem Supermarkt.
 - [Weitere Protein-Marken](https://linupapp.de/protein/weitere-protein-marken/): foodspring, BioTech USA, Optimum Nutrition u. a.
+- [Skyr im Vergleich: welcher hat am meisten Protein](https://linupapp.de/protein/skyr-vergleich/): 16 Skyr von Lidl, Aldi, REWE, Edeka, Kaufland, Penny, Netto und Herstellermarken mit Protein pro 100 g, pro 150-g-Portion und pro Becher. Neun liegen gleichauf bei 11 g pro 100 g, ein 500-g-Becher bringt 55 g.
+- [Proteinpudding im Vergleich: Protein und Zucker je Becher](https://linupapp.de/protein/proteinpudding-vergleich/): 12 Proteinpuddings im 200-g-Becher mit Barcode-Quelle. Layenberger hat mit 22 g das meiste Protein, der vegane Vemondo mit 1,6 g den wenigsten Zucker.
+- [Eiweißbrot im Vergleich zu normalem Brot](https://linupapp.de/protein/proteinbrot-vergleich/): 8 Eiweißbrote und 4 normale Brote mit Protein pro 100 g, je Packung und je Scheibe. Eiweißbrot hat 18 bis 25,3 g pro 100 g, normales Brot 4,4 bis 6,5 g.
 
 ## App
 
