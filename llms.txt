@@ -83,6 +83,7 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://linupapp.de/ll
 - [Zuckerfreie Energydrinks: kcal, Koffein & Süßstoffe](https://linupapp.de/getraenke/zuckerfreie-energy-drinks/): 13 zuckerfreie Energydrinks (Red Bull, Monster Ultra, Rockstar, effect, Kong Strong von Lidl, Flying Power von Aldi) mit kcal, Zucker, Koffein und Süßungsmitteln pro 100 ml und pro Dose. 5 bis 20 kcal pro Dose.
 - [Rockstar Energy: Kalorien und Zucker je Sorte](https://linupapp.de/getraenke/rockstar-energy-kalorien/): 12 Rockstar-Sorten von 295 kcal (Juiced) bis 7 kcal (Peach) pro 500-ml-Dose, jede mit Barcode-Beleg.
 - [Spezi und Cola-Mix: Kalorien und Zucker](https://linupapp.de/getraenke/spezi-kalorien/): 15 Sorten Spezi und Cola-Mix von Paulaner bis Aldi, mit Kalorien und Zucker pro Flasche und pro 100 ml.
+- [Wie viel Koffein und Zucker haben Mate-Limonaden je Flasche?](https://linupapp.de/getraenke/mate-limonaden-koffein/): 13 Mate-Limonaden von Club-Mate bis Koka Mate mit Koffein und Zucker je Flasche, Quelle für jede Zahl. 0,5 l bringen 90 bis 125 mg Koffein und 22 bis 35 g Zucker.
 
 ## Gerichte & Snacks zum Abnehmen (Kalorien & Eiweiß pro Portion)
 
@@ -106,11 +107,14 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://linupapp.de/ll
 - [Eier & Eiergerichte: Kalorien & Eiweiß](https://linupapp.de/gerichte/eier-gerichte-kalorien/): 25 Eiergerichte (Rührei, Omelett, gekochte Eier u. a.) mit Kalorien und Eiweiß pro Portion.
 - [Instant-Nudeln und 5-Minuten-Terrinen: Kalorien je Packung](https://linupapp.de/gerichte/instant-nudeln-kalorien/): 15 Instant-Nudeln und 5-Minuten-Terrinen mit Kalorien und Eiweiß je Packung, von 152 bis 555 kcal.
 - [Tiefkühlpizza: Kalorien ganz und pro Viertel](https://linupapp.de/gerichte/tiefkuehlpizza-kalorien/): 13 Tiefkühlpizzen mit Barcode: ganze Pizza 612 bis 1.097 kcal, ein Viertel 153 bis 274 kcal.
+- [Sushi aus dem Supermarkt: Kalorien pro Box (18 Boxen)](https://linupapp.de/gerichte/sushi-supermarkt-kalorien/): 18 Sushi-Boxen von Aldi, Lidl, Rewe, Edeka, Penny, Kaufland und Eat Happy mit Kalorien und Eiweiß pro Box, Quelle je Zeile. Kleine Boxen 257 bis 369 kcal, große 692 bis 722 kcal.
+- [Fertigsalat aus dem Kühlregal: Kalorien mit Dressing](https://linupapp.de/gerichte/fertigsalate-kuehlregal/): 12 Salatboxen von REWE to go, Aldi, Lidl, Edeka und Meal Quick mit Kalorien und Eiweiß pro Box inklusive Dressing. Meist 182 bis 414 kcal, Boxen mit Orzo, Falafel oder viel Käse 537 bis 691 kcal.
 
 ## Getränke-Ergänzungen
 
 - [Säfte, Eistee & Schorlen: Kalorien & Zucker](https://linupapp.de/getraenke/saefte-eistee-schorlen-kalorien/): Fruchtsäfte, Eistees und Schorlen mit echten Kalorien- und Zuckerwerten pro Portion.
 - [Kaffee & Tee (Fertiggetränke): Kalorien](https://linupapp.de/getraenke/kaffee-tee-kalorien/): Fertige Kaffee- und Teegetränke mit Kalorien und Zucker pro Portion.
+- [Hafermilch, Sojamilch, Mandelmilch: Kalorien und Protein im Vergleich](https://linupapp.de/getraenke/pflanzenmilch-vergleich/): 15 Hafer-, Soja- und Mandeldrinks von Alpro, Oatly, dmBio, Aldi und Lidl mit Kalorien und Eiweiß je Glas (200 ml), dazu Kuhmilch 1,5 % zum Vergleich, Barcode-Quelle je Wert.
 
 ## Lebensmittel-Nährwerte (Kalorien, Protein & Makros pro Portion)
 
@@ -127,6 +131,8 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://linupapp.de/ll
 - [Weihnachtsgebäck Kalorien: Lebkuchen, Stollen, Plätzchen, Spekulatius](https://linupapp.de/lebensmittel/weihnachten-kalorien/): 15 Produkte mit kcal, Zucker und Fett pro 100 g, Quelle je Zeile. Lebkuchen 360 bis 437 kcal, Stollen rund 400, Spekulatius 455 bis 502, Vanillekipferl 554.
 - [Käse: Kalorien & Protein](https://linupapp.de/lebensmittel/kaese/): 4 Käsesorten mit Kalorien und Eiweiß pro Portion.
 - [Wie viele Ballaststoffe hat eine Scheibe Vollkornbrot?](https://linupapp.de/lebensmittel/vollkornbrot-ballaststoffe/): 11 Roggenvollkornbrote und Pumpernickel mit 4,5 bis 7,3 g Ballaststoffen pro Scheibe, Scheibengewicht und Barcode-Quelle je Zeile.
+- [Eiweiß und Ballaststoffe in Bohnen, Linsen und Kichererbsen aus der Dose](https://linupapp.de/lebensmittel/huelsenfruechte-dose-ballaststoffe/): 8 Dosen Bohnen, Linsen und Kichererbsen mit Eiweiß und Ballaststoffen je abgetropfter Dose und pro 100 g, Barcode-Quelle je Zeile. Pro Dose 14,4 bis 23,9 g Eiweiß und 9,5 bis 19,3 g Ballaststoffe.
+- [Welches Müsli hat die meisten Ballaststoffe pro 40-g-Portion?](https://linupapp.de/lebensmittel/muesli-ballaststoffe/): 16 Müslis aus dem Supermarkt mit 4,4 bis 7,6 g Ballaststoffen je 40-g-Portion, dazu Zucker und Kalorien, Barcode-Quelle je Zeile. Am meisten hat Allos Ungesüßtes Crunchy Pur.
 
 ## Fast Food & Restaurants (Kalorien pro Gericht)
 
@@ -141,6 +147,7 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://linupapp.de/ll
 - [Döner & Kebab: Kalorien (Richtwerte)](https://linupapp.de/fastfood/doener-kalorien/): Kalorien-Richtwerte für Döner, Dürüm und Kebab pro Portion.
 - [Vapiano: Kalorien](https://linupapp.de/fastfood/vapiano-kalorien/): Kalorien der Vapiano-Gerichte pro Portion.
 - [Indisches Essen: Kalorien (Richtwerte)](https://linupapp.de/fastfood/indisch-kalorien/): Kalorien-Richtwerte typischer indischer Gerichte pro Portion.
+- [Starbucks Kalorien: Latte, Frappuccino und Chai im Vergleich](https://linupapp.de/fastfood/starbucks-kalorien/): 17 Starbucks-Getränke von Caffe Latte bis Java Chip Frappuccino in Tall und Grande mit Kalorien, Zucker und Eiweiß, dazu der Wert mit Haferdrink. Quelle: Nährwerttabelle von Starbucks Deutschland.
 
 ## Protein-Produkte (Kalorien & Eiweiß pro Portion)
 
@@ -162,6 +169,9 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://linupapp.de/ll
 - [Skyr im Vergleich: welcher hat am meisten Protein](https://linupapp.de/protein/skyr-vergleich/): 16 Skyr von Lidl, Aldi, REWE, Edeka, Kaufland, Penny, Netto und Herstellermarken mit Protein pro 100 g, pro 150-g-Portion und pro Becher. Neun liegen gleichauf bei 11 g pro 100 g, ein 500-g-Becher bringt 55 g.
 - [Proteinpudding im Vergleich: Protein und Zucker je Becher](https://linupapp.de/protein/proteinpudding-vergleich/): 12 Proteinpuddings im 200-g-Becher mit Barcode-Quelle. Layenberger hat mit 22 g das meiste Protein, der vegane Vemondo mit 1,6 g den wenigsten Zucker.
 - [Eiweißbrot im Vergleich zu normalem Brot](https://linupapp.de/protein/proteinbrot-vergleich/): 8 Eiweißbrote und 4 normale Brote mit Protein pro 100 g, je Packung und je Scheibe. Eiweißbrot hat 18 bis 25,3 g pro 100 g, normales Brot 4,4 bis 6,5 g.
+- [Beef Jerky im Vergleich: Eiweiß, Salz und Kalorien je Tüte](https://linupapp.de/protein/jerky-vergleich/): 9 Beef Jerkys von 25 bis 75 g mit Eiweiß, Salz und Kalorien je Tüte, jeder Wert mit Barcode. Zimbo hat mit 37,5 g das meiste Eiweiß, McEnnedy mit 3,1 g das meiste Salz.
+- [Naturtofu oder Räuchertofu: Eiweiß und Kalorien je 100 g](https://linupapp.de/protein/tofu-natur-raeuchertofu-vergleich/): 17 Tofus aus Deutschland mit Eiweiß, Kalorien und Salz je 100 g und je Packung. Naturtofu 12 bis 17 g Eiweiß, Räuchertofu 14 bis 22 g, dafür bis 1,9 g Salz.
+- [Veganer Aufschnitt: Eiweiß je Brotportion im Vergleich](https://linupapp.de/protein/vegane-aufschnitte-vergleich/): 15 vegane Salamis, Schinken, Lyoner und Mortadella mit Eiweiß je 20-g-Brotportion und je Packung, jeder Wert mit Barcode. 0,4 bis 7 g je Brotportion, viel nur bei Weizeneiweiß als Grundlage.
 
 ## App
 
