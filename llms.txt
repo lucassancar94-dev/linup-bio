@@ -84,6 +84,8 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://linupapp.de/ll
 - [Rockstar Energy: Kalorien und Zucker je Sorte](https://linupapp.de/getraenke/rockstar-energy-kalorien/): 12 Rockstar-Sorten von 295 kcal (Juiced) bis 7 kcal (Peach) pro 500-ml-Dose, jede mit Barcode-Beleg.
 - [Spezi und Cola-Mix: Kalorien und Zucker](https://linupapp.de/getraenke/spezi-kalorien/): 15 Sorten Spezi und Cola-Mix von Paulaner bis Aldi, mit Kalorien und Zucker pro Flasche und pro 100 ml.
 - [Wie viel Koffein und Zucker haben Mate-Limonaden je Flasche?](https://linupapp.de/getraenke/mate-limonaden-koffein/): 13 Mate-Limonaden von Club-Mate bis Koka Mate mit Koffein und Zucker je Flasche, Quelle für jede Zahl. 0,5 l bringen 90 bis 125 mg Koffein und 22 bis 35 g Zucker.
+- [Wie viel Zucker haben Tonic Water und Bitter Lemon je Glas?](https://linupapp.de/getraenke/tonic-bitterlemon-zucker/): 13 Flaschen Tonic Water und Bitter Lemon von Schweppes, Thomas Henry und Handelsmarken mit Zucker je Glas (200 ml) und pro 100 ml, Quelle für jede Zahl. Tonic 15 bis 18,6 g je Glas, Bitter Lemon 20 bis 24,2 g, Zero-Sorten 0 g.
+- [Wie viel Zucker haben Fanta und andere Orangenlimonaden?](https://linupapp.de/getraenke/orangenlimonade-zucker-vergleich/): 18 Orangenlimonaden von Fanta, Bluna, Mirinda, Sinalco bis zu Handelsmarken mit Zucker und Kalorien je Flasche und pro 100 ml. Mit Zucker 5,5 bis 11 g pro 100 ml, Fanta Orange 38 g und Bluna Orange 55 g je 0,5 l.
 
 ## Gerichte & Snacks zum Abnehmen (Kalorien & Eiweiß pro Portion)
 
@@ -109,6 +111,10 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://linupapp.de/ll
 - [Tiefkühlpizza: Kalorien ganz und pro Viertel](https://linupapp.de/gerichte/tiefkuehlpizza-kalorien/): 13 Tiefkühlpizzen mit Barcode: ganze Pizza 612 bis 1.097 kcal, ein Viertel 153 bis 274 kcal.
 - [Sushi aus dem Supermarkt: Kalorien pro Box (18 Boxen)](https://linupapp.de/gerichte/sushi-supermarkt-kalorien/): 18 Sushi-Boxen von Aldi, Lidl, Rewe, Edeka, Penny, Kaufland und Eat Happy mit Kalorien und Eiweiß pro Box, Quelle je Zeile. Kleine Boxen 257 bis 369 kcal, große 692 bis 722 kcal.
 - [Fertigsalat aus dem Kühlregal: Kalorien mit Dressing](https://linupapp.de/gerichte/fertigsalate-kuehlregal/): 12 Salatboxen von REWE to go, Aldi, Lidl, Edeka und Meal Quick mit Kalorien und Eiweiß pro Box inklusive Dressing. Meist 182 bis 414 kcal, Boxen mit Orzo, Falafel oder viel Käse 537 bis 691 kcal.
+- [TK-Fertiggerichte für die Mikrowelle: Kalorien je Packung](https://linupapp.de/gerichte/tk-fertiggerichte-mikrowelle/): 10 tiefgekühlte Menüschalen von Aldi (Speisezeit), Gustoria und Jütro mit Kalorien und Eiweiß pro Packung, Quelle je Zeile. 8 von 10 liegen bei 364 bis 544 kcal, Spanne 264 bis 660 kcal.
+- [Müsliriegel: Kalorien und Zucker pro Riegel](https://linupapp.de/gerichte/muesliriegel-kalorien/): 14 Müsliriegel von Corny, Alnatura, Aldi, Lidl, Edeka und dm mit kcal, Zucker und Eiweiß pro Riegel, Barcode je Zeile. Klassische 25-g-Riegel mit Zucker 105 bis 110 kcal und 5,3 bis 8,3 g Zucker, Riegel mit Süßungsmittel 0,1 bis 0,3 g Zucker.
+- [Welche Chips haben am wenigsten Kalorien und Fett?](https://linupapp.de/gerichte/chips-kalorien-vergleich/): 15 Chips von funny-frisch, Lay's, Pringles, Chio, Lorenz, Zweifel, Aldi und Netto mit kcal und Fett pro 100 g, pro Handvoll und pro Tüte. Ofenchips 405 kcal und 9,2 g Fett pro 100 g, klassische Chips 516 bis 549 kcal.
+- [Wie viele Ballaststoffe haben TK-Gemüsemischungen je Portion?](https://linupapp.de/gerichte/tk-gemuesemischungen-ballaststoffe/): 14 Tiefkühl-Gemüsemischungen von Iglo, Frosta, Edeka, Lidl und Netto mit Ballaststoffen, kcal und Eiweiß pro 200 g, Quelle je Zeile. 4,2 bis 9,8 g Ballaststoffe, am meisten Iglo Erbsen & Karotten.
 
 ## Getränke-Ergänzungen
 
@@ -133,6 +139,9 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://linupapp.de/ll
 - [Wie viele Ballaststoffe hat eine Scheibe Vollkornbrot?](https://linupapp.de/lebensmittel/vollkornbrot-ballaststoffe/): 11 Roggenvollkornbrote und Pumpernickel mit 4,5 bis 7,3 g Ballaststoffen pro Scheibe, Scheibengewicht und Barcode-Quelle je Zeile.
 - [Eiweiß und Ballaststoffe in Bohnen, Linsen und Kichererbsen aus der Dose](https://linupapp.de/lebensmittel/huelsenfruechte-dose-ballaststoffe/): 8 Dosen Bohnen, Linsen und Kichererbsen mit Eiweiß und Ballaststoffen je abgetropfter Dose und pro 100 g, Barcode-Quelle je Zeile. Pro Dose 14,4 bis 23,9 g Eiweiß und 9,5 bis 19,3 g Ballaststoffe.
 - [Welches Müsli hat die meisten Ballaststoffe pro 40-g-Portion?](https://linupapp.de/lebensmittel/muesli-ballaststoffe/): 16 Müslis aus dem Supermarkt mit 4,4 bis 7,6 g Ballaststoffen je 40-g-Portion, dazu Zucker und Kalorien, Barcode-Quelle je Zeile. Am meisten hat Allos Ungesüßtes Crunchy Pur.
+- [Wie viel Eiweiß und Ballaststoffe hat Linsen- und Kichererbsen-Pasta?](https://linupapp.de/lebensmittel/linsen-kichererbsen-pasta/): 12 Nudeln aus roten Linsen und Kichererbsen je 80-g-Portion trocken mit Eiweiß, Ballaststoffen und Kalorien, Barcode-Quelle je Zahl. 16,0 bis 20,8 g Eiweiß und 4,3 bis 9,6 g Ballaststoffe je 80 g.
+- [Wie viele Kalorien hat ein Tortilla-Wrap je Stück?](https://linupapp.de/lebensmittel/tortilla-wraps-vergleich/): 13 Tortilla-Wraps aus dem Supermarkt mit kcal, Eiweiß, Kohlenhydraten und Ballaststoffen pro Stück, Barcode-Quelle je Zahl. 117 bis 228 kcal pro Wrap, 284 bis 326 kcal pro 100 g.
+- [Schokoriegel Kalorien: Snickers, Mars, Twix, Duplo im Vergleich](https://linupapp.de/lebensmittel/schokolade-kalorien-vergleich/): 18 bekannte Schokoriegel mit Kalorien und Zucker pro Stück und pro 100 g, Barcode-Quelle je Zahl. 71 bis 244 kcal je Riegel, am meisten Zucker hat Mars mit 31,6 g.
 
 ## Fast Food & Restaurants (Kalorien pro Gericht)
 
@@ -172,6 +181,7 @@ Ausführliche Langfassung dieser Inhalte für KI-Systeme: https://linupapp.de/ll
 - [Beef Jerky im Vergleich: Eiweiß, Salz und Kalorien je Tüte](https://linupapp.de/protein/jerky-vergleich/): 9 Beef Jerkys von 25 bis 75 g mit Eiweiß, Salz und Kalorien je Tüte, jeder Wert mit Barcode. Zimbo hat mit 37,5 g das meiste Eiweiß, McEnnedy mit 3,1 g das meiste Salz.
 - [Naturtofu oder Räuchertofu: Eiweiß und Kalorien je 100 g](https://linupapp.de/protein/tofu-natur-raeuchertofu-vergleich/): 17 Tofus aus Deutschland mit Eiweiß, Kalorien und Salz je 100 g und je Packung. Naturtofu 12 bis 17 g Eiweiß, Räuchertofu 14 bis 22 g, dafür bis 1,9 g Salz.
 - [Veganer Aufschnitt: Eiweiß je Brotportion im Vergleich](https://linupapp.de/protein/vegane-aufschnitte-vergleich/): 15 vegane Salamis, Schinken, Lyoner und Mortadella mit Eiweiß je 20-g-Brotportion und je Packung, jeder Wert mit Barcode. 0,4 bis 7 g je Brotportion, viel nur bei Weizeneiweiß als Grundlage.
+- [Veggie-Burger-Patties im Vergleich: Eiweiß und Kalorien je Patty](https://linupapp.de/protein/veggie-burgerpatties-vergleich/): 10 vegetarische Burger-Patties aus Deutschland von 80 bis 115 g mit Eiweiß, Kalorien, Fett und Salz je Stück, jeder Wert mit Barcode. 12,1 bis 26,1 g Eiweiß und 118 bis 305 kcal je Patty.
 
 ## App
 
